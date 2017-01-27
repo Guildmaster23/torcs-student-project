@@ -1,0 +1,1896 @@
+ simuv2
+
+ Timestamp is 5882368f (Fri Jan 20 19:10:55 2017)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00024724H .text                   CODE
+ 0001:00024730 0000033aH .text$x                 CODE
+ 0001:00024a70 00000284H .text$yc                CODE
+ 0001:00024d00 000001d8H .text$yd                CODE
+ 0002:00000000 00000154H .idata$5                DATA
+ 0002:00000154 00000004H .CRT$XCA                DATA
+ 0002:00000158 00000024H .CRT$XCU                DATA
+ 0002:0000017c 00000004H .CRT$XCZ                DATA
+ 0002:00000180 00000004H .CRT$XIA                DATA
+ 0002:00000184 00000014H .CRT$XIC                DATA
+ 0002:00000198 00000004H .CRT$XIZ                DATA
+ 0002:0000019c 00000004H .CRT$XPA                DATA
+ 0002:000001a0 00000004H .CRT$XPX                DATA
+ 0002:000001a4 00000004H .CRT$XPXA               DATA
+ 0002:000001a8 00000004H .CRT$XPZ                DATA
+ 0002:000001ac 00000004H .CRT$XTA                DATA
+ 0002:000001b0 00000004H .CRT$XTZ                DATA
+ 0002:000001c0 0000aba8H .rdata                  DATA
+ 0002:0000ad68 0000047cH .rdata$r                DATA
+ 0002:0000b1f0 00000064H .rdata$sxdata           DATA
+ 0002:0000b254 00000004H .rtc$IAA                DATA
+ 0002:0000b258 00000004H .rtc$IZZ                DATA
+ 0002:0000b25c 00000004H .rtc$TAA                DATA
+ 0002:0000b260 00000004H .rtc$TZZ                DATA
+ 0002:0000b268 00000aecH .xdata$x                DATA
+ 0002:0000bd54 0000003cH .idata$2                DATA
+ 0002:0000bd90 00000014H .idata$3                DATA
+ 0002:0000bda4 00000154H .idata$4                DATA
+ 0002:0000bef8 00000608H .idata$6                DATA
+ 0002:0000c500 00000044H .edata                  DATA
+ 0003:00000000 000018e0H .data                   DATA
+ 0003:000018e0 000029fcH .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000019       ___safe_se_handler_count   00000019     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       ?SimAeroConfig@@YAXPAUtCar@@@Z 10001000 f   aero.obj
+ 0001:000000c0       ?SimAeroUpdate@@YAXPAUtCar@@PAUSituation@@@Z 100010c0 f   aero.obj
+ 0001:000004f0       ?SimWingConfig@@YAXPAUtCar@@H@Z 100014f0 f   aero.obj
+ 0001:000005f0       ?SimWingReConfig@@YAXPAUtCar@@H@Z 100015f0 f   aero.obj
+ 0001:000006a0       ?SimWingUpdate@@YAXPAUtCar@@HPAUSituation@@@Z 100016a0 f   aero.obj
+ 0001:00000760       ?SimAxleConfig@@YAXPAUtCar@@H@Z 10001760 f   axle.obj
+ 0001:000008a0       ?SimAxleReConfig@@YAXPAUtCar@@H@Z 100018a0 f   axle.obj
+ 0001:00000920       ?SimAxleUpdate@@YAXPAUtCar@@H@Z 10001920 f   axle.obj
+ 0001:00000a10       ?SimBrakeConfig@@YAXPAXPBDPAUtBrake@@@Z 10001a10 f   brake.obj
+ 0001:00000ac0       ?SimBrakeUpdate@@YAXPAUtCar@@PAUtWheel@@PAUtBrake@@@Z 10001ac0 f   brake.obj
+ 0001:00000b60       ?SimBrakeSystemConfig@@YAXPAUtCar@@@Z 10001b60 f   brake.obj
+ 0001:00000bc0       ?SimBrakeSystemReConfig@@YAXPAUtCar@@@Z 10001bc0 f   brake.obj
+ 0001:00000c10       ?SimBrakeSystemUpdate@@YAXPAUtCar@@@Z 10001c10 f   brake.obj
+ 0001:00000c70       ?SimCarConfig@@YAXPAUtCar@@@Z 10001c70 f   car.obj
+ 0001:00001ba0       ?SimCarUpdateWheelPos@@YAXPAUtCar@@@Z 10002ba0 f   car.obj
+ 0001:00001fc0       ?SimTelemetryOut@@YAXPAUtCar@@@Z 10002fc0 f   car.obj
+ 0001:00002250       ?SimCarUpdate@@YAXPAUtCar@@PAUSituation@@@Z 10003250 f   car.obj
+ 0001:000022c0       ?SimCarUpdate2@@YAXPAUtCar@@PAUSituation@@@Z 100032c0 f   car.obj
+ 0001:000022e0       ?sgNormaliseVec2@@YAXQAM@Z 100032e0 f i collide.obj
+ 0001:00002330       ?SimCarCollideZ@@YAXPAUtCar@@@Z 10003330 f   collide.obj
+ 0001:000024a0       ?SimCarCollideXYScene@@YAXPAUtCar@@@Z 100034a0 f   collide.obj
+ 0001:000032e0       ?SimCollideRemoveCar@@YAXPAUtCar@@H@Z 100042e0 f   collide.obj
+ 0001:00003350       ?SimCarCollideShutdown@@YAXH@Z 10004350 f   collide.obj
+ 0001:00003450       ?buildWalls@@YAXPAUtrackSeg@@H@Z 10004450 f   collide.obj
+ 0001:00003960       ?SimCarCollideConfig@@YAXPAUtCar@@PAUtTrack@@@Z 10004960 f   collide.obj
+ 0001:000039b0       ?SimCarCollideInit@@YAXPAUtTrack@@@Z 100049b0 f   collide.obj
+ 0001:00003a50       ?SimCarCollideCars@@YAXPAUSituation@@@Z 10004a50 f   collide.obj
+ 0001:00003b40       ?SimDifferentialConfig@@YAXPAXPBDPAUtDifferential@@@Z 10004b40 f   differential.obj
+ 0001:00003da0       ?SimDifferentialReConfig@@YAXPAUtCar@@H@Z 10004da0 f   differential.obj
+ 0001:00004030       ?SimDifferentialUpdate@@YAXPAUtCar@@PAUtDifferential@@H@Z 10005030 f   differential.obj
+ 0001:000045c0       ?SimEngineConfig@@YAXPAUtCar@@@Z 100055c0 f   engine.obj
+ 0001:00004940       ?SimEngineUpdateTq@@YAXPAUtCar@@@Z 10005940 f   engine.obj
+ 0001:00004aa0       ?SimEngineUpdateRpm@@YAMPAUtCar@@M@Z 10005aa0 f   engine.obj
+ 0001:00004cb0       ?SimEngineShutdown@@YAXPAUtCar@@@Z 10005cb0 f   engine.obj
+ 0001:00004eb0       ?SimConfig@@YAXPAUCarElt@@PAURmInfo@@@Z 10005eb0 f   simu.obj
+ 0001:00005010       ?SimReConfig@@YAXPAUCarElt@@@Z 10006010 f   simu.obj
+ 0001:00005860       ?SimUpdate@@YAXPAUSituation@@NH@Z 10006860 f   simu.obj
+ 0001:00005e70       ?SimInit@@YAXHPAUtTrack@@MM@Z 10006e70 f   simu.obj
+ 0001:00005eb0       ?SimShutdown@@YAXXZ        10006eb0 f   simu.obj
+ 0001:00005f20       ?SimAdjustPitCarSetupParam@@YA_NPAUtCarPitSetupValue@@@Z 10006f20 f   simu.obj
+ 0001:00005fb0       _simuv2                    10006fb0 f   simuitf.obj
+ 0001:00005ff0       ?SimSteerConfig@@YAXPAUtCar@@@Z 10006ff0 f   steer.obj
+ 0001:00006050       ?SimSteerReConfig@@YAXPAUtCar@@@Z 10007050 f   steer.obj
+ 0001:00006090       ?SimSteerUpdate@@YAXPAUtCar@@@Z 10007090 f   steer.obj
+ 0001:000062b0       ?SimSuspCheckIn@@YAXPAUSuspension@@@Z 100072b0 f   susp.obj
+ 0001:00006310       ?SimSuspUpdate@@YAXPAUSuspension@@@Z 10007310 f   susp.obj
+ 0001:00006350       ?SimSuspConfig@@YAXPAXPBDPAUSuspension@@MM@Z 10007350 f   susp.obj
+ 0001:00006490       ?SimSuspReConfig@@YAXPAUtCar@@HPAUSuspension@@MM@Z 10007490 f   susp.obj
+ 0001:00006570       ?SimSuspThirdReConfig@@YAXPAUtCar@@HPAUSuspension@@MM@Z 10007570 f   susp.obj
+ 0001:00006610       ?SimTransmissionConfig@@YAXPAUtCar@@@Z 10007610 f   transmission.obj
+ 0001:00006d90       ?SimTransmissionReConfig@@YAXPAUtCar@@@Z 10007d90 f   transmission.obj
+ 0001:00006f20       ?SimGearboxUpdate@@YAXPAUtCar@@@Z 10007f20 f   transmission.obj
+ 0001:00007370       ?SimTransmissionUpdate@@YAXPAUtCar@@@Z 10008370 f   transmission.obj
+ 0001:00007510       ?SimWheelConfig@@YAXPAUtCar@@H@Z 10008510 f   wheel.obj
+ 0001:00007a90       ?SimWheelReConfig@@YAXPAUtCar@@H@Z 10008a90 f   wheel.obj
+ 0001:00007b50       ?SimWheelUpdateRide@@YAXPAUtCar@@H@Z 10008b50 f   wheel.obj
+ 0001:00007c60       ?SimWheelUpdateForce@@YAXPAUtCar@@H@Z 10008c60 f   wheel.obj
+ 0001:00008220       ?SimWheelUpdateRotation@@YAXPAUtCar@@@Z 10009220 f   wheel.obj
+ 0001:00008300       ?SimUpdateFreeWheels@@YAXPAUtCar@@H@Z 10009300 f   wheel.obj
+ 0001:00008750       ??1bad_alloc@std@@UAE@XZ   10009750 f i solid:C-api.obj
+ 0001:00008760       ??_Ebad_alloc@std@@UAEPAXI@Z 10009760 f i solid:C-api.obj
+ 0001:00008760       ??_Gbad_alloc@std@@UAEPAXI@Z 10009760 f i solid:C-api.obj
+ 0001:00008790       ??3@YAXPAX0@Z              10009790 f i solid:C-api.obj
+ 0001:000087a0       ?dot@@YANABVVector@@0@Z    100097a0 f i solid:C-api.obj
+ 0001:000087c0       ??1Convex@@UAE@XZ          100097c0 f i solid:C-api.obj
+ 0001:000087c0       ??1Shape@@UAE@XZ           100097c0 f i solid:C-api.obj
+ 0001:000087d0       ?getType@Complex@@UBE?AW4ShapeType@@XZ 100097d0 f i solid:C-api.obj
+ 0001:000087e0       ??_EComplex@@UAEPAXI@Z     100097e0 f i solid:C-api.obj
+ 0001:000087e0       ??_GComplex@@UAEPAXI@Z     100097e0 f i solid:C-api.obj
+ 0001:00008800       ??0Encounter@@QAE@PBVObject@@0@Z 10009800 f i solid:C-api.obj
+ 0001:000088a0       ?getType@Convex@@UBE?AW4ShapeType@@XZ 100098a0 f i solid:C-api.obj
+ 0001:000088b0       _dtNewComplexShape         100098b0 f   solid:C-api.obj
+ 0001:000088f0       _dtBegin                   100098f0 f   solid:C-api.obj
+ 0001:00008900       _dtLoadIdentity            10009900 f   solid:C-api.obj
+ 0001:00008910       _dtMultMatrixf             10009910 f   solid:C-api.obj
+ 0001:00008940       _dtSetDefaultResponse      10009940 f   solid:C-api.obj
+ 0001:00008960       _dtClearDefaultResponse    10009960 f   solid:C-api.obj
+ 0001:00008980       _dtDisableCaching          10009980 f   solid:C-api.obj
+ 0001:00008990       _dtSetTolerance            10009990 f   solid:C-api.obj
+ 0001:000089a0       ??A?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@QAEAAVPoint@@I@Z 100099a0 f i solid:C-api.obj
+ 0001:000089e0       ?_Max@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@PAU342@@Z 100099e0 f i solid:C-api.obj
+ 0001:00008a00       ?_Min@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@PAU342@@Z 10009a00 f i solid:C-api.obj
+ 0001:00008a20       ?_Rrotate@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@@Z 10009a20 f i solid:C-api.obj
+ 0001:00008a80       ??8const_iterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QBE_NABV012@@Z 10009a80 f i solid:C-api.obj
+ 0001:00008a80       ??8const_iterator@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QBE_NABV012@@Z 10009a80 f i solid:C-api.obj
+ 0001:00008ab0       ?_Inc@const_iterator@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAEXXZ 10009ab0 f i solid:C-api.obj
+ 0001:00008b20       ??Dconst_iterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QBEABU?$pair@QAXVResponse@@@2@XZ 10009b20 f i solid:C-api.obj
+ 0001:00008b50       ?_Max@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@PAU342@@Z 10009b50 f i solid:C-api.obj
+ 0001:00008b70       ?_Min@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@PAU342@@Z 10009b70 f i solid:C-api.obj
+ 0001:00008b90       ?_Rrotate@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@@Z 10009b90 f i solid:C-api.obj
+ 0001:00008bf0       ?_Max@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@2@PAU342@@Z 10009bf0 f i solid:C-api.obj
+ 0001:00008c10       ?_Min@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@2@PAU342@@Z 10009c10 f i solid:C-api.obj
+ 0001:00008c30       ?_Rrotate@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@2@@Z 10009c30 f i solid:C-api.obj
+ 0001:00008c90       ?_Dec@const_iterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAEXXZ 10009c90 f i solid:C-api.obj
+ 0001:00008d20       ?_Inc@const_iterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAEXXZ 10009d20 f i solid:C-api.obj
+ 0001:00008d90       ?_Inc@const_iterator@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAEXXZ 10009d90 f i solid:C-api.obj
+ 0001:00008e00       ?_Max@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@PAU342@@Z 10009e00 f i solid:C-api.obj
+ 0001:00008e20       ?_Min@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@KAPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@PAU342@@Z 10009e20 f i solid:C-api.obj
+ 0001:00008e40       ?_Dec@const_iterator@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAEXXZ 10009e40 f i solid:C-api.obj
+ 0001:00008ed0       ?_Dec@const_iterator@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAEXXZ 10009ed0 f i solid:C-api.obj
+ 0001:00008f60       ??$_Allocate@VPoint@@@std@@YAPAVPoint@@IPAV1@@Z 10009f60 f i solid:C-api.obj
+ 0001:00008fc0       ??$_Allocate@D@std@@YAPADIPAD@Z 10009fc0 f i solid:C-api.obj
+ 0001:00009020       ??0bad_alloc@std@@QAE@ABV01@@Z 1000a020 f i solid:C-api.obj
+ 0001:00009040       ??$_Fill@PAVPoint@@V1@@std@@YAXPAVPoint@@0ABV1@@Z 1000a040 f i solid:C-api.obj
+ 0001:00009080       ??$_Copy_opt@PAVPoint@@PAV1@Uforward_iterator_tag@std@@@std@@YAPAVPoint@@PAV1@00Uforward_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1000a080 f i solid:C-api.obj
+ 0001:000090c0       ??$_Copy_backward_opt@PAVPoint@@PAV1@Uforward_iterator_tag@std@@@std@@YAPAVPoint@@PAV1@00Uforward_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1000a0c0 f i solid:C-api.obj
+ 0001:00009110       ??RTransform@@QBE?AVPoint@@ABV1@@Z 1000a110 f i solid:C-api.obj
+ 0001:00009170       ??1Endpoint@@QAE@XZ        1000a170 f i solid:C-api.obj
+ 0001:00009190       ??1Object@@QAE@XZ          1000a190 f i solid:C-api.obj
+ 0001:00009200       ?object_test@@YA_NAAVEncounter@@@Z 1000a200 f   solid:C-api.obj
+ 0001:000093b0       ?_Lrotate@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@@Z 1000a3b0 f i solid:C-api.obj
+ 0001:00009400       ?_Lbound@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@IBEPAU_Node@?$_Tree_nod@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@2@ABU?$pair@PAXPAX@2@@Z 1000a400 f i solid:C-api.obj
+ 0001:00009440       ?_Lrotate@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@@Z 1000a440 f i solid:C-api.obj
+ 0001:00009490       ?_Rrotate@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@@Z 1000a490 f i solid:C-api.obj
+ 0001:000094f0       ?_Inc@const_iterator@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAEXXZ 1000a4f0 f i solid:C-api.obj
+ 0001:00009560       ?_Lrotate@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@@Z 1000a560 f i solid:C-api.obj
+ 0001:000095b0       ?_Lrotate@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@2@@Z 1000a5b0 f i solid:C-api.obj
+ 0001:00009600       ?_Erase@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@@Z 1000a600 f i solid:C-api.obj
+ 0001:00009640       ??$_Copy_backward_opt@PAVPoint@@PAV1@@std@@YAPAVPoint@@PAV1@00Urandom_access_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1000a640 f i solid:C-api.obj
+ 0001:000096a0       ??$_Uninit_copy@PAVPoint@@PAV1@V?$allocator@VPoint@@@std@@@std@@YAPAVPoint@@PAV1@00AAV?$allocator@VPoint@@@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1000a6a0 f i solid:C-api.obj
+ 0001:000096f0       ??_GBox@@UAEPAXI@Z         1000a6f0 f i solid:C-api.obj
+ 0001:000096f0       ??_EShape@@UAEPAXI@Z       1000a6f0 f i solid:C-api.obj
+ 0001:000096f0       ??_GShape@@UAEPAXI@Z       1000a6f0 f i solid:C-api.obj
+ 0001:000096f0       ??_EBox@@UAEPAXI@Z         1000a6f0 f i solid:C-api.obj
+ 0001:00009710       _dtBox                     1000a710 f   solid:C-api.obj
+ 0001:00009750       ??1?$_Vector_val@IV?$allocator@I@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009750       ??1?$_Vector_val@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009750       ??1?$_Vector_val@VPoint@@V?$allocator@VPoint@@@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009750       ??1?$_Tree_val@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009750       ??1?$_Tree_val@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009750       ??1?$_Tree_val@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009750       ??1?$_Vector_val@PAXV?$allocator@PAX@std@@@std@@QAE@XZ 1000a750 f i solid:RespTable.obj
+ 0001:00009750       ??1?$_Tree_val@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009750       ??1?$_Vector_val@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@QAE@XZ 1000a750 f i solid:C-api.obj
+ 0001:00009760       ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z 1000a760 f i solid:C-api.obj
+ 0001:000097f0       ?_Buynode@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAEPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@PAU342@00ABVEncounter@@D@Z 1000a7f0 f i solid:C-api.obj
+ 0001:00009840       ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IAEXII@Z 1000a840 f i solid:C-api.obj
+ 0001:00009980       ?_Erase@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@@Z 1000a980 f i solid:C-api.obj
+ 0001:000099c0       ?_Buynode@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAEPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@XZ 1000a9c0 f i solid:C-api.obj
+ 0001:00009a00       ?_Buynode@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAEPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@PAU342@00ABU?$pair@QAXVResponse@@@2@D@Z 1000aa00 f i solid:C-api.obj
+ 0001:00009a50       ?_Erase@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@2@@Z 1000aa50 f i solid:C-api.obj
+ 0001:00009a90       ?_Buynode@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@IAEPAU_Node@?$_Tree_nod@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@2@XZ 1000aa90 f i solid:C-api.obj
+ 0001:00009ad0       ?_Buynode@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAEPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@XZ 1000aad0 f i solid:C-api.obj
+ 0001:00009b10       ?_Buynode@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAEPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@PAU342@00ABU?$pair@QAXPAVObject@@@2@D@Z 1000ab10 f i solid:C-api.obj
+ 0001:00009b50       ?_Erase@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAEXPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@@Z 1000ab50 f i solid:C-api.obj
+ 0001:00009b90       ?_Buynode@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAEPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@XZ 1000ab90 f i solid:C-api.obj
+ 0001:00009bd0       ??$fill@PAPAVComplex@@PAV1@@std@@YAXPAPAVComplex@@0ABQAV1@@Z 1000abd0 f i solid:C-api.obj
+ 0001:00009bd0       ??$fill@PAPBVPolytope@@PBV1@@std@@YAXPAPBVPolytope@@0ABQBV1@@Z 1000abd0 f i solid:C-api.obj
+ 0001:00009bd0       ??$fill@PAII@std@@YAXPAI0ABI@Z 1000abd0 f i solid:C-api.obj
+ 0001:00009bd0       ??$fill@PAPAXPAX@std@@YAXPAPAX0ABQAX@Z 1000abd0 f i solid:RespTable.obj
+ 0001:00009bf0       ??$_Distance2@Viterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@I@std@@YAXViterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@0@0AAIUbidirectional_iterator_tag@0@@Z 1000abf0 f i solid:C-api.obj
+ 0001:00009c30       ??$_Uninit_fill_n@PAVPoint@@IV1@V?$allocator@VPoint@@@std@@@std@@YAXPAVPoint@@IABV1@AAV?$allocator@VPoint@@@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1000ac30 f i solid:C-api.obj
+ 0001:00009c80       ??0IndexArray@@QAE@HQBI@Z  1000ac80 f i solid:C-api.obj
+ 0001:00009ce0       ??0Polytope@@QAE@ABVVertexBase@@HQBI@Z 1000ace0 f i solid:C-api.obj
+ 0001:00009d40       ??0Simplex@@QAE@ABVVertexBase@@HQBI@Z 1000ad40 f i solid:C-api.obj
+ 0001:00009d70       ??0Polygon@@QAE@ABVVertexBase@@HQBI@Z 1000ad70 f i solid:C-api.obj
+ 0001:00009da0       ??_GSimplex@@UAEPAXI@Z     1000ada0 f i solid:C-api.obj
+ 0001:00009da0       ??_GPolygon@@UAEPAXI@Z     1000ada0 f i solid:C-api.obj
+ 0001:00009da0       ??_EPolygon@@UAEPAXI@Z     1000ada0 f i solid:C-api.obj
+ 0001:00009da0       ??_ESimplex@@UAEPAXI@Z     1000ada0 f i solid:C-api.obj
+ 0001:00009da0       ??_EPolytope@@UAEPAXI@Z    1000ada0 f i solid:C-api.obj
+ 0001:00009da0       ??_GPolytope@@UAEPAXI@Z    1000ada0 f i solid:C-api.obj
+ 0001:00009de0       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ 1000ade0 f i solid:C-api.obj
+ 0001:00009e10       ?_Eqrange@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAE?AU?$pair@Viterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@V123@@2@ABQAX@Z 1000ae10 f i solid:C-api.obj
+ 0001:00009ea0       ?_Eqrange@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@IAE?AU?$pair@Viterator@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@V123@@2@ABU?$pair@PAXPAX@2@@Z 1000aea0 f i solid:C-api.obj
+ 0001:00009f50       ?_Eqrange@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAE?AU?$pair@Viterator@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@V123@@2@ABVEncounter@@@Z 1000af50 f i solid:C-api.obj
+ 0001:0000a000       ??$copy@V?$_Vector_iterator@VPoint@@V?$allocator@VPoint@@@std@@@std@@PAVPoint@@@std@@YAPAVPoint@@V?$_Vector_iterator@VPoint@@V?$allocator@VPoint@@@std@@@0@0PAV1@@Z 1000b000 f i solid:C-api.obj
+ 0001:0000a060       ??$unchecked_copy@PAVPoint@@PAV1@@stdext@@YAPAVPoint@@PAV1@00@Z 1000b060 f i solid:C-api.obj
+ 0001:0000a0c0       ??$_Unchecked_move_backward@PAVPoint@@PAV1@@stdext@@YAPAVPoint@@PAV1@00@Z 1000b0c0 f i solid:C-api.obj
+ 0001:0000a0f0       ??$_Distance2@Viterator@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@I@std@@YAXViterator@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@0@0AAIUbidirectional_iterator_tag@0@@Z 1000b0f0 f i solid:C-api.obj
+ 0001:0000a130       ?what@logic_error@std@@UBEPBDXZ 1000b130 f i solid:C-api.obj
+ 0001:0000a140       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z 1000b140 f i solid:C-api.obj
+ 0001:0000a220       ?_Ufill@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@IAEPAVPoint@@PAV3@IABV3@@Z 1000b220 f i solid:C-api.obj
+ 0001:0000a260       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z 1000b260 f i solid:C-api.obj
+ 0001:0000a340       _dtProceed                 1000b340 f   solid:C-api.obj
+ 0001:0000a440       _dtTest                    1000b440 f   solid:C-api.obj
+ 0001:0000a5e0       ?erase@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@QAE?AV?$_Vector_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@V?$_Vector_const_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@0@Z 1000b5e0 f i solid:C-api.obj
+ 0001:0000a660       ?erase@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@QAE?AV?$_Vector_iterator@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@2@V?$_Vector_const_iterator@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@2@0@Z 1000b660 f i solid:C-api.obj
+ 0001:0000a660       ?erase@?$vector@IV?$allocator@I@std@@@std@@QAE?AV?$_Vector_iterator@IV?$allocator@I@std@@@2@V?$_Vector_const_iterator@IV?$allocator@I@std@@@2@0@Z 1000b660 f i solid:C-api.obj
+ 0001:0000a6f0       ?erase@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@QAE?AV?$_Vector_iterator@PAVComplex@@V?$allocator@PAVComplex@@@std@@@2@V?$_Vector_const_iterator@PAVComplex@@V?$allocator@PAVComplex@@@std@@@2@@Z 1000b6f0 f i solid:C-api.obj
+ 0001:0000a750       ?find@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@ABQAX@Z 1000b750 f i solid:C-api.obj
+ 0001:0000a7e0       ?_Ufill@?$vector@PAXV?$allocator@PAX@std@@@std@@IAEPAPAXPAPAXIABQAX@Z 1000b7e0 f i solid:RespTable.obj
+ 0001:0000a7e0       ?_Ufill@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@IAEPAPBVPolytope@@PAPBV3@IABQBV3@@Z 1000b7e0 f i solid:C-api.obj
+ 0001:0000a7e0       ?_Ufill@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@IAEPAPAVComplex@@PAPAV3@IABQAV3@@Z 1000b7e0 f i solid:C-api.obj
+ 0001:0000a7e0       ?_Ufill@?$vector@IV?$allocator@I@std@@@std@@IAEPAIPAIIABI@Z 1000b7e0 f i solid:C-api.obj
+ 0001:0000a810       ??$_Umove@PAVPoint@@@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@IAEPAVPoint@@PAV2@00@Z 1000b810 f i solid:C-api.obj
+ 0001:0000a840       ??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 1000b840 f i solid:C-api.obj
+ 0001:0000a8a0       ??0length_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 1000b8a0 f i solid:C-api.obj
+ 0001:0000a8c0       ??_Glogic_error@std@@UAEPAXI@Z 1000b8c0 f i solid:C-api.obj
+ 0001:0000a8c0       ??_Glength_error@std@@UAEPAXI@Z 1000b8c0 f i solid:C-api.obj
+ 0001:0000a8c0       ??_Eout_of_range@std@@UAEPAXI@Z 1000b8c0 f i solid:C-api.obj
+ 0001:0000a8c0       ??_Elength_error@std@@UAEPAXI@Z 1000b8c0 f i solid:C-api.obj
+ 0001:0000a8c0       ??_Elogic_error@std@@UAEPAXI@Z 1000b8c0 f i solid:C-api.obj
+ 0001:0000a8c0       ??_Gout_of_range@std@@UAEPAXI@Z 1000b8c0 f i solid:C-api.obj
+ 0001:0000a910       ??0out_of_range@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 1000b910 f i solid:C-api.obj
+ 0001:0000a930       ??1out_of_range@std@@UAE@XZ 1000b930 f i solid:C-api.obj
+ 0001:0000a930       ??1length_error@std@@UAE@XZ 1000b930 f i solid:C-api.obj
+ 0001:0000a970       _dtDeleteShape             1000b970 f   solid:C-api.obj
+ 0001:0000aa30       _dtSelectObject            1000ba30 f   solid:C-api.obj
+ 0001:0000aab0       ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z 1000bab0 f i solid:C-api.obj
+ 0001:0000aaf0       ?erase@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 1000baf0 f i solid:C-api.obj
+ 0001:0000adb0       ??0logic_error@std@@QAE@ABV01@@Z 1000bdb0 f i solid:C-api.obj
+ 0001:0000ae20       ??0?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE@ABU?$less@PAX@1@ABV?$allocator@U?$pair@QAXVResponse@@@std@@@1@@Z 1000be20 f i solid:C-api.obj
+ 0001:0000aea0       ??0?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE@ABU?$less@U?$pair@PAXPAX@std@@@1@ABV?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@1@@Z 1000bea0 f i solid:C-api.obj
+ 0001:0000af20       ??0?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE@ABU?$less@PAX@1@ABV?$allocator@U?$pair@QAXPAVObject@@@std@@@1@@Z 1000bf20 f i solid:C-api.obj
+ 0001:0000afa0       ??0?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE@ABU?$less@VEncounter@@@1@ABV?$allocator@VEncounter@@@1@@Z 1000bfa0 f i solid:C-api.obj
+ 0001:0000b020       ?_Insert@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@ABVEncounter@@@Z 1000c020 f i solid:C-api.obj
+ 0001:0000b210       ??0length_error@std@@QAE@ABV01@@Z 1000c210 f i solid:C-api.obj
+ 0001:0000b230       ?erase@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 1000c230 f i solid:C-api.obj
+ 0001:0000b4f0       ?_Insert@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@ABU?$pair@QAXVResponse@@@2@@Z 1000c4f0 f i solid:C-api.obj
+ 0001:0000b6e0       ?erase@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 1000c6e0 f i solid:C-api.obj
+ 0001:0000b9a0       ?erase@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@0@Z 1000c9a0 f i solid:C-api.obj
+ 0001:0000ba80       ?_Insert@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@ABU?$pair@QAXPAVObject@@@2@@Z 1000ca80 f i solid:C-api.obj
+ 0001:0000bc70       ?erase@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 1000cc70 f i solid:C-api.obj
+ 0001:0000bf30       ??0out_of_range@std@@QAE@ABV01@@Z 1000cf30 f i solid:C-api.obj
+ 0001:0000bf50       _dtDeleteObject            1000cf50 f   solid:C-api.obj
+ 0001:0000c020       ?insert@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE?AU?$pair@Viterator@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@_N@2@ABVEncounter@@@Z 1000d020 f i solid:C-api.obj
+ 0001:0000c120       ?erase@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@0@Z 1000d120 f i solid:C-api.obj
+ 0001:0000c200       ?erase@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@0@Z 1000d200 f i solid:C-api.obj
+ 0001:0000c2e0       ?erase@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@0@Z 1000d2e0 f i solid:C-api.obj
+ 0001:0000c3c0       ?insert@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE?AU?$pair@Viterator@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@_N@2@ABU?$pair@QAXVResponse@@@2@@Z 1000d3c0 f i solid:C-api.obj
+ 0001:0000c4b0       ?_Insert_n@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@IAEXV?$_Vector_const_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@IABVPoint@@@Z 1000d4b0 f i solid:C-api.obj
+ 0001:0000c790       ?insert@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE?AU?$pair@Viterator@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@_N@2@ABU?$pair@QAXPAVObject@@@2@@Z 1000d790 f i solid:C-api.obj
+ 0001:0000c880       ?addPair@@YAXPBVObject@@0@Z 1000d880 f   solid:C-api.obj
+ 0001:0000c8b0       ??1?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE@XZ 1000d8b0 f i solid:C-api.obj
+ 0001:0000c920       ?erase@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAEIABQAX@Z 1000d920 f i solid:C-api.obj
+ 0001:0000c990       ??1?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE@XZ 1000d990 f i solid:C-api.obj
+ 0001:0000ca00       ??1?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE@XZ 1000da00 f i solid:C-api.obj
+ 0001:0000ca70       ??1?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE@XZ 1000da70 f i solid:C-api.obj
+ 0001:0000cae0       ?erase@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAEIABVEncounter@@@Z 1000dae0 f i solid:C-api.obj
+ 0001:0000cb50       ?insert@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@ABU?$pair@QAXVResponse@@@2@@Z 1000db50 f i solid:C-api.obj
+ 0001:0000cd20       ?insert@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@QAE?AV?$_Vector_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@V?$_Vector_const_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@ABVPoint@@@Z 1000dd20 f i solid:C-api.obj
+ 0001:0000cdf0       ?insert@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@ABU?$pair@QAXPAVObject@@@2@@Z 1000ddf0 f i solid:C-api.obj
+ 0001:0000cfc0       ??1?$map@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@@std@@QAE@XZ 1000dfc0 f i solid:C-api.obj
+ 0001:0000cfd0       ?removePair@@YAXPBVObject@@0@Z 1000dfd0 f   solid:C-api.obj
+ 0001:0000d000       ??A?$map@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@@std@@QAEAAVResponse@@ABQAX@Z 1000e000 f i solid:C-api.obj
+ 0001:0000d0b0       ?push_back@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@QAEXABVPoint@@@Z 1000e0b0 f i solid:C-api.obj
+ 0001:0000d150       ??A?$map@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@@std@@QAEAAPAVObject@@ABQAX@Z 1000e150 f i solid:C-api.obj
+ 0001:0000d200       ??0RespTable@@QAE@XZ       1000e200 f i solid:C-api.obj
+ 0001:0000d280       _dtEndComplexShape         1000e280 f   solid:C-api.obj
+ 0001:0000d410       _dtVertex                  1000e410 f   solid:C-api.obj
+ 0001:0000d4e0       _dtVertexIndices           1000e4e0 f   solid:C-api.obj
+ 0001:0000d650       _dtCreateObject            1000e650 f   solid:C-api.obj
+ 0001:0000d6b0       _dtSetObjectResponse       1000e6b0 f   solid:C-api.obj
+ 0001:0000d6f0       _dtClearObjectResponse     1000e6f0 f   solid:C-api.obj
+ 0001:0000d720       _dtEnd                     1000e720 f   solid:C-api.obj
+ 0001:0000d7c0       ??XMatrix@@QAEAAV0@ABV0@@Z 1000e7c0 f i solid:Transform.obj
+ 0001:0000d8c0       ?setValue@Transform@@QAEXQBM@Z 1000e8c0 f   solid:Transform.obj
+ 0001:0000d930       ?setIdentity@Transform@@QAEXXZ 1000e930 f   solid:Transform.obj
+ 0001:0000d970       ?inverse@Matrix@@QBE?AV1@XZ 1000e970 f i solid:Transform.obj
+ 0001:0000da40       ??D@YA?AVMatrix@@ABV0@0@Z  1000ea40 f i solid:Transform.obj
+ 0001:0000db30       ?multTransposeLeft@@YA?AVMatrix@@ABV1@0@Z 1000eb30 f i solid:Transform.obj
+ 0001:0000dc20       ??XTransform@@QAEAAV0@ABV0@@Z 1000ec20 f   solid:Transform.obj
+ 0001:0000dca0       ?invert@Transform@@QAEXABV1@@Z 1000eca0 f   solid:Transform.obj
+ 0001:0000dd80       ?multInverseLeft@Transform@@QAEXABV1@0@Z 1000ed80 f   solid:Transform.obj
+ 0001:0000dee0       ??1Complex@@UAE@XZ         1000eee0 f   solid:Complex.obj
+ 0001:0000df90       ?intersect@@YA_NABVComplex@@ABVConvex@@ABVTransform@@2AAVVector@@@Z 1000ef90 f   solid:Complex.obj
+ 0001:0000e000       ?find_prim@@YA_NABVComplex@@ABVConvex@@ABVTransform@@2AAVVector@@AAPBVShape@@@Z 1000f000 f   solid:Complex.obj
+ 0001:0000e070       ?common_point@@YA_NABVComplex@@ABVConvex@@ABVTransform@@2AAVVector@@AAVPoint@@4@Z 1000f070 f   solid:Complex.obj
+ 0001:0000e0f0       ?enclose@BBox@@QAEXABV1@0@Z 1000f0f0 f i solid:Complex.obj
+ 0001:0000e1e0       ?bbox@Complex@@UBE?AVBBox@@ABVTransform@@@Z 1000f1e0 f   solid:Complex.obj
+ 0001:0000e2e0       ?finish@Complex@@QAEXHPAPBVPolytope@@@Z 1000f2e0 f   solid:Complex.obj
+ 0001:0000e400       ?intersect@@YA_NABVComplex@@0ABVTransform@@1AAVVector@@@Z 1000f400 f   solid:Complex.obj
+ 0001:0000e580       ?find_prim@@YA_NABVComplex@@0ABVTransform@@1AAVVector@@AAPBVShape@@3@Z 1000f580 f   solid:Complex.obj
+ 0001:0000e710       ?common_point@@YA_NABVComplex@@0ABVTransform@@1AAVVector@@AAVPoint@@3@Z 1000f710 f   solid:Complex.obj
+ 0001:0000e8a0       ?approxZero@@YA_NABVVector@@@Z 1000f8a0 f i solid:Convex.obj
+ 0001:0000e8e0       ?compute_det@@YAXXZ        1000f8e0 f   solid:Convex.obj
+ 0001:0000ed50       ?valid@@YA_NH@Z            1000fd50 f i solid:Convex.obj
+ 0001:0000edb0       ?degenerate@@YA_NABVVector@@@Z 1000fdb0 f i solid:Convex.obj
+ 0001:0000ee10       ?compute_vector@@YAXHAAVVector@@@Z 1000fe10 f i solid:Convex.obj
+ 0001:0000ef60       ?compute_points@@YAXHAAVPoint@@0@Z 1000ff60 f i solid:Convex.obj
+ 0001:0000f180       ?closest@@YA_NAAVVector@@@Z 10010180 f i solid:Convex.obj
+ 0001:0000f240       ?intersect@@YA_NABVConvex@@0ABVTransform@@1AAVVector@@@Z 10010240 f   solid:Convex.obj
+ 0001:0000f4e0       ?intersect@@YA_NABVConvex@@0ABVTransform@@AAVVector@@@Z 100104e0 f   solid:Convex.obj
+ 0001:0000f6f0       ?common_point@@YA_NABVConvex@@0ABVTransform@@1AAVVector@@AAVPoint@@3@Z 100106f0 f   solid:Convex.obj
+ 0001:0000fa40       ?common_point@@YA_NABVConvex@@0ABVTransform@@AAVVector@@AAVPoint@@3@Z 10010a40 f   solid:Convex.obj
+ 0001:0000fd00       ?closest_points@@YAXABVConvex@@0ABVTransform@@1AAVPoint@@2@Z 10010d00 f   solid:Convex.obj
+ 0001:000101d0       ?bbox@Convex@@UBE?AVBBox@@ABVTransform@@@Z 100111d0 f   solid:Convex.obj
+ 0001:000103d0       ??0Endpoint@@QAE@XZ        100113d0 f i solid:Object.obj
+ 0001:000103e0       ?move@Object@@QAEXXZ       100113e0 f   solid:Object.obj
+ 0001:000104b0       ?proceed@Object@@QAEXXZ    100114b0 f   solid:Object.obj
+ 0001:000104d0       ?intersectConvexConvex@@YA_NABVShape@@0ABVTransform@@1AAVVector@@@Z 100114d0 f   solid:Object.obj
+ 0001:000104e0       ?intersectComplexConvex@@YA_NABVShape@@0ABVTransform@@1AAVVector@@@Z 100114e0 f   solid:Object.obj
+ 0001:000104f0       ?intersectComplexComplex@@YA_NABVShape@@0ABVTransform@@1AAVVector@@@Z 100114f0 f   solid:Object.obj
+ 0001:00010500       ?common_pointConvexConvex@@YA_NABVShape@@0ABVTransform@@1AAVVector@@AAVPoint@@3@Z 10011500 f   solid:Object.obj
+ 0001:00010510       ?common_pointComplexConvex@@YA_NABVShape@@0ABVTransform@@1AAVVector@@AAVPoint@@3@Z 10011510 f   solid:Object.obj
+ 0001:00010520       ?common_pointComplexComplex@@YA_NABVShape@@0ABVTransform@@1AAVVector@@AAVPoint@@3@Z 10011520 f   solid:Object.obj
+ 0001:00010530       ?intersectInitialize@@YAPAV?$AlgoTable@P6A_NABVShape@@0ABVTransform@@1AAVVector@@@Z@@XZ 10011530 f   solid:Object.obj
+ 0001:00010560       ?intersect@@YA_NABVObject@@0AAVVector@@@Z 10011560 f   solid:Object.obj
+ 0001:000105d0       ?common_pointInitialize@@YAPAV?$AlgoTable@P6A_NABVShape@@0ABVTransform@@1AAVVector@@AAVPoint@@3@Z@@XZ 100115d0 f   solid:Object.obj
+ 0001:00010600       ?common_point@@YA_NABVObject@@0AAVVector@@AAVPoint@@2@Z 10011600 f   solid:Object.obj
+ 0001:00010680       ?prev_closest_points@@YA_NABVObject@@0AAVVector@@AAVPoint@@2@Z 10011680 f   solid:Object.obj
+ 0001:00010850       ??0Object@@QAE@PAXPBVShape@@@Z 10011850 f   solid:Object.obj
+ 0001:000109f0       ??RResponse@@QBEXPAX0ABVPoint@@1ABVVector@@@Z 100119f0 f   solid:Response.obj
+ 0001:00010a70       ??RResponse@@QBEXPAX0@Z    10011a70 f   solid:Response.obj
+ 0001:00010a90       ??$_Allocate@PAX@std@@YAPAPAXIPAPAX@Z 10011a90 f i solid:RespTable.obj
+ 0001:00010a90       ??$_Allocate@PAVComplex@@@std@@YAPAPAVComplex@@IPAPAV1@@Z 10011a90 f i solid:C-api.obj
+ 0001:00010a90       ??$_Allocate@I@std@@YAPAIIPAI@Z 10011a90 f i solid:C-api.obj
+ 0001:00010a90       ??$_Allocate@PBVPolytope@@@std@@YAPAPBVPolytope@@IPAPBV1@@Z 10011a90 f i solid:C-api.obj
+ 0001:00010af0       ??$_Unchecked_move_backward@PAIPAI@stdext@@YAPAIPAI00@Z 10011af0 f i solid:C-api.obj
+ 0001:00010af0       ??$_Unchecked_move_backward@PAPAXPAPAX@stdext@@YAPAPAXPAPAX00@Z 10011af0 f i solid:RespTable.obj
+ 0001:00010af0       ??$_Unchecked_move_backward@PAPAVComplex@@PAPAV1@@stdext@@YAPAPAVComplex@@PAPAV1@00@Z 10011af0 f i solid:C-api.obj
+ 0001:00010af0       ??$_Unchecked_move_backward@PAPBVPolytope@@PAPBV1@@stdext@@YAPAPBVPolytope@@PAPBV1@00@Z 10011af0 f i solid:C-api.obj
+ 0001:00010b20       ?find@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QBE?AVconst_iterator@12@ABQAX@Z 10011b20 f i solid:RespTable.obj
+ 0001:00010bb0       ?find@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QBE?AVconst_iterator@12@ABU?$pair@PAXPAX@2@@Z 10011bb0 f i solid:RespTable.obj
+ 0001:00010c30       ??$_Umove@PAPAX@?$vector@PAXV?$allocator@PAX@std@@@std@@IAEPAPAXPAPAX00@Z 10011c30 f i solid:RespTable.obj
+ 0001:00010c30       ??$_Umove@PAI@?$vector@IV?$allocator@I@std@@@std@@IAEPAIPAI00@Z 10011c30 f i solid:C-api.obj
+ 0001:00010c30       ??$_Umove@PAPBVPolytope@@@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@IAEPAPBVPolytope@@PAPBV2@00@Z 10011c30 f i solid:C-api.obj
+ 0001:00010c30       ??$_Umove@PAPAVComplex@@@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@IAEPAPAVComplex@@PAPAV2@00@Z 10011c30 f i solid:C-api.obj
+ 0001:00010c70       ?find@RespTable@@QBEABVResponse@@PAX0@Z 10011c70 f   solid:RespTable.obj
+ 0001:00010db0       ?_Xlen@?$vector@PAXV?$allocator@PAX@std@@@std@@KAXXZ 10011db0 f i solid:RespTable.obj
+ 0001:00010db0       ?_Xlen@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@KAXXZ 10011db0 f i solid:C-api.obj
+ 0001:00010db0       ?_Xlen@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@KAXXZ 10011db0 f i solid:C-api.obj
+ 0001:00010db0       ?_Xlen@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@KAXXZ 10011db0 f i solid:C-api.obj
+ 0001:00010db0       ?_Xlen@?$vector@IV?$allocator@I@std@@@std@@KAXXZ 10011db0 f i solid:C-api.obj
+ 0001:00010e20       ?_Insert_n@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@IAEXV?$_Vector_const_iterator@PAVComplex@@V?$allocator@PAVComplex@@@std@@@2@IABQAVComplex@@@Z 10011e20 f i solid:C-api.obj
+ 0001:00010e20       ?_Insert_n@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@IAEXV?$_Vector_const_iterator@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@2@IABQBVPolytope@@@Z 10011e20 f i solid:C-api.obj
+ 0001:00010e20       ?_Insert_n@?$vector@PAXV?$allocator@PAX@std@@@std@@IAEXV?$_Vector_const_iterator@PAXV?$allocator@PAX@std@@@2@IABQAX@Z 10011e20 f i solid:RespTable.obj
+ 0001:00010e20       ?_Insert_n@?$vector@IV?$allocator@I@std@@@std@@IAEXV?$_Vector_const_iterator@IV?$allocator@I@std@@@2@IABI@Z 10011e20 f i solid:C-api.obj
+ 0001:00010fd0       ?insert@?$vector@PAXV?$allocator@PAX@std@@@std@@QAE?AV?$_Vector_iterator@PAXV?$allocator@PAX@std@@@2@V?$_Vector_const_iterator@PAXV?$allocator@PAX@std@@@2@ABQAX@Z 10011fd0 f i solid:RespTable.obj
+ 0001:00010fd0       ?insert@?$vector@IV?$allocator@I@std@@@std@@QAE?AV?$_Vector_iterator@IV?$allocator@I@std@@@2@V?$_Vector_const_iterator@IV?$allocator@I@std@@@2@ABI@Z 10011fd0 f i solid:C-api.obj
+ 0001:00010fd0       ?insert@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@QAE?AV?$_Vector_iterator@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@2@V?$_Vector_const_iterator@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@2@ABQBVPolytope@@@Z 10011fd0 f i solid:C-api.obj
+ 0001:00010fd0       ?insert@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@QAE?AV?$_Vector_iterator@PAVComplex@@V?$allocator@PAVComplex@@@std@@@2@V?$_Vector_const_iterator@PAVComplex@@V?$allocator@PAVComplex@@@std@@@2@ABQAVComplex@@@Z 10011fd0 f i solid:C-api.obj
+ 0001:00011080       ?push_back@?$vector@PAXV?$allocator@PAX@std@@@std@@QAEXABQAX@Z 10012080 f i solid:RespTable.obj
+ 0001:00011080       ?push_back@?$vector@IV?$allocator@I@std@@@std@@QAEXABI@Z 10012080 f i solid:C-api.obj
+ 0001:00011080       ?push_back@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@QAEXABQAVComplex@@@Z 10012080 f i solid:C-api.obj
+ 0001:00011080       ?push_back@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@QAEXABQBVPolytope@@@Z 10012080 f i solid:C-api.obj
+ 0001:000110f0       ?cleanObject@RespTable@@QAEXPAX@Z 100120f0 f   solid:RespTable.obj
+ 0001:000113c0       ?support@Box@@UBE?AVPoint@@ABVVector@@@Z 100123c0 f   solid:Box.obj
+ 0001:00011410       ?support@Polygon@@UBE?AVPoint@@ABVVector@@@Z 10012410 f   solid:Polygon.obj
+ 0001:00011580       ??1Polyhedron@@UAE@XZ      10012580 f   solid:Polyhedron.obj
+ 0001:000115a0       ?support@Simplex@@UBE?AVPoint@@ABVVector@@@Z 100125a0 f   solid:Simplex.obj
+ 0001:000115a0       ?support@Polyhedron@@UBE?AVPoint@@ABVVector@@@Z 100125a0 f   solid:Polyhedron.obj
+ 0001:00011750       ??0Polyhedron@@QAE@ABVVertexBase@@HQBI@Z 10012750 f   solid:Polyhedron.obj
+ 0001:00011780       ??_EPolyhedron@@UAEPAXI@Z  10012780 f i solid:Polyhedron.obj
+ 0001:00011780       ??_GPolyhedron@@UAEPAXI@Z  10012780 f i solid:Polyhedron.obj
+ 0001:000117a0       ?size@BBox@@QBENXZ         100127a0 f i solid:BBoxTree.obj
+ 0001:000117d0       ?intersect@@YA_NABVBBox@@0@Z 100127d0 f i solid:BBoxTree.obj
+ 0001:00011830       ?sep_axes_test@@YA_NABVVector@@0ABVMatrix@@010@Z 10012830 f i solid:BBoxTree.obj
+ 0001:00011940       ?intersect@@YA_NPBVBBoxNode@@ABVConvex@@ABVBBox@@ABVTransform@@AAVVector@@@Z 10012940 f   solid:BBoxTree.obj
+ 0001:000119d0       ?find_prim@@YA_NPBVBBoxNode@@ABVConvex@@ABVBBox@@ABVTransform@@AAVVector@@AAPBVShape@@@Z 100129d0 f   solid:BBoxTree.obj
+ 0001:00011a80       ?common_point@@YA_NPBVBBoxNode@@ABVConvex@@ABVBBox@@ABVTransform@@AAVVector@@AAVPoint@@5@Z 10012a80 f   solid:BBoxTree.obj
+ 0001:00011b30       ?include@BBox@@QAEXABVPoint@@@Z 10012b30 f i solid:BBoxTree.obj
+ 0001:00011c00       ?fitBBox@BBoxLeaf@@QAEXXZ  10012c00 f   solid:BBoxTree.obj
+ 0001:00011c50       ??0BBoxInternal@@QAE@HPAVBBoxLeaf@@@Z 10012c50 f   solid:BBoxTree.obj
+ 0001:00011e60       ?intersect@@YA_NABVBBox@@0ABVTransform@@ABVMatrix@@12@Z 10012e60 f i solid:BBoxTree.obj
+ 0001:00011f60       ?intersect@@YA_NPBVBBoxNode@@0ABVTransform@@ABVMatrix@@12AAVVector@@@Z 10012f60 f   solid:BBoxTree.obj
+ 0001:00012080       ?find_prim@@YA_NPBVBBoxNode@@0ABVTransform@@ABVMatrix@@12AAVVector@@AAPBVShape@@4@Z 10013080 f   solid:BBoxTree.obj
+ 0001:000121f0       ?common_point@@YA_NPBVBBoxNode@@0ABVTransform@@ABVMatrix@@12AAVVector@@AAVPoint@@4@Z 100131f0 f   solid:BBoxTree.obj
+ 0001:00012350       ?update@@YAXABVEndpoint@@0@Z 10013350 f i solid:Endpoint.obj
+ 0001:000123b0       ??0Endpoint@@QAE@HHPBVObject@@@Z 100133b0 f   solid:Endpoint.obj
+ 0001:000123f0       ?move@Endpoint@@QAEXN@Z    100133f0 f   solid:Endpoint.obj
+ 0001:00012580       ??0EndpointList@@QAE@XZ    10013580 f i solid:Endpoint.obj
+ 0001:000125b0       ??1EndpointList@@QAE@XZ    100135b0 f i solid:Endpoint.obj
+ 0001:000125de       ?GfParmGetNum@@YAMPAXPBD11M@Z 100135de f   tgf:tgf.dll
+ 0001:000125e4       ?GfParmGetStr@@YAPBDPAXPBD11@Z 100135e4 f   tgf:tgf.dll
+ 0001:000125ea       ?_tgf_win_free@@YAXPAX@Z   100135ea f   tgf:tgf.dll
+ 0001:000125f0       ?_tgf_win_malloc@@YAPAXI@Z 100135f0 f   tgf:tgf.dll
+ 0001:000125f6       ?GfParmGetEltNb@@YAHPAXPBD@Z 100135f6 f   tgf:tgf.dll
+ 0001:000125fc       ?_tgf_win_calloc@@YAPAXII@Z 100135fc f   tgf:tgf.dll
+ 0001:00012602       ?_tgf_win_strdup@@YAPADPBD@Z 10013602 f   tgf:tgf.dll
+ 0001:00012608       ?RtTrackGlobal2Local@@YAXPAUtrackSeg@@MMPAUtTrkLocPos@@H@Z 10013608 f   robottools:robottools.dll
+ 0001:0001260e       ?RtTrackSurfaceNormalL@@YAXPAUtTrkLocPos@@PAUt3Dd@@@Z 1001360e f   robottools:robottools.dll
+ 0001:00012614       ?RtTrackSideTgAngleL@@YAMPAUtTrkLocPos@@@Z 10013614 f   robottools:robottools.dll
+ 0001:0001261a       ?RtTrackHeightL@@YAMPAUtTrkLocPos@@@Z 1001361a f   robottools:robottools.dll
+ 0001:00012620       ?RtTrackLocal2Global@@YAXPAUtTrkLocPos@@PAM1H@Z 10013620 f   robottools:robottools.dll
+ 0001:00012630       ?sgMakeCoordMat4@@YAXQAY03MMMMMMM@Z 10013630 f   sg_vs2008_32:sg.obj
+ 0001:00012820       ?sgXformPnt4@@YAXQAMQBMQAY03$$CBM@Z 10013820 f   sg_vs2008_32:sg.obj
+ 0001:000128e0       ?sgFullXformPnt3@@YAXQAMQBMQAY03$$CBM@Z 100138e0 f   sg_vs2008_32:sg.obj
+ 0001:00012941       ?_Xlen@_String_base@std@@SAXXZ 10013941 f   libcpmt:string.obj
+ 0001:00012979       ?_Xran@_String_base@std@@SAXXZ 10013979 f   libcpmt:string.obj
+ 0001:000129b1       ??_U@YAPAXI@Z              100139b1 f   libcpmt:newaop.obj
+ 0001:000129bc       __initp_misc_winxfltr      100139bc f   LIBCMT:winxfltr.obj
+ 0001:000129bc       __fpclear                  100139bc f   LIBCMT:_fpinit_.obj
+ 0001:000129bd       __cfltcvt_init             100139bd f   LIBCMT:_fpinit_.obj
+ 0001:00012a1d       __fpmath                   10013a1d f   LIBCMT:_fpinit_.obj
+ 0001:00012a40       _atan2                     10013a40 f   LIBCMT:_87ctriga_.obj
+ 0001:00012a4a       __CIatan2                  10013a4a f   LIBCMT:_87ctriga_.obj
+ 0001:00012a60       _exp                       10013a60 f   LIBCMT:_87ctran_.obj
+ 0001:00012a9c       __CIexp                    10013a9c f   LIBCMT:_87ctran_.obj
+ 0001:00012ad7       __exp_default              10013ad7 f   LIBCMT:_87ctran_.obj
+ 0001:00012ae1       __CIexp_default            10013ae1 f   LIBCMT:_87ctran_.obj
+ 0001:00012af0       _sin                       10013af0 f   LIBCMT:_sin_.obj
+ 0001:00012b30       __CIsin                    10013b30 f   LIBCMT:_sin_.obj
+ 0001:00012b6b       __CIsin_default            10013b6b f   LIBCMT:_sin_.obj
+ 0001:00012b7f       __sin_default              10013b7f     LIBCMT:_sin_.obj
+ 0001:00012c20       __CIsqrt                   10013c20 f   LIBCMT:_sqrt_.obj
+ 0001:00012c34       _sqrt                      10013c34     LIBCMT:_sqrt_.obj
+ 0001:00012ce0       _cos                       10013ce0 f   LIBCMT:_cos_.obj
+ 0001:00012d20       __CIcos                    10013d20 f   LIBCMT:_cos_.obj
+ 0001:00012d5b       __CIcos_default            10013d5b f   LIBCMT:_cos_.obj
+ 0001:00012d6f       __cos_default              10013d6f     LIBCMT:_cos_.obj
+ 0001:00012e09       _printf                    10013e09 f   LIBCMT:printf.obj
+ 0001:00012eb8       __get_printf_count_output  10013eb8 f   LIBCMT:printf.obj
+ 0001:00012ed0       __ftol2_sse                10013ed0 f   LIBCMT:ftol2.obj
+ 0001:00012ed9       __ftol2_pentium4           10013ed9 f   LIBCMT:ftol2.obj
+ 0001:00012eec       __ftol2_sse_excpt          10013eec f   LIBCMT:ftol2.obj
+ 0001:00012f06       __ftol2                    10013f06 f   LIBCMT:ftol2.obj
+ 0001:00012f7b       _rand                      10013f7b f   LIBCMT:rand.obj
+ 0001:00012f9d       __snprintf                 10013f9d f   LIBCMT:snprintf.obj
+ 0001:0001304c       __isnan                    1001404c f   LIBCMT:_ieeemisc_.obj
+ 0001:00013080       __fpclass                  10014080 f   LIBCMT:_ieeemisc_.obj
+ 0001:00013120       _memset                    10014120 f   LIBCMT:memset.obj
+ 0001:000131a0       _tan                       100141a0 f   LIBCMT:_tan_.obj
+ 0001:000131e0       __CItan                    100141e0 f   LIBCMT:_tan_.obj
+ 0001:0001321b       __CItan_default            1001421b f   LIBCMT:_tan_.obj
+ 0001:0001322f       __tan_default              1001422f     LIBCMT:_tan_.obj
+ 0001:000132d0       _asin                      100142d0 f   LIBCMT:_asin_.obj
+ 0001:00013310       __CIasin                   10014310 f   LIBCMT:_asin_.obj
+ 0001:0001334b       __CIasin_default           1001434b f   LIBCMT:_asin_.obj
+ 0001:0001335f       __asin_default             1001435f     LIBCMT:_asin_.obj
+ 0001:00013420       _atan                      10014420 f   LIBCMT:_atan_.obj
+ 0001:00013460       __CIatan                   10014460 f   LIBCMT:_atan_.obj
+ 0001:0001349b       __CIatan_default           1001449b f   LIBCMT:_atan_.obj
+ 0001:000134af       __atan_default             100144af     LIBCMT:_atan_.obj
+ 0001:00013540       _log                       10014540 f   LIBCMT:_log_.obj
+ 0001:00013580       __CIlog                    10014580 f   LIBCMT:_log_.obj
+ 0001:000135bb       __CIlog_default            100145bb f   LIBCMT:_log_.obj
+ 0001:000135cf       __log_default              100145cf     LIBCMT:_log_.obj
+ 0001:00013690       __CRT_INIT@12              10014690 f   LIBCMT:dllcrt0.obj
+ 0001:000138bb       __DllMainCRTStartup@12     100148bb f   LIBCMT:dllcrt0.obj
+ 0001:000138de       _memcpy_s                  100148de f   LIBCMT:memcpy_s.obj
+ 0001:0001395b       _memmove_s                 1001495b f   LIBCMT:memmove_s.obj
+ 0001:000139b8       ??0exception@std@@QAE@XZ   100149b8 f   LIBCMT:stdexcpt.obj
+ 0001:000139c9       ??0exception@std@@QAE@ABQBD@Z 100149c9 f   LIBCMT:stdexcpt.obj
+ 0001:00013a1c       ??0exception@std@@QAE@ABQBDH@Z 10014a1c f   LIBCMT:stdexcpt.obj
+ 0001:00013a39       ??0exception@std@@QAE@ABV01@@Z 10014a39 f   LIBCMT:stdexcpt.obj
+ 0001:00013a96       ??1exception@std@@UAE@XZ   10014a96 f   LIBCMT:stdexcpt.obj
+ 0001:00013aac       ?what@exception@std@@UBEPBDXZ 10014aac f   LIBCMT:stdexcpt.obj
+ 0001:00013ab9       ??_Eexception@std@@UAEPAXI@Z 10014ab9 f i LIBCMT:stdexcpt.obj
+ 0001:00013ab9       ??_Gexception@std@@UAEPAXI@Z 10014ab9 f i LIBCMT:stdexcpt.obj
+ 0001:00013ada       ??1type_info@@UAE@XZ       10014ada f   LIBCMT:typinfo.obj
+ 0001:00013aea       ??_Etype_info@@UAEPAXI@Z   10014aea f i LIBCMT:typinfo.obj
+ 0001:00013aea       ??_Gtype_info@@UAEPAXI@Z   10014aea f i LIBCMT:typinfo.obj
+ 0001:00013b0b       ??8type_info@@QBE_NABV0@@Z 10014b0b f   LIBCMT:typinfo.obj
+ 0001:00013b2b       ??3@YAXPAX@Z               10014b2b f   LIBCMT:delete.obj
+ 0001:00013b36       __purecall                 10014b36 f   LIBCMT:purevirt.obj
+ 0001:00013b60       ??_V@YAXPAX@Z              10014b60 f   LIBCMT:delete2.obj
+ 0001:00013b6b       ??0bad_alloc@std@@QAE@XZ   10014b6b f i LIBCMT:new.obj
+ 0001:00013b86       ??2@YAPAXI@Z               10014b86 f   LIBCMT:new.obj
+ 0001:00013beb       __initp_misc_invarg        10014beb f   LIBCMT:invarg.obj
+ 0001:00013bfa       __invoke_watson            10014bfa f   LIBCMT:invarg.obj
+ 0001:00013d22       __invalid_parameter        10014d22 f   LIBCMT:invarg.obj
+ 0001:00013d48       __invalid_parameter_noinfo 10014d48 f   LIBCMT:invarg.obj
+ 0001:00013d58       __CxxThrowException@8      10014d58 f   LIBCMT:throw.obj
+ 0001:00013da4       ?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z 10014da4 f   LIBCMT:ehvecdtr.obj
+ 0001:00013e02       ??_M@YGXPAXIHP6EX0@Z@Z     10014e02 f   LIBCMT:ehvecdtr.obj
+ 0001:00013e65       ?_JumpToContinuation@@YGXPAXPAUEHRegistrationNode@@@Z 10014e65 f   LIBCMT:_trnsctrl_.obj
+ 0001:00013e97       ?_CallMemberFunction0@@YGXPAX0@Z 10014e97 f   LIBCMT:_trnsctrl_.obj
+ 0001:00013e97       ?_CallMemberFunction2@@YGXPAX00H@Z 10014e97 f   LIBCMT:_trnsctrl_.obj
+ 0001:00013e97       ?_CallMemberFunction1@@YGXPAX00@Z 10014e97 f   LIBCMT:_trnsctrl_.obj
+ 0001:00013e9e       ?_UnwindNestedFrames@@YGXPAUEHRegistrationNode@@PAUEHExceptionRecord@@@Z 10014e9e f   LIBCMT:_trnsctrl_.obj
+ 0001:00013ef2       ___CxxFrameHandler3        10014ef2 f   LIBCMT:_trnsctrl_.obj
+ 0001:00013f5b       ?_CallSETranslator@@YAHPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAX2PBU_s_FuncInfo@@H1@Z 10014f5b f   LIBCMT:_trnsctrl_.obj
+ 0001:000140d1       ?_GetRangeOfTrysToCheck@@YAPBU_s_TryBlockMapEntry@@PBU_s_FuncInfo@@HHPAI1@Z 100150d1 f   LIBCMT:_trnsctrl_.obj
+ 0001:00014146       __CreateFrameInfo          10015146 f   LIBCMT:_trnsctrl_.obj
+ 0001:00014172       __IsExceptionObjectToBeDestroyed 10015172 f   LIBCMT:_trnsctrl_.obj
+ 0001:00014199       __FindAndUnlinkFrame       10015199 f   LIBCMT:_trnsctrl_.obj
+ 0001:000141eb       ?_CallCatchBlock2@@YAPAXPAUEHRegistrationNode@@PBU_s_FuncInfo@@PAXHK@Z 100151eb f   LIBCMT:_trnsctrl_.obj
+ 0001:00014305       ___onexitinit              10015305 f   LIBCMT:onexit.obj
+ 0001:00014336       __onexit                   10015336 f   LIBCMT:onexit.obj
+ 0001:00014372       _atexit                    10015372 f   LIBCMT:onexit.obj
+ 0001:00014389       ??_L@YGXPAXIHP6EX0@Z1@Z    10015389 f   LIBCMT:ehvecctr.obj
+ 0001:000143f0       _acos                      100153f0 f   LIBCMT:_acos_.obj
+ 0001:00014430       __CIacos                   10015430 f   LIBCMT:_acos_.obj
+ 0001:0001446b       __CIacos_default           1001546b f   LIBCMT:_acos_.obj
+ 0001:0001447f       __acos_default             1001547f     LIBCMT:_acos_.obj
+ 0001:00014536       __crt_waiting_on_module_handle 10015536 f   LIBCMT:crt0dat.obj
+ 0001:00014566       __amsg_exit                10015566 f   LIBCMT:crt0dat.obj
+ 0001:0001458f       ___crtCorExitProcess       1001558f f   LIBCMT:crt0dat.obj
+ 0001:000145ba       ___crtExitProcess          100155ba f   LIBCMT:crt0dat.obj
+ 0001:000145d2       __lockexit                 100155d2 f   LIBCMT:crt0dat.obj
+ 0001:000145db       __unlockexit               100155db f   LIBCMT:crt0dat.obj
+ 0001:00014601       __initterm_e               10015601 f   LIBCMT:crt0dat.obj
+ 0001:00014625       __cinit                    10015625 f   LIBCMT:crt0dat.obj
+ 0001:000147d6       __exit                     100157d6 f   LIBCMT:crt0dat.obj
+ 0001:000147ec       __cexit                    100157ec f   LIBCMT:crt0dat.obj
+ 0001:000147fb       __init_pointers            100157fb f   LIBCMT:crt0dat.obj
+ 0001:00014849       ___iob_func                10015849 f   LIBCMT:_file.obj
+ 0001:0001484f       ___initstdio               1001584f f   LIBCMT:_file.obj
+ 0001:00014900       ___endstdio                10015900 f   LIBCMT:_file.obj
+ 0001:00014920       __lock_file                10015920 f   LIBCMT:_file.obj
+ 0001:00014961       __lock_file2               10015961 f   LIBCMT:_file.obj
+ 0001:00014993       __unlock_file              10015993 f   LIBCMT:_file.obj
+ 0001:000149cf       __unlock_file2             100159cf f   LIBCMT:_file.obj
+ 0001:00014a00       _strlen                    10015a00 f   LIBCMT:strlen.obj
+ 0001:00014a8b       @__security_check_cookie@4 10015a8b f   LIBCMT:secchk.obj
+ 0001:00014a9a       __EH_prolog3               10015a9a f   LIBCMT:ehprolg3.obj
+ 0001:00014acd       __EH_prolog3_catch         10015acd f   LIBCMT:ehprolg3.obj
+ 0001:00014b03       ??0_LocaleUpdate@@QAE@PAUlocaleinfo_struct@@@Z 10015b03 f i LIBCMT:cvt.obj
+ 0001:00014b8a       __forcdecpt_l              10015b8a f   LIBCMT:cvt.obj
+ 0001:00014bfd       __cropzeros_l              10015bfd f   LIBCMT:cvt.obj
+ 0001:00014c7f       __positive                 10015c7f f   LIBCMT:cvt.obj
+ 0001:00014c9b       __fassign_l                10015c9b f   LIBCMT:cvt.obj
+ 0001:00014cdd       __fassign                  10015cdd f   LIBCMT:cvt.obj
+ 0001:00014d16       __forcdecpt                10015d16 f   LIBCMT:cvt.obj
+ 0001:00014d29       __cropzeros                10015d29 f   LIBCMT:cvt.obj
+ 0001:00014eab       __cftoe_l                  10015eab f   LIBCMT:cvt.obj
+ 0001:00014f7b       __cftoe                    10015f7b f   LIBCMT:cvt.obj
+ 0001:00014f9b       __cftoa_l                  10015f9b f   LIBCMT:cvt.obj
+ 0001:00015405       __cftof_l                  10016405 f   LIBCMT:cvt.obj
+ 0001:000154c0       __cftog_l                  100164c0 f   LIBCMT:cvt.obj
+ 0001:000155ba       __cfltcvt_l                100165ba f   LIBCMT:cvt.obj
+ 0001:00015642       __cfltcvt                  10016642 f   LIBCMT:cvt.obj
+ 0001:00015665       __initp_misc_cfltcvt_tab   10016665 f   LIBCMT:cmiscdat.obj
+ 0001:00015686       __setdefaultprecision      10016686 f   LIBCMT:fp8.obj
+ 0001:000156b1       __ms_p5_test_fdiv          100166b1 f   LIBCMT:_testfdiv_.obj
+ 0001:000156ef       __ms_p5_mp_test_fdiv       100166ef f   LIBCMT:_testfdiv_.obj
+ 0001:0001573c       __fFATN2                   1001673c     LIBCMT:_87triga_.obj
+ 0001:0001578c       __rtpiby2                  1001678c     LIBCMT:_87triga_.obj
+ 0001:000157d0       __cintrindisp2             100167d0 f   LIBCMT:_87cdisp_.obj
+ 0001:0001580e       __cintrindisp1             1001680e f   LIBCMT:_87cdisp_.obj
+ 0001:0001584b       __ctrandisp2               1001684b f   LIBCMT:_87cdisp_.obj
+ 0001:000159e1       __ctrandisp1               100169e1 f   LIBCMT:_87cdisp_.obj
+ 0001:00015a14       __fload                    10016a14 f   LIBCMT:_87cdisp_.obj
+ 0001:00015a50       __sse2_mathfcns_init       10016a50 f   LIBCMT:_mathfcns_.obj
+ 0001:00015a70       __CIexp_pentium4           10016a70 f   LIBCMT:_exp_pentium4_.obj
+ 0001:00015a88       __exp_pentium4             10016a88     LIBCMT:_exp_pentium4_.obj
+ 0001:00015d41       __fFEXP                    10016d41     LIBCMT:_87tran_.obj
+ 0001:00015da8       __rtinfpopse               10016da8     LIBCMT:_87tran_.obj
+ 0001:00015daa       __rtinfnpopse              10016daa     LIBCMT:_87tran_.obj
+ 0001:00015dba       __fFLN                     10016dba     LIBCMT:_87tran_.obj
+ 0001:00015e6f       __rtinfpop                 10016e6f     LIBCMT:_87tran_.obj
+ 0001:00015e71       __rtinfnpop                10016e71     LIBCMT:_87tran_.obj
+ 0001:00015e8e       __ffexpm1                  10016e8e     LIBCMT:_87tran_.obj
+ 0001:00015f40       __CIsin_pentium4           10016f40 f   LIBCMT:_sin_pentium4_.obj
+ 0001:00015f58       __sin_pentium4             10016f58     LIBCMT:_sin_pentium4_.obj
+ 0001:00016110       __trandisp1                10017110 f   LIBCMT:_87disp_.obj
+ 0001:00016177       __trandisp2                10017177 f   LIBCMT:_87disp_.obj
+ 0001:00016203       __rttospopde               10017203     LIBCMT:_87disp_.obj
+ 0001:00016208       __rttospop                 10017208     LIBCMT:_87disp_.obj
+ 0001:0001620a       __rtnospop                 1001720a     LIBCMT:_87disp_.obj
+ 0001:0001620c       __rttosnpop                1001720c     LIBCMT:_87disp_.obj
+ 0001:0001620d       __rtnospopde               1001720d     LIBCMT:_87disp_.obj
+ 0001:00016214       __rtzeropop                10017214     LIBCMT:_87disp_.obj
+ 0001:00016216       __rtzeronpop               10017216     LIBCMT:_87disp_.obj
+ 0001:0001621b       __rtonepop                 1001721b     LIBCMT:_87disp_.obj
+ 0001:0001621d       __rtonenpop                1001721d     LIBCMT:_87disp_.obj
+ 0001:00016222       __tosnan1                  10017222     LIBCMT:_87disp_.obj
+ 0001:0001624d       __nosnan2                  1001724d     LIBCMT:_87disp_.obj
+ 0001:0001624f       __tosnan2                  1001724f     LIBCMT:_87disp_.obj
+ 0001:00016277       __nan2                     10017277     LIBCMT:_87disp_.obj
+ 0001:000162b6       __rtindfpop                100172b6     LIBCMT:_87disp_.obj
+ 0001:000162b8       __rtindfnpop               100172b8     LIBCMT:_87disp_.obj
+ 0001:000162c9       __rttosnpopde              100172c9     LIBCMT:_87disp_.obj
+ 0001:000162d3       __rtchsifneg               100172d3     LIBCMT:_87disp_.obj
+ 0001:000162e0       __twoToTOS                 100172e0 f   LIBCMT:_common_.obj
+ 0001:000162f5       __load_CW                  100172f5 f   LIBCMT:_common_.obj
+ 0001:0001630c       __convertTOStoQNaN         1001730c f   LIBCMT:_common_.obj
+ 0001:00016325       __fload_withFB             10017325 f   LIBCMT:_common_.obj
+ 0001:00016368       __checkTOS_withFB          10017368 f   LIBCMT:_common_.obj
+ 0001:0001637e       __fast_exit                1001737e f   LIBCMT:_common_.obj
+ 0001:0001638b       __math_exit                1001738b f   LIBCMT:_common_.obj
+ 0001:000163b5       __check_overflow_exit      100173b5 f   LIBCMT:_common_.obj
+ 0001:000163c9       __check_range_exit         100173c9 f   LIBCMT:_common_.obj
+ 0001:00016470       __startTwoArgErrorHandling 10017470 f   LIBCMT:_genexcep_.obj
+ 0001:00016487       __startOneArgErrorHandling 10017487 f   LIBCMT:_genexcep_.obj
+ 0001:000164d0       __CIcos_pentium4           100174d0 f   LIBCMT:_cos_pentium4_.obj
+ 0001:000164e8       __cos_pentium4             100174e8     LIBCMT:_cos_pentium4_.obj
+ 0001:0001667c       __stbuf                    1001767c f   LIBCMT:_sftbuf.obj
+ 0001:00016718       __ftbuf                    10017718 f   LIBCMT:_sftbuf.obj
+ 0001:000167f2       __output_l                 100177f2 f   LIBCMT:output.obj
+ 0001:0001738a       __get_errno_from_oserr     1001838a f   LIBCMT:dosmap.obj
+ 0001:000173cc       __errno                    100183cc f   LIBCMT:dosmap.obj
+ 0001:000173df       ___doserrno                100183df f   LIBCMT:dosmap.obj
+ 0001:000173f2       __dosmaperr                100183f2 f   LIBCMT:dosmap.obj
+ 0001:00017418       __SEH_prolog4              10018418 f   LIBCMT:sehprolg4.obj
+ 0001:0001745d       __SEH_epilog4              1001845d f   LIBCMT:sehprolg4.obj
+ 0001:00017480       __except_handler4          10018480 f   LIBCMT:chandler4.obj
+ 0001:0001760c       __encode_pointer           1001860c f   LIBCMT:tidtable.obj
+ 0001:0001767e       __encoded_null             1001867e f   LIBCMT:tidtable.obj
+ 0001:00017687       __decode_pointer           10018687 f   LIBCMT:tidtable.obj
+ 0001:000176f9       ___crtTlsAlloc@4           100186f9 f   LIBCMT:tidtable.obj
+ 0001:00017702       ___set_flsgetvalue         10018702 f   LIBCMT:tidtable.obj
+ 0001:00017736       __mtterm                   10018736 f   LIBCMT:tidtable.obj
+ 0001:00017773       __initptd                  10018773 f   LIBCMT:tidtable.obj
+ 0001:0001785a       __getptd_noexit            1001885a f   LIBCMT:tidtable.obj
+ 0001:000178d3       __getptd                   100188d3 f   LIBCMT:tidtable.obj
+ 0001:000178ed       __freefls@4                100188ed f   LIBCMT:tidtable.obj
+ 0001:00017a1c       __freeptd                  10018a1c f   LIBCMT:tidtable.obj
+ 0001:00017a8a       __mtinit                   10018a8a f   LIBCMT:tidtable.obj
+ 0001:00017c17       __flsbuf                   10018c17 f   LIBCMT:_flsbuf.obj
+ 0001:00017d7b       __set_exp                  10018d7b f   LIBCMT:_util_.obj
+ 0001:00017da7       __sptype                   10018da7 f   LIBCMT:_util_.obj
+ 0001:00017e07       __decomp                   10018e07 f   LIBCMT:_util_.obj
+ 0001:00017ec0       __raise_exc_ex             10018ec0 f   LIBCMT:_fpexcept_.obj
+ 0001:0001819c       __raise_exc                1001919c f   LIBCMT:_fpexcept_.obj
+ 0001:000181bf       __handle_exc               100191bf f   LIBCMT:_fpexcept_.obj
+ 0001:000183a1       __set_errno_from_matherr   100193a1 f   LIBCMT:_fpexcept_.obj
+ 0001:000183ce       __statfp                   100193ce f   LIBCMT:_fpctrl_.obj
+ 0001:000183de       __clrfp                    100193de f   LIBCMT:_fpctrl_.obj
+ 0001:000183ef       __ctrlfp                   100193ef f   LIBCMT:_fpctrl_.obj
+ 0001:00018418       __set_statfp               10019418 f   LIBCMT:_fpctrl_.obj
+ 0001:00018470       ___set_fpsr_sse2           10019470 f   LIBCMT:_fpctrl_.obj
+ 0001:00018539       __VEC_memzero              10019539 f   LIBCMT:p4_memset.obj
+ 0001:000185d0       __CItan_pentium4           100195d0 f   LIBCMT:_tan_pentium4_.obj
+ 0001:000185e8       __tan_pentium4             100195e8     LIBCMT:_tan_pentium4_.obj
+ 0001:00018830       __CIasin_pentium4          10019830 f   LIBCMT:_asin_pentium4_.obj
+ 0001:00018848       __asin_pentium4            10019848     LIBCMT:_asin_pentium4_.obj
+ 0001:00018db0       __CIatan_pentium4          10019db0 f   LIBCMT:_atan_pentium4_.obj
+ 0001:00018dc8       __atan_pentium4            10019dc8     LIBCMT:_atan_pentium4_.obj
+ 0001:000190a0       __CIlog_pentium4           1001a0a0 f   LIBCMT:_log_pentium4_.obj
+ 0001:000190b8       __log_pentium4             1001a0b8     LIBCMT:_log_pentium4_.obj
+ 0001:00019310       _free                      1001a310 f   LIBCMT:free.obj
+ 0001:0001939e       __malloc_crt               1001a39e f   LIBCMT:crtheap.obj
+ 0001:000193e3       __calloc_crt               1001a3e3 f   LIBCMT:crtheap.obj
+ 0001:0001942f       __realloc_crt              1001a42f f   LIBCMT:crtheap.obj
+ 0001:0001947d       __ioinit                   1001a47d f   LIBCMT:ioinit.obj
+ 0001:000196d1       __ioterm                   1001a6d1 f   LIBCMT:ioinit.obj
+ 0001:0001971f       __setenvp                  1001a71f f   LIBCMT:stdenvp.obj
+ 0001:00019997       __setargv                  1001a997 f   LIBCMT:stdargv.obj
+ 0001:00019a52       ___crtGetEnvironmentStringsA 1001aa52 f   LIBCMT:a_env.obj
+ 0001:00019b89       __RTC_Initialize           1001ab89 f   LIBCMT:_initsect_.obj
+ 0001:00019baf       __RTC_Terminate            1001abaf f   LIBCMT:_initsect_.obj
+ 0001:00019bd5       __heap_init                1001abd5 f   LIBCMT:heapinit.obj
+ 0001:00019c05       __heap_term                1001ac05 f   LIBCMT:heapinit.obj
+ 0001:00019c79       __XcptFilter               1001ac79 f   LIBCMT:winxfltr.obj
+ 0001:00019dd9       ___CppXcptFilter           1001add9 f   LIBCMT:winxfltr.obj
+ 0001:00019df9       _DllMain@12                1001adf9 f   LIBCMT:dllmain.obj
+ 0001:00019dff       ___security_init_cookie    1001adff f   LIBCMT:gs_support.obj
+ 0001:00019ea0       _memcpy                    1001aea0 f   LIBCMT:memcpy.obj
+ 0001:0001a210       _memmove                   1001b210 f   LIBCMT:memmove.obj
+ 0001:0001a575       _strcpy_s                  1001b575 f   LIBCMT:strcpy_s.obj
+ 0001:0001a5dd       _V6_HeapAlloc              1001b5dd f   LIBCMT:malloc.obj
+ 0001:0001a62c       _malloc                    1001b62c f   LIBCMT:malloc.obj
+ 0001:0001a6f6       ?_Type_info_dtor@type_info@@CAXPAV1@@Z 1001b6f6 f   LIBCMT:typname.obj
+ 0001:0001a770       _strcmp                    1001b770 f   LIBCMT:strcmp.obj
+ 0001:0001a7f8       _abort                     1001b7f8 f   LIBCMT:abort.obj
+ 0001:0001a90f       __set_abort_behavior       1001b90f f   LIBCMT:abort.obj
+ 0001:0001a930       __NMSG_WRITE               1001b930 f   LIBCMT:crt0msg.obj
+ 0001:0001aadb       __FF_MSGBANNER             1001badb f   LIBCMT:crt0msg.obj
+ 0001:0001ab14       __initp_misc_purevirt      1001bb14 f   LIBCMT:inithelp.obj
+ 0001:0001ab23       __initp_heap_handler       1001bb23 f   LIBCMT:handler.obj
+ 0001:0001ab32       __callnewh                 1001bb32 f   LIBCMT:handler.obj
+ 0001:0001ab5a       __crt_debugger_hook        1001bb5a f   LIBCMT:dbghook.obj
+ 0001:0001ab62       ?terminate@@YAXXZ          1001bb62 f   LIBCMT:hooks.obj
+ 0001:0001ab9b       ?unexpected@@YAXXZ         1001bb9b f   LIBCMT:hooks.obj
+ 0001:0001abae       ?_inconsistency@@YAXXZ     1001bbae f   LIBCMT:hooks.obj
+ 0001:0001abe6       __initp_eh_hooks           1001bbe6 f   LIBCMT:hooks.obj
+ 0001:0001abf7       ??0bad_exception@std@@QAE@PBD@Z 1001bbf7 f i LIBCMT:frame.obj
+ 0001:0001ac15       ??1bad_exception@std@@UAE@XZ 1001bc15 f i LIBCMT:frame.obj
+ 0001:0001ac20       ??_Gbad_exception@std@@UAEPAXI@Z 1001bc20 f i LIBCMT:frame.obj
+ 0001:0001ac20       ??_Ebad_exception@std@@UAEPAXI@Z 1001bc20 f i LIBCMT:frame.obj
+ 0001:0001ac47       ___TypeMatch               1001bc47 f   LIBCMT:frame.obj
+ 0001:0001aca6       ___FrameUnwindFilter       1001bca6 f   LIBCMT:frame.obj
+ 0001:0001acef       ___FrameUnwindToState      1001bcef f   LIBCMT:frame.obj
+ 0001:0001ae15       ___DestructExceptionObject 1001be15 f   LIBCMT:frame.obj
+ 0001:0001ae6a       ___AdjustPointer           1001be6a f   LIBCMT:frame.obj
+ 0001:0001b0f3       ___BuildCatchObjectHelper  1001c0f3 f   LIBCMT:frame.obj
+ 0001:0001b272       ___BuildCatchObject        1001c272 f   LIBCMT:frame.obj
+ 0001:0001b7ad       ??0bad_exception@std@@QAE@ABV01@@Z 1001c7ad f i LIBCMT:frame.obj
+ 0001:0001b7ca       ___InternalCxxFrameHandler 1001c7ca f   LIBCMT:frame.obj
+ 0001:0001b8b0       __CallSettingFrame@12      1001c8b0 f   LIBCMT:lowhelpr.obj
+ 0001:0001b8d7       __NLG_Return               1001c8d7     LIBCMT:lowhelpr.obj
+ 0001:0001b8fc       __msize                    1001c8fc f   LIBCMT:msize.obj
+ 0001:0001b9a0       __CIacos_pentium4          1001c9a0 f   LIBCMT:_acos_pentium4_.obj
+ 0001:0001b9b8       __acos_pentium4            1001c9b8     LIBCMT:_acos_pentium4_.obj
+ 0001:0001bef4       __mtinitlocks              1001cef4 f   LIBCMT:mlock.obj
+ 0001:0001bf3f       __mtdeletelocks            1001cf3f f   LIBCMT:mlock.obj
+ 0001:0001bf96       __unlock                   1001cf96 f   LIBCMT:mlock.obj
+ 0001:0001bfad       __mtinitlocknum            1001cfad f   LIBCMT:mlock.obj
+ 0001:0001c070       __lock                     1001d070 f   LIBCMT:mlock.obj
+ 0001:0001c0b0       __ValidateImageBase        1001d0b0 f   LIBCMT:pesect.obj
+ 0001:0001c0f0       __FindPESection            1001d0f0 f   LIBCMT:pesect.obj
+ 0001:0001c140       __IsNonwritableInCurrentImage 1001d140 f   LIBCMT:pesect.obj
+ 0001:0001c1fd       __initp_misc_winsig        1001d1fd f   LIBCMT:winsig.obj
+ 0001:0001c252       ___get_sigabrt             1001d252 f   LIBCMT:winsig.obj
+ 0001:0001c25f       _raise                     1001d25f f   LIBCMT:winsig.obj
+ 0001:0001c40f       __initp_misc_rand_s        1001d40f f   LIBCMT:rand_s.obj
+ 0001:0001c41e       __initp_misc_initcrit      1001d41e f   LIBCMT:initcrit.obj
+ 0001:0001c42d       ___crtInitCritSecAndSpinCount 1001d42d f   LIBCMT:initcrit.obj
+ 0001:0001c48d       __fileno                   1001d48d f   LIBCMT:fileno.obj
+ 0001:0001c4bf       __fcloseall                1001d4bf f   LIBCMT:closeall.obj
+ 0001:0001c55e       __flush                    1001d55e f   LIBCMT:fflush.obj
+ 0001:0001c5c6       __fflush_nolock            1001d5c6 f   LIBCMT:fflush.obj
+ 0001:0001c6e8       __flushall                 1001d6e8 f   LIBCMT:fflush.obj
+ 0001:0001c6f1       ___report_gsfailure        1001d6f1 f   LIBCMT:gs_report.obj
+ 0001:0001c800       _strrchr                   1001d800 f   LIBCMT:strrchr.obj
+ 0001:0001ca53       ___updatetmbcinfo          1001da53 f   LIBCMT:mbctype.obj
+ 0001:0001cb73       __setmbcp_nolock           1001db73 f   LIBCMT:mbctype.obj
+ 0001:0001cd58       __setmbcp                  1001dd58 f   LIBCMT:mbctype.obj
+ 0001:0001cef2       ___initmbctable            1001def2 f   LIBCMT:mbctype.obj
+ 0001:0001cf10       ___freetlocinfo            1001df10 f   LIBCMT:setlocal.obj
+ 0001:0001d059       ___addlocaleref            1001e059 f   LIBCMT:setlocal.obj
+ 0001:0001d0e8       ___removelocaleref         1001e0e8 f   LIBCMT:setlocal.obj
+ 0001:0001d1bf       ___updatetlocinfo          1001e1bf f   LIBCMT:setlocal.obj
+ 0001:0001d235       __isdigit_l                1001e235 f i LIBCMT:_ctype.obj
+ 0001:0001d286       _isdigit                   1001e286 f i LIBCMT:_ctype.obj
+ 0001:0001d2b4       __tolower_l                1001e2b4 f   LIBCMT:tolower.obj
+ 0001:0001d3c9       _tolower                   1001e3c9 f   LIBCMT:tolower.obj
+ 0001:0001d3f5       __atodbl_l                 1001e3f5 f   LIBCMT:atodbl.obj
+ 0001:0001d49d       __atoflt_l                 1001e49d f   LIBCMT:atodbl.obj
+ 0001:0001d545       __fptostr                  1001e545 f   LIBCMT:_fptostr.obj
+ 0001:0001d604       ___dtold                   1001e604 f   LIBCMT:_cfout_.obj
+ 0001:0001d6c1       __fltout2                  1001e6c1 f   LIBCMT:_cfout_.obj
+ 0001:0001d760       __alldvrm                  1001e760 f   LIBCMT:lldvrm.obj
+ 0001:0001d840       __aullshr                  1001e840 f   LIBCMT:ullshr.obj
+ 0001:0001d85f       __fptrap                   1001e85f f   LIBCMT:crt0fp.obj
+ 0001:0001d868       __controlfp_s              1001e868 f   LIBCMT:_contrlfp_.obj
+ 0001:0001d8d4       __87except                 1001e8d4 f   LIBCMT:_87except_.obj
+ 0001:0001da63       __get_sse2_info            1001ea63 f   LIBCMT:cpu_disp.obj
+ 0001:0001dac5       ___sse2_available_init     1001eac5 f   LIBCMT:cpu_disp.obj
+ 0001:0001dad2       ___libm_error_support      1001ead2 f   LIBCMT:_libm_error_.obj
+ 0001:0001dd82       __d_inttype                1001ed82 f   LIBCMT:_powhlp_.obj
+ 0001:0001dde8       __powhlp                   1001ede8 f   LIBCMT:_powhlp_.obj
+ 0001:0001df30       _fdiv_main_routine         1001ef30 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e047       __adj_fdiv_r               1001f047 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e4e6       __fdivp_sti_st             1001f4e6 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e4f9       __fdivrp_sti_st            1001f4f9 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e50c       __adj_fdiv_m32             1001f50c f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e558       __adj_fdiv_m64             1001f558 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e5a4       __adj_fdiv_m16i            1001f5a4 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e5d8       __adj_fdiv_m32i            1001f5d8 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e60c       __adj_fdivr_m32            1001f60c f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e658       __adj_fdivr_m64            1001f658 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e6a4       __adj_fdivr_m16i           1001f6a4 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e6d8       __adj_fdivr_m32i           1001f6d8 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e70c       __safe_fdiv                1001f70c f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e721       __safe_fdivr               1001f721 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e736       __fprem_common             1001f736 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e93c       __adj_fprem                1001f93c f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001e9ee       __fprem1_common            1001f9ee f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001ebf4       __adj_fprem1               1001fbf4 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001eca9       __safe_fprem               1001fca9 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001ecaf       __safe_fprem1              1001fcaf f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001ecb5       __adj_fpatan               1001fcb5 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001ecb8       __adj_fptan                1001fcb8 f   LIBCMT:_adj_fdiv_.obj
+ 0001:0001ecbb       __isatty                   1001fcbb f   LIBCMT:isatty.obj
+ 0001:0001ed1f       __wctomb_s_l               1001fd1f f   LIBCMT:wctomb.obj
+ 0001:0001ee8b       _wctomb_s                  1001fe8b f   LIBCMT:wctomb.obj
+ 0001:0001eea8       __isleadbyte_l             1001fea8 f i LIBCMT:_wctype.obj
+ 0001:0001eee0       _isleadbyte                1001fee0 f i LIBCMT:_wctype.obj
+ 0001:0001ef00       __aulldvrm                 1001ff00 f   LIBCMT:ulldvrm.obj
+ 0001:0001ef98       __local_unwind4            1001ff98 f   LIBCMT:exsup4.obj
+ 0001:0001f06e       __seh_longjmp_unwind4@4    1002006e f   LIBCMT:exsup4.obj
+ 0001:0001f08a       @_EH4_CallFilterFunc@8     1002008a f   LIBCMT:exsup4.obj
+ 0001:0001f0a1       @_EH4_TransferToHandler@8  100200a1 f   LIBCMT:exsup4.obj
+ 0001:0001f0ba       @_EH4_GlobalUnwind@4       100200ba f   LIBCMT:exsup4.obj
+ 0001:0001f0d4       @_EH4_LocalUnwind@16       100200d4 f   LIBCMT:exsup4.obj
+ 0001:0001f0eb       __lseeki64_nolock          100200eb f   LIBCMT:lseeki64.obj
+ 0001:0001f170       __lseeki64                 10020170 f   LIBCMT:lseeki64.obj
+ 0001:0001f289       __write_nolock             10020289 f   LIBCMT:write.obj
+ 0001:0001f9bc       __write                    100209bc f   LIBCMT:write.obj
+ 0001:0001fa98       __getbuf                   10020a98 f   LIBCMT:_getbuf.obj
+ 0001:0001fae1       __matherr                  10020ae1 f   LIBCMT:_matherr_.obj
+ 0001:0001fae4       ___sbh_find_block          10020ae4 f   LIBCMT:sbheap.obj
+ 0001:0001fb14       ___sbh_free_block          10020b14 f   LIBCMT:sbheap.obj
+ 0001:0001fe2a       ___sbh_alloc_new_region    10020e2a f   LIBCMT:sbheap.obj
+ 0001:0001feda       ___sbh_alloc_new_group     10020eda f   LIBCMT:sbheap.obj
+ 0001:0001ffe2       ___sbh_resize_block        10020fe2 f   LIBCMT:sbheap.obj
+ 0001:000202c3       ___sbh_alloc_block         100212c3 f   LIBCMT:sbheap.obj
+ 0001:000205a8       __calloc_impl              100215a8 f   LIBCMT:calloc_impl.obj
+ 0001:000206c6       _realloc                   100216c6 f   LIBCMT:realloc.obj
+ 0001:00020934       __ismbblead                10021934 f   LIBCMT:ismbbyte.obj
+ 0001:000209d3       __VEC_memcpy               100219d3 f   LIBCMT:p4_memcpy.obj
+ 0001:00020ab6       ___crtMessageBoxA          10021ab6 f   LIBCMT:crtmbox.obj
+ 0001:00020c1f       _strcat_s                  10021c1f f   LIBCMT:strcat_s.obj
+ 0001:00020c93       _strncpy_s                 10021c93 f   LIBCMT:strncpy_s.obj
+ 0001:00020d48       __set_error_mode           10021d48 f   LIBCMT:errmode.obj
+ 0001:00020d93       __freea                    10021d93 f i LIBCMT:a_loc.obj
+ 0001:00020db3       ?_ValidateRead@@YAHPBXI@Z  10021db3 f   LIBCMT:validate.obj
+ 0001:00020db3       ?_ValidateExecute@@YAHP6GHXZ@Z 10021db3 f   LIBCMT:validate.obj
+ 0001:00020db3       ?_ValidateWrite@@YAHPAXI@Z 10021db3 f   LIBCMT:validate.obj
+ 0001:00020dc8       __global_unwind2           10021dc8 f   LIBCMT:exsup.obj
+ 0001:00020e2d       __local_unwind2            10021e2d f   LIBCMT:exsup.obj
+ 0001:00020eb1       __abnormal_termination     10021eb1 f   LIBCMT:exsup.obj
+ 0001:00020ed4       __NLG_Notify1              10021ed4 f   LIBCMT:exsup.obj
+ 0001:00020edd       __NLG_Notify               10021edd f   LIBCMT:exsup.obj
+ 0001:00020ef4       __NLG_Dispatch2            10021ef4     LIBCMT:exsup.obj
+ 0001:00020ef4       __NLG_Dispatch             10021ef4     LIBCMT:exsup.obj
+ 0001:00020efc       __NLG_Call                 10021efc f   LIBCMT:exsup.obj
+ 0001:00020efe       __NLG_Return2              10021efe     LIBCMT:exsup.obj
+ 0001:00020eff       __fclose_nolock            10021eff f   LIBCMT:fclose.obj
+ 0001:00020f76       _fclose                    10021f76 f   LIBCMT:fclose.obj
+ 0001:00020ff2       __commit                   10021ff2 f   LIBCMT:commit.obj
+ 0001:00021302       _strtol                    10022302 f   LIBCMT:strtol.obj
+ 0001:000216d2       ___crtLCMapStringA         100226d2 f   LIBCMT:a_map.obj
+ 0001:000218d1       ___crtGetStringTypeA       100228d1 f   LIBCMT:a_str.obj
+ 0001:00021913       ___free_lc_time            10022913 f   LIBCMT:inittime.obj
+ 0001:00021aa8       ___free_lconv_num          10022aa8 f   LIBCMT:initnum.obj
+ 0001:00021aed       ___free_lconv_mon          10022aed f   LIBCMT:initmon.obj
+ 0001:00021b80       _strcspn                   10022b80 f   LIBCMT:strcspn.obj
+ 0001:00021bd0       _strpbrk                   10022bd0 f   LIBCMT:strpbrk.obj
+ 0001:00021c10       __isctype_l                10022c10 f   LIBCMT:isctype.obj
+ 0001:00021cc8       __ld12tod                  10022cc8 f   LIBCMT:_intrncvt_.obj
+ 0001:0002220c       __ld12tof                  1002320c f   LIBCMT:_intrncvt_.obj
+ 0001:00022750       ___strgtold12_l            10023750 f   LIBCMT:_strgtold_.obj
+ 0001:00022e48       _$I10_OUTPUT               10023e48 f   LIBCMT:_x10fout_.obj
+ 0001:0002389a       __control87                1002489a f i LIBCMT:_ieee87_.obj
+ 0001:00023ba9       __frnd                     10024ba9 f   LIBCMT:_frnd_.obj
+ 0001:00023bbd       __free_osfhnd              10024bbd f   LIBCMT:osfinfo.obj
+ 0001:00023c43       __get_osfhandle            10024c43 f   LIBCMT:osfinfo.obj
+ 0001:00023cba       ___lock_fhandle            10024cba f   LIBCMT:osfinfo.obj
+ 0001:00023d5a       __unlock_fhandle           10024d5a f   LIBCMT:osfinfo.obj
+ 0001:00023d81       __putwch_nolock            10024d81 f   LIBCMT:putwch.obj
+ 0001:00023e46       __mbtowc_l                 10024e46 f   LIBCMT:mbtowc.obj
+ 0001:00023f5d       _mbtowc                    10024f5d f   LIBCMT:mbtowc.obj
+ 0001:00023f80       __alloca_probe             10024f80     LIBCMT:chkstk.obj
+ 0001:00023f80       __chkstk                   10024f80 f   LIBCMT:chkstk.obj
+ 0001:00023fb0       __allmul                   10024fb0 f   LIBCMT:llmul.obj
+ 0001:00023fe4       _atol                      10024fe4 f   LIBCMT:atox.obj
+ 0001:00024000       __alloca_probe_16          10025000 f   LIBCMT:alloca16.obj
+ 0001:00024016       __alloca_probe_8           10025016     LIBCMT:alloca16.obj
+ 0001:0002402c       __close_nolock             1002502c f   LIBCMT:close.obj
+ 0001:000240c8       __close                    100250c8 f   LIBCMT:close.obj
+ 0001:00024195       __freebuf                  10025195 f   LIBCMT:_freebuf.obj
+ 0001:000241c6       ___ansicp                  100251c6 f   LIBCMT:convrtcp.obj
+ 0001:0002420f       ___convertcp               1002520f f   LIBCMT:convrtcp.obj
+ 0001:000243c3       ___mtold12                 100253c3 f   LIBCMT:_mantold_.obj
+ 0001:00024591       ___initconout              10025591 f   LIBCMT:initcon.obj
+ 0001:000245b0       ___termcon                 100255b0 f   LIBCMT:initcon.obj
+ 0001:000245e0       ___ascii_strnicmp          100255e0 f   LIBCMT:_strnicm.obj
+ 0001:00024660       _strchr                    10025660 f   LIBCMT:strchr.obj
+ 0001:00024666       ___from_strstr_to_strchr   10025666     LIBCMT:strchr.obj
+ 0001:0002471e       _RtlUnwind@16              1002571e f   kernel32:KERNEL32.dll
+ 0002:00000000       __imp__GetEnvironmentStringsW@0 10026000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__CreateFileA@28      10026004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__CloseHandle@4       10026008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__WriteConsoleW@20    1002600c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__GetConsoleOutputCP@0 10026010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__WriteConsoleA@20    10026014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__SetStdHandle@8      10026018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__GetCurrentThreadId@0 1002601c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__GetCommandLineA@0   10026020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__TerminateProcess@8  10026024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__GetCurrentProcess@0 10026028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__UnhandledExceptionFilter@4 1002602c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__SetUnhandledExceptionFilter@4 10026030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__IsDebuggerPresent@0 10026034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__RaiseException@16   10026038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__RtlUnwind@16        1002603c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__GetModuleHandleW@4  10026040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__Sleep@4             10026044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__GetProcAddress@8    10026048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__ExitProcess@4       1002604c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__EnterCriticalSection@4 10026050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__LeaveCriticalSection@4 10026054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__GetModuleHandleA@4  10026058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__TlsGetValue@4       1002605c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__TlsAlloc@0          10026060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__TlsSetValue@8       10026064     kernel32:KERNEL32.dll
+ 0002:00000068       __imp__TlsFree@4           10026068     kernel32:KERNEL32.dll
+ 0002:0000006c       __imp__InterlockedIncrement@4 1002606c     kernel32:KERNEL32.dll
+ 0002:00000070       __imp__SetLastError@4      10026070     kernel32:KERNEL32.dll
+ 0002:00000074       __imp__GetLastError@0      10026074     kernel32:KERNEL32.dll
+ 0002:00000078       __imp__InterlockedDecrement@4 10026078     kernel32:KERNEL32.dll
+ 0002:0000007c       __imp__HeapFree@12         1002607c     kernel32:KERNEL32.dll
+ 0002:00000080       __imp__SetHandleCount@4    10026080     kernel32:KERNEL32.dll
+ 0002:00000084       __imp__GetStdHandle@4      10026084     kernel32:KERNEL32.dll
+ 0002:00000088       __imp__GetFileType@4       10026088     kernel32:KERNEL32.dll
+ 0002:0000008c       __imp__GetStartupInfoA@4   1002608c     kernel32:KERNEL32.dll
+ 0002:00000090       __imp__DeleteCriticalSection@4 10026090     kernel32:KERNEL32.dll
+ 0002:00000094       __imp__GetModuleFileNameA@12 10026094     kernel32:KERNEL32.dll
+ 0002:00000098       __imp__FreeEnvironmentStringsA@4 10026098     kernel32:KERNEL32.dll
+ 0002:0000009c       __imp__GetEnvironmentStrings@0 1002609c     kernel32:KERNEL32.dll
+ 0002:000000a0       __imp__FreeEnvironmentStringsW@4 100260a0     kernel32:KERNEL32.dll
+ 0002:000000a4       __imp__WideCharToMultiByte@32 100260a4     kernel32:KERNEL32.dll
+ 0002:000000a8       __imp__HeapCreate@12       100260a8     kernel32:KERNEL32.dll
+ 0002:000000ac       __imp__HeapDestroy@4       100260ac     kernel32:KERNEL32.dll
+ 0002:000000b0       __imp__VirtualFree@12      100260b0     kernel32:KERNEL32.dll
+ 0002:000000b4       __imp__QueryPerformanceCounter@4 100260b4     kernel32:KERNEL32.dll
+ 0002:000000b8       __imp__GetTickCount@0      100260b8     kernel32:KERNEL32.dll
+ 0002:000000bc       __imp__GetCurrentProcessId@0 100260bc     kernel32:KERNEL32.dll
+ 0002:000000c0       __imp__GetSystemTimeAsFileTime@4 100260c0     kernel32:KERNEL32.dll
+ 0002:000000c4       __imp__HeapAlloc@12        100260c4     kernel32:KERNEL32.dll
+ 0002:000000c8       __imp__WriteFile@20        100260c8     kernel32:KERNEL32.dll
+ 0002:000000cc       __imp__HeapSize@12         100260cc     kernel32:KERNEL32.dll
+ 0002:000000d0       __imp__LoadLibraryA@4      100260d0     kernel32:KERNEL32.dll
+ 0002:000000d4       __imp__InitializeCriticalSectionAndSpinCount@8 100260d4     kernel32:KERNEL32.dll
+ 0002:000000d8       __imp__GetCPInfo@8         100260d8     kernel32:KERNEL32.dll
+ 0002:000000dc       __imp__GetACP@0            100260dc     kernel32:KERNEL32.dll
+ 0002:000000e0       __imp__GetOEMCP@0          100260e0     kernel32:KERNEL32.dll
+ 0002:000000e4       __imp__IsValidCodePage@4   100260e4     kernel32:KERNEL32.dll
+ 0002:000000e8       __imp__SetFilePointer@16   100260e8     kernel32:KERNEL32.dll
+ 0002:000000ec       __imp__GetConsoleCP@0      100260ec     kernel32:KERNEL32.dll
+ 0002:000000f0       __imp__GetConsoleMode@8    100260f0     kernel32:KERNEL32.dll
+ 0002:000000f4       __imp__VirtualAlloc@16     100260f4     kernel32:KERNEL32.dll
+ 0002:000000f8       __imp__HeapReAlloc@16      100260f8     kernel32:KERNEL32.dll
+ 0002:000000fc       __imp__GetLocaleInfoA@16   100260fc     kernel32:KERNEL32.dll
+ 0002:00000100       __imp__FlushFileBuffers@4  10026100     kernel32:KERNEL32.dll
+ 0002:00000104       __imp__LCMapStringA@24     10026104     kernel32:KERNEL32.dll
+ 0002:00000108       __imp__MultiByteToWideChar@24 10026108     kernel32:KERNEL32.dll
+ 0002:0000010c       __imp__LCMapStringW@24     1002610c     kernel32:KERNEL32.dll
+ 0002:00000110       __imp__GetStringTypeA@20   10026110     kernel32:KERNEL32.dll
+ 0002:00000114       __imp__GetStringTypeW@16   10026114     kernel32:KERNEL32.dll
+ 0002:00000118       \177KERNEL32_NULL_THUNK_DATA 10026118     kernel32:KERNEL32.dll
+ 0002:0000011c       __imp_?RtTrackLocal2Global@@YAXPAUtTrkLocPos@@PAM1H@Z 1002611c     robottools:robottools.dll
+ 0002:00000120       __imp_?RtTrackHeightL@@YAMPAUtTrkLocPos@@@Z 10026120     robottools:robottools.dll
+ 0002:00000124       __imp_?RtTrackSideTgAngleL@@YAMPAUtTrkLocPos@@@Z 10026124     robottools:robottools.dll
+ 0002:00000128       __imp_?RtTrackSurfaceNormalL@@YAXPAUtTrkLocPos@@PAUt3Dd@@@Z 10026128     robottools:robottools.dll
+ 0002:0000012c       __imp_?RtTrackGlobal2Local@@YAXPAUtrackSeg@@MMPAUtTrkLocPos@@H@Z 1002612c     robottools:robottools.dll
+ 0002:00000130       \177robottools_NULL_THUNK_DATA 10026130     robottools:robottools.dll
+ 0002:00000134       __imp_?_tgf_win_strdup@@YAPADPBD@Z 10026134     tgf:tgf.dll
+ 0002:00000138       __imp_?_tgf_win_calloc@@YAPAXII@Z 10026138     tgf:tgf.dll
+ 0002:0000013c       __imp_?GfParmGetEltNb@@YAHPAXPBD@Z 1002613c     tgf:tgf.dll
+ 0002:00000140       __imp_?_tgf_win_malloc@@YAPAXI@Z 10026140     tgf:tgf.dll
+ 0002:00000144       __imp_?_tgf_win_free@@YAXPAX@Z 10026144     tgf:tgf.dll
+ 0002:00000148       __imp_?GfParmGetStr@@YAPBDPAXPBD11@Z 10026148     tgf:tgf.dll
+ 0002:0000014c       __imp_?GfParmGetNum@@YAMPAXPBD11M@Z 1002614c     tgf:tgf.dll
+ 0002:00000150       \177tgf_NULL_THUNK_DATA    10026150     tgf:tgf.dll
+ 0002:00000154       ___xc_a                    10026154     LIBCMT:crt0init.obj
+ 0002:0000017c       ___xc_z                    1002617c     LIBCMT:crt0init.obj
+ 0002:00000180       ___xi_a                    10026180     LIBCMT:crt0init.obj
+ 0002:00000198       ___xi_z                    10026198     LIBCMT:crt0init.obj
+ 0002:0000019c       ___xp_a                    1002619c     LIBCMT:crt0init.obj
+ 0002:000001a8       ___xp_z                    100261a8     LIBCMT:crt0init.obj
+ 0002:000001ac       ___xt_a                    100261ac     LIBCMT:crt0init.obj
+ 0002:000001b0       ___xt_z                    100261b0     LIBCMT:crt0init.obj
+ 0002:000001c0       ??_C@_09HDJCNBBO@Rear?5Wing?$AA@ 100261c0     aero.obj
+ 0002:000001cc       ??_C@_0L@KFOBHFPA@Front?5Wing?$AA@ 100261cc     aero.obj
+ 0002:000001e8       __real@3fe4a3d700000000    100261e8     aero.obj
+ 0002:000001f0       ??_C@_0L@PLABABOE@rear?5Clift?$AA@ 100261f0     aero.obj
+ 0002:000001fc       ??_C@_0M@CCMIOJBA@front?5Clift?$AA@ 100261fc     aero.obj
+ 0002:00000208       ??_C@_0L@NAALCPPI@front?5area?$AA@ 10026208     aero.obj
+ 0002:00000214       __real@40200000            10026214     aero.obj
+ 0002:00000218       ??_C@_0N@GFHNLLOJ@Aerodynamics?$AA@ 10026218     aero.obj
+ 0002:00000228       ??_C@_02JFIEOGIK@Cx?$AA@   10026228     aero.obj
+ 0002:0000022c       __real@3ecccccd            1002622c     aero.obj
+ 0002:00000230       __real@c008000000000000    10026230     aero.obj
+ 0002:00000238       __real@3ff8000000000000    10026238     aero.obj
+ 0002:00000240       __real@40c3880000000000    10026240     aero.obj
+ 0002:00000248       __real@bff0000000000000    10026248     aero.obj
+ 0002:00000250       __real@3fc3333340000000    10026250     aero.obj
+ 0002:00000258       __real@c020000000000000    10026258     aero.obj
+ 0002:00000260       __real@3ff0000000000000    10026260     aero.obj
+ 0002:00000268       __real@c000000000000000    10026268     aero.obj
+ 0002:00000270       __real@403de4f7            10026270     aero.obj
+ 0002:00000274       __real@3e0ef34d            10026274     aero.obj
+ 0002:00000278       __real@c00921fb54442d18    10026278     aero.obj
+ 0002:00000280       __real@401921fb54442d18    10026280     aero.obj
+ 0002:00000288       __real@41200000            10026288     aero.obj
+ 0002:0000028c       __real@3f800000            1002628c     aero.obj
+ 0002:00000290       __real@4010000000000000    10026290     aero.obj
+ 0002:00000298       __real@bff3ae1480000000    10026298     aero.obj
+ 0002:000002a0       ??_C@_04KGBJPGDI@zpos?$AA@ 100262a0     aero.obj
+ 0002:000002a8       ??_C@_04NMNJKFFI@xpos?$AA@ 100262a8     aero.obj
+ 0002:000002b0       ??_C@_05FECBCJJD@angle?$AA@ 100262b0     aero.obj
+ 0002:000002b8       ??_C@_04GOEDGNCF@area?$AA@ 100262b8     aero.obj
+ 0002:000002c0       ??_C@_09EFCFDFCK@Rear?5Axle?$AA@ 100262c0     axle.obj
+ 0002:000002cc       ??_C@_0L@JDFGJBME@Front?5Axle?$AA@ 100262cc     axle.obj
+ 0002:000002e0       __real@3fe0000000000000    100262e0     axle.obj
+ 0002:000002e8       ??_C@_0BD@HECCBHOE@Rear?5Anti?9Roll?5Bar?$AA@ 100262e8     axle.obj
+ 0002:000002fc       ??_C@_0BE@LBDGJBGP@Front?5Anti?9Roll?5Bar?$AA@ 100262fc     axle.obj
+ 0002:00000310       ??_C@_06BJPIPHJK@spring?$AA@ 10026310     axle.obj
+ 0002:00000318       ??_C@_0BC@OPDKIIBK@suspension?5course?$AA@ 10026318     axle.obj
+ 0002:0000032c       ??_C@_0BD@GLFDNJIP@roll?5center?5height?$AA@ 1002632c     axle.obj
+ 0002:00000340       ??_C@_07IKGGBMHK@inertia?$AA@ 10026340     axle.obj
+ 0002:00000348       __real@3e19999a            10026348     axle.obj
+ 0002:00000350       __real@3e051eb8            10026350     brake.obj
+ 0002:00000354       ??_C@_02BCPJPDCN@mu?$AA@   10026354     brake.obj
+ 0002:00000358       __real@3e99999a            10026358     brake.obj
+ 0002:0000035c       ??_C@_0M@LJLIFJMF@piston?5area?$AA@ 1002635c     brake.obj
+ 0002:00000368       __real@3b03126f            10026368     brake.obj
+ 0002:0000036c       ??_C@_0O@OMDFPKLA@disk?5diameter?$AA@ 1002636c     brake.obj
+ 0002:0000037c       __real@3e4ccccd            1002637c     brake.obj
+ 0002:00000380       __real@3dcb7cdfd9d7bdbb    10026380     brake.obj
+ 0002:00000388       __real@3f2a36e2eb1c432d    10026388     brake.obj
+ 0002:00000390       __real@3f1a36e2eb1c432d    10026390     brake.obj
+ 0002:00000398       ??_C@_0N@OGJNDDCE@max?5pressure?$AA@ 10026398     brake.obj
+ 0002:000003a8       __real@49742400            100263a8     brake.obj
+ 0002:000003ac       ??_C@_0N@EIIEIMOC@Brake?5System?$AA@ 100263ac     brake.obj
+ 0002:000003bc       ??_C@_0BN@GFMEOPGO@front?9rear?5brake?5repartition?$AA@ 100263bc     brake.obj
+ 0002:000003dc       __real@3f000000            100263dc     brake.obj
+ 0002:000003f8       __real@40239d0140000000    100263f8     car.obj
+ 0002:00000400       __real@4028000000000000    10026400     car.obj
+ 0002:00000408       ??_C@_06LABBAFHL@Bonnet?$AA@ 10026408     car.obj
+ 0002:00000410       ??_C@_04OBLJIMOI@ypos?$AA@ 10026410     car.obj
+ 0002:00000418       ??_C@_06BNFOCFOC@Driver?$AA@ 10026418     car.obj
+ 0002:00000420       ??_C@_0BN@DIAMIAMF@mass?5repartition?5coefficient?$AA@ 10026420     car.obj
+ 0002:00000440       ??_C@_0N@GEJBANM@initial?5fuel?$AA@ 10026440     car.obj
+ 0002:00000450       ??_C@_09OCIBGKHD@fuel?5tank?$AA@ 10026450     car.obj
+ 0002:0000045c       __real@42a00000            1002645c     car.obj
+ 0002:00000460       ??_C@_09KBFOLGED@GC?5height?$AA@ 10026460     car.obj
+ 0002:0000046c       ??_C@_0CD@KDNACABM@rear?5right?9left?5weight?5repartiti@ 1002646c     car.obj
+ 0002:00000490       ??_C@_0CE@DAFKDMKL@front?5right?9left?5weight?5repartit@ 10026490     car.obj
+ 0002:000004b4       ??_C@_0BO@GAOOHNDP@front?9rear?5weight?5repartition?$AA@ 100264b4     car.obj
+ 0002:000004d4       ??_C@_04IJEANHEE@mass?$AA@ 100264d4     car.obj
+ 0002:000004dc       __real@44bb8000            100264dc     car.obj
+ 0002:000004e0       ??_C@_0M@CBDBHKKM@body?5height?$AA@ 100264e0     car.obj
+ 0002:000004ec       __real@3f99999a            100264ec     car.obj
+ 0002:000004f0       ??_C@_0O@PMLFBGDA@overall?5width?$AA@ 100264f0     car.obj
+ 0002:00000500       ??_C@_0L@JJMDEKK@body?5width?$AA@ 10026500     car.obj
+ 0002:0000050c       __real@3ff33333            1002650c     car.obj
+ 0002:00000510       ??_C@_03DAGGNFD@Car?$AA@   10026510     car.obj
+ 0002:00000514       ??_C@_0M@JEBFIFOG@body?5length?$AA@ 10026514     car.obj
+ 0002:00000520       __real@40966666            10026520     car.obj
+ 0002:00000528       __real@3ee4f8b588e368f1    10026528     car.obj
+ 0002:00000530       __real@0000000000000000    10026530     car.obj
+ 0002:00000538       __real@4000000000000000    10026538     car.obj
+ 0002:00000540       __real@4022000000000000    10026540     car.obj
+ 0002:00000548       __real@41100000            10026548     car.obj
+ 0002:0000054c       __real@bf851eb8            1002654c     car.obj
+ 0002:00000550       ??_C@_0CJ@HKHJDCMI@Aero?5Fx?3?$CFf?5Fz?3?$CFf?5Fzf?$DN?$CFf?5Fzr?$DN?$CFf?5r@ 10026550     car.obj
+ 0002:00000580       __real@3fb999999999999a    10026580     car.obj
+ 0002:00000588       ??_C@_0BD@OMNKKOFO@fx?3?$CFf?5fy?3?$CFf?5fz?3?$CFf?6?$AA@ 10026588     car.obj
+ 0002:0000059c       ??_C@_0BC@FPKCAGOG@sx?3?$CFf?5sa?3?$CFf?5w?3?$CFf?5?$AA@ 1002659c     car.obj
+ 0002:000005b0       ??_C@_0CC@JAGHFFAN@wheel?5?$CFd?5?9?5RH?3?$CFf?5susp?3?$CFf?5zr?3?$CF?42f@ 100265b0     car.obj
+ 0002:000005d4       ??_C@_0M@OMBEPBEL@As?3?5?$CFf?6?9?9?9?6?$AA@ 100265d4     car.obj
+ 0002:000005e0       ??_C@_0CA@NJCLPAMB@Px?3?5?$CFf?5?5Py?3?5?$CFf?5?5Pz?3?5?$CFf?5?$CIm?$CJ?6?9?9?9?6?$AA@ 100265e0     car.obj
+ 0002:00000600       ??_C@_0BO@MKPBJEGM@Vx?3?5?$CFf?5?5Vy?3?5?$CFf?5?5Vz?3?5?$CFf?5?$CIm?1s?$CJ?6?$AA@ 10026600     car.obj
+ 0002:00000620       ??_C@_0CB@CFOKHHNK@?9?9?9?6Ax?3?5?$CFf?5?5Ay?3?5?$CFf?5?5Az?3?5?$CFf?5?$CIGs?$CJ?6@ 10026620     car.obj
+ 0002:00000648       __real@40239eb851eb851f    10026648     car.obj
+ 0002:00000650       ??_C@_0BO@BIODNKLL@Ax?3?5?$CFf?5?5Ay?3?5?$CFf?5?5Az?3?5?$CFf?5?$CIrad?$CJ?6?$AA@ 10026650     car.obj
+ 0002:00000670       ??_C@_0CA@BLMFNIMI@Wx?3?5?$CFf?5?5Wy?3?5?$CFf?5?5Wz?3?5?$CFf?5?$CIrad?1s?$CJ?6?$AA@ 10026670     car.obj
+ 0002:00000690       ??_C@_0CC@GOLPMLOK@?9?9?9?6Mx?3?5?$CFf?5?5My?3?5?$CFf?5?5Mz?3?5?$CFf?5?$CIN?1m?$CJ@ 10026690     car.obj
+ 0002:000006b4       ??_C@_0BM@JDGIGBNF@Seg?3?5?$CFd?5?$CI?$CFs?$CJ?5?5Ts?3?$CFf?5?5Tr?3?$CFf?6?$AA@ 100266b4     car.obj
+ 0002:000006d0       ??_C@_0CO@IDHKNBCO@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?6Ca@ 100266d0     car.obj
+ 0002:00000714       __real@c0a00000            10026714     collide.obj
+ 0002:00000718       __real@3f747ae140000000    10026718     collide.obj
+ 0002:00000720       __real@404ca5dc1a63c1f8    10026720     collide.obj
+ 0002:00000728       __real@3fc00000            10026728     collide.obj
+ 0002:00000730       __real@3ff0c152382d7365    10026730     collide.obj
+ 0002:00000738       __real@3fa999999999999a    10026738     collide.obj
+ 0002:00000740       __real@3ef4f8b580000000    10026740     collide.obj
+ 0002:00000748       __real@3fa99999a0000000    10026748     collide.obj
+ 0002:00000754       __real@bf800000            10026754     collide.obj
+ 0002:00000758       ??_C@_0CC@HGMHLAID@fixedobjects?5full?5in?5?$CFs?0?5line?5?$CFd@ 10026758     collide.obj
+ 0002:0000077c       ??_C@_0BM@GELHFHLK@Shape?5not?5open?5?$CFs?0?5line?5?$CFd?6?$AA@ 1002677c     collide.obj
+ 0002:00000798       ??_C@_0BO@FKAOCOAM@Shape?5not?5closed?5?$CFs?0?5line?5?$CFd?6?$AA@ 10026798     collide.obj
+ 0002:000007b8       ??_C@_0O@JCCPPKAD@?4?2collide?4cpp?$AA@ 100267b8     collide.obj
+ 0002:000007c8       __real@3f50624dd2f1a9fc    100267c8     collide.obj
+ 0002:000007d4       ??_C@_04HEDFJGEJ@FREE?$AA@ 100267d4     differential.obj
+ 0002:000007dc       ??_C@_05BIEJGJFB@SPOOL?$AA@ 100267dc     differential.obj
+ 0002:000007e4       ??_C@_0BA@KKPLINHN@VISCOUS?5COUPLER?$AA@ 100267e4     differential.obj
+ 0002:000007f4       ??_C@_0N@JHKPFFOE@LIMITED?5SLIP?$AA@ 100267f4     differential.obj
+ 0002:00000804       ??_C@_04GPMDFGEJ@type?$AA@ 10026804     differential.obj
+ 0002:0000080c       ??_C@_04OKGDLNCL@NONE?$AA@ 1002680c     differential.obj
+ 0002:00000814       ??_C@_0BB@LCKOCALA@viscosity?5factor?$AA@ 10026814     differential.obj
+ 0002:00000828       ??_C@_0BL@GPAAAMG@locking?5brake?5input?5torque?$AA@ 10026828     differential.obj
+ 0002:00000848       __real@3fd51eb860000000    10026848     differential.obj
+ 0002:00000850       ??_C@_0BF@HNJFGJGB@locking?5input?5torque?$AA@ 10026850     differential.obj
+ 0002:00000868       __real@453b8000            10026868     differential.obj
+ 0002:0000086c       ??_C@_0O@JEODHGM@max?5slip?5bias?$AA@ 1002686c     differential.obj
+ 0002:0000087c       __real@3cf5c28f            1002687c     differential.obj
+ 0002:00000880       ??_C@_0BA@JBIPLHLJ@max?5torque?5bias?$AA@ 10026880     differential.obj
+ 0002:00000890       __real@3f4ccccd            10026890     differential.obj
+ 0002:00000894       ??_C@_0BA@MAHGAMOE@min?5torque?5bias?$AA@ 10026894     differential.obj
+ 0002:000008a4       __real@3d4ccccd            100268a4     differential.obj
+ 0002:000008a8       ??_C@_05ONLLBMGH@ratio?$AA@ 100268a8     differential.obj
+ 0002:000008b0       ??_C@_0L@CCDNIEMB@efficiency?$AA@ 100268b0     differential.obj
+ 0002:000008bc       __real@3dcccccd            100268bc     differential.obj
+ 0002:000008c8       __real@40dfffc000000000    100268c8     engine.obj
+ 0002:000008d0       ??_C@_02FNCPOIDG@Tq?$AA@   100268d0     engine.obj
+ 0002:000008d4       ??_C@_03JLCPDFEO@rpm?$AA@  100268d4     engine.obj
+ 0002:000008d8       ??_C@_08OEOPGIOB@?$CFs?1?$CFs?1?$CFd?$AA@ 100268d8     engine.obj
+ 0002:000008e4       ??_C@_05GFOLEBJA@?$CFs?1?$CFs?$AA@ 100268e4     engine.obj
+ 0002:000008ec       ??_C@_0M@HOBDOHFN@data?5points?$AA@ 100268ec     engine.obj
+ 0002:000008f8       ??_C@_0BC@OJMNOGFI@brake?5coefficient?$AA@ 100268f8     engine.obj
+ 0002:0000090c       __real@3ea8f5c3            1002690c     engine.obj
+ 0002:00000910       ??_C@_0BB@PAEFDEO@fuel?5cons?5factor?$AA@ 10026910     engine.obj
+ 0002:00000924       __real@3d7ec56d            10026924     engine.obj
+ 0002:00000928       __real@3e781d7e            10026928     engine.obj
+ 0002:0000092c       ??_C@_08KFFDGGJK@tickover?$AA@ 1002692c     engine.obj
+ 0002:00000938       __real@43160000            10026938     engine.obj
+ 0002:0000093c       ??_C@_09EEMLJLMM@revs?5maxi?$AA@ 1002693c     engine.obj
+ 0002:00000948       __real@447a0000            10026948     engine.obj
+ 0002:0000094c       ??_C@_06HBKBHOGJ@Engine?$AA@ 1002694c     engine.obj
+ 0002:00000954       ??_C@_0N@BNKANPCM@revs?5limiter?$AA@ 10026954     engine.obj
+ 0002:00000964       __real@44480000            10026964     engine.obj
+ 0002:00000968       __real@3e7ad7f29abcaf48    10026968     engine.obj
+ 0002:00000970       __real@3c23d70a            10026970     engine.obj
+ 0002:00000978       __real@3fefae1480000000    10026978     engine.obj
+ 0002:00000980       __real@4014000000000000    10026980     engine.obj
+ 0002:00000988       __real@3f50624de0000000    10026988     engine.obj
+ 0002:00000990       __real@3fb99999a0000000    10026990     engine.obj
+ 0002:00000998       __real@3fecccccc0000000    10026998     engine.obj
+ 0002:000009b0       __real@403e000000000000    100269b0     simu.obj
+ 0002:000009b8       __real@3fc999999999999a    100269b8     simu.obj
+ 0002:000009c0       __real@bdcccccd            100269c0     simu.obj
+ 0002:000009c4       __real@c0400000            100269c4     simu.obj
+ 0002:000009c8       __real@3f1a36e2e0000000    100269c8     simu.obj
+ 0002:000009d4       ??_C@_0BH@NMOCLMMD@Simulation?5Engine?5V2?40?$AA@ 100269d4     simuitf.obj
+ 0002:000009ec       ??_C@_04NDMGPPLE@simu?$AA@ 100269ec     simuitf.obj
+ 0002:000009f8       ??_C@_0BA@JIAOOKNL@max?5steer?5speed?$AA@ 100269f8     steer.obj
+ 0002:00000a08       ??_C@_05JHJIHHIE@Steer?$AA@ 10026a08     steer.obj
+ 0002:00000a10       ??_C@_0L@NKBELAP@steer?5lock?$AA@ 10026a10     steer.obj
+ 0002:00000a1c       __real@3edc28f6            10026a1c     steer.obj
+ 0002:00000a28       __real@4024000000000000    10026a28     susp.obj
+ 0002:00000a30       ??_C@_0BH@DKIFCFOL@fast?5rebound?5threshold?$AA@ 10026a30     susp.obj
+ 0002:00000a48       ??_C@_0BE@IDHMJOMM@fast?5bump?5threshold?$AA@ 10026a48     susp.obj
+ 0002:00000a5c       ??_C@_0N@IBGFKMGP@fast?5rebound?$AA@ 10026a5c     susp.obj
+ 0002:00000a6c       ??_C@_09GGODEECC@fast?5bump?$AA@ 10026a6c     susp.obj
+ 0002:00000a78       ??_C@_0N@PJDJFFEH@slow?5rebound?$AA@ 10026a78     susp.obj
+ 0002:00000a88       ??_C@_09EMNHNHCA@slow?5bump?$AA@ 10026a88     susp.obj
+ 0002:00000a94       ??_C@_07CEFBFMMF@packers?$AA@ 10026a94     susp.obj
+ 0002:00000a9c       ??_C@_09FOGJBODB@bellcrank?$AA@ 10026a9c     susp.obj
+ 0002:00000aa8       __real@482ae600            10026aa8     susp.obj
+ 0002:00000aac       ??_C@_01KJLJFBPL@8?$AA@    10026aac     transmission.obj
+ 0002:00000ab0       ??_C@_01COCBENDE@7?$AA@    10026ab0     transmission.obj
+ 0002:00000ab4       ??_C@_01DHDKHMHF@6?$AA@    10026ab4     transmission.obj
+ 0002:00000ab8       ??_C@_01BMBHCPLG@5?$AA@    10026ab8     transmission.obj
+ 0002:00000abc       ??_C@_01FAMBOPH@4?$AA@     10026abc     transmission.obj
+ 0002:00000ac0       ??_C@_01EKENIIDA@3?$AA@    10026ac0     transmission.obj
+ 0002:00000ac4       ??_C@_01FDFGLJHB@2?$AA@    10026ac4     transmission.obj
+ 0002:00000ac8       ??_C@_01HIHLOKLC@1?$AA@    10026ac8     transmission.obj
+ 0002:00000acc       ??_C@_01EFFIKLCJ@n?$AA@    10026acc     transmission.obj
+ 0002:00000ad0       ??_C@_01KDCPPGHE@r?$AA@    10026ad0     transmission.obj
+ 0002:00000ad8       __real@3fd0000000000000    10026ad8     transmission.obj
+ 0002:00000ae0       ??_C@_08OBGMOMHH@?$CFs?1?$CFs?1?$CFs?$AA@ 10026ae0     transmission.obj
+ 0002:00000aec       ??_C@_05NKODJPOO@gears?$AA@ 10026aec     transmission.obj
+ 0002:00000af4       ??_C@_0BF@JADCGNEB@Central?5Differential?$AA@ 10026af4     transmission.obj
+ 0002:00000b0c       ??_C@_03FMBEPNCB@4WD?$AA@  10026b0c     transmission.obj
+ 0002:00000b10       ??_C@_0BD@KBPIFHDM@Front?5Differential?$AA@ 10026b10     transmission.obj
+ 0002:00000b24       ??_C@_03JNCCJFDG@FWD?$AA@  10026b24     transmission.obj
+ 0002:00000b28       ??_C@_0BC@PEFGCIE@Rear?5Differential?$AA@ 10026b28     transmission.obj
+ 0002:00000b3c       ??_C@_07BFPDKHBL@Gearbox?$AA@ 10026b3c     transmission.obj
+ 0002:00000b44       ??_C@_0L@NKLOGILP@shift?5time?$AA@ 10026b44     transmission.obj
+ 0002:00000b50       ??_C@_0L@GPGHGHOJ@Drivetrain?$AA@ 10026b50     transmission.obj
+ 0002:00000b5c       ??_C@_03ECFJFFPO@RWD?$AA@  10026b5c     transmission.obj
+ 0002:00000b60       __real@4008000000000000    10026b60     transmission.obj
+ 0002:00000b68       ??_C@_0BA@MDBNPHOE@Rear?5Left?5Brake?$AA@ 10026b68     wheel.obj
+ 0002:00000b78       ??_C@_0BB@HOHHFFGL@Rear?5Right?5Brake?$AA@ 10026b78     wheel.obj
+ 0002:00000b8c       ??_C@_0BB@JKHKPCLA@Front?5Left?5Brake?$AA@ 10026b8c     wheel.obj
+ 0002:00000ba0       ??_C@_0BC@BCCIKHID@Front?5Right?5Brake?$AA@ 10026ba0     wheel.obj
+ 0002:00000bb4       ??_C@_0BF@GONIDKNP@Rear?5Left?5Suspension?$AA@ 10026bb4     wheel.obj
+ 0002:00000bcc       ??_C@_0BG@KOCHFCBB@Rear?5Right?5Suspension?$AA@ 10026bcc     wheel.obj
+ 0002:00000be4       ??_C@_0BG@LCHEJIFO@Front?5Left?5Suspension?$AA@ 10026be4     wheel.obj
+ 0002:00000bfc       ??_C@_0BH@DEEEENAF@Front?5Right?5Suspension?$AA@ 10026bfc     wheel.obj
+ 0002:00000c14       ??_C@_0BA@OOGIOKPL@Rear?5Left?5Wheel?$AA@ 10026c14     wheel.obj
+ 0002:00000c24       ??_C@_0BB@FDACEIHE@Rear?5Right?5Wheel?$AA@ 10026c24     wheel.obj
+ 0002:00000c38       ??_C@_0BB@LHAPOPKP@Front?5Left?5Wheel?$AA@ 10026c38     wheel.obj
+ 0002:00000c4c       ??_C@_0BC@DPFNLKJM@Front?5Right?5Wheel?$AA@ 10026c4c     wheel.obj
+ 0002:00000c70       __real@3ff99999a0000000    10026c70     wheel.obj
+ 0002:00000c78       __real@3fe99999a0000000    10026c78     wheel.obj
+ 0002:00000c80       __real@41a00000            10026c80     wheel.obj
+ 0002:00000c84       ??_C@_0P@GKLPFDJJ@operating?5load?$AA@ 10026c84     wheel.obj
+ 0002:00000c98       __real@3ff3333340000000    10026c98     wheel.obj
+ 0002:00000ca0       ??_C@_0BA@BIGJFOFA@load?5factor?5min?$AA@ 10026ca0     wheel.obj
+ 0002:00000cb0       ??_C@_0BA@KOCLKDP@load?5factor?5max?$AA@ 10026cb0     wheel.obj
+ 0002:00000cc0       __real@3fcccccd            10026cc0     wheel.obj
+ 0002:00000cc4       ??_C@_0BC@OGIHMKBB@elasticity?5factor?$AA@ 10026cc4     wheel.obj
+ 0002:00000cd8       __real@3f333333            10026cd8     wheel.obj
+ 0002:00000cdc       ??_C@_0BB@FDPLMBGO@dynamic?5friction?$AA@ 10026cdc     wheel.obj
+ 0002:00000cf0       ??_C@_09CNHECHOC@stiffness?$AA@ 10026cf0     wheel.obj
+ 0002:00000cfc       __real@41f00000            10026cfc     wheel.obj
+ 0002:00000d00       ??_C@_06LIPNDEMN@camber?$AA@ 10026d00     wheel.obj
+ 0002:00000d08       ??_C@_03GBOHAENH@toe?$AA@  10026d08     wheel.obj
+ 0002:00000d0c       ??_C@_0M@IPGIOMHG@ride?5height?$AA@ 10026d0c     wheel.obj
+ 0002:00000d18       ??_C@_0BI@GDNAMBMI@tire?5height?9width?5ratio?$AA@ 10026d18     wheel.obj
+ 0002:00000d30       __real@3f400000            10026d30     wheel.obj
+ 0002:00000d34       ??_C@_0L@LGAPFFPK@tire?5width?$AA@ 10026d34     wheel.obj
+ 0002:00000d40       __real@3e147ae1            10026d40     wheel.obj
+ 0002:00000d44       ??_C@_0N@PKNPBDGA@rim?5diameter?$AA@ 10026d44     wheel.obj
+ 0002:00000d54       ??_C@_08POHEELCJ@pressure?$AA@ 10026d54     wheel.obj
+ 0002:00000d60       __real@48869200            10026d60     wheel.obj
+ 0002:00000d68       __real@3f847ae147ae147b    10026d68     wheel.obj
+ 0002:00000d70       __real@4049000000000000    10026d70     wheel.obj
+ 0002:00000d78       __real@4032000000000000    10026d78     wheel.obj
+ 0002:00000d80       __real@3f2a36e2e0000000    10026d80     wheel.obj
+ 0002:00000d88       __real@40000000            10026d88     wheel.obj
+ 0002:00000d8c       __real@358637bd            10026d8c     wheel.obj
+ 0002:00000d90       ??_C@_0P@GHFPNOJB@bad?5allocation?$AA@ 10026d90     solid:C-api.obj
+ 0002:00000dd4       ??_7bad_alloc@std@@6B@     10026dd4     solid:C-api.obj
+ 0002:00000de0       ??_7Shape@@6B@             10026de0     solid:C-api.obj
+ 0002:00000df0       ??_7Complex@@6B@           10026df0     solid:C-api.obj
+ 0002:00000e00       ??_7Polytope@@6B@          10026e00     solid:C-api.obj
+ 0002:00000e14       ??_7Box@@6B@               10026e14     solid:C-api.obj
+ 0002:00000e28       ??_7Simplex@@6B@           10026e28     solid:C-api.obj
+ 0002:00000e3c       ??_7Polygon@@6B@           10026e3c     solid:C-api.obj
+ 0002:00000e50       ??_7logic_error@std@@6B@   10026e50     solid:C-api.obj
+ 0002:00000e5c       ??_7length_error@std@@6B@  10026e5c     solid:C-api.obj
+ 0002:00000e68       ??_7out_of_range@std@@6B@  10026e68     solid:C-api.obj
+ 0002:00000e70       ??_C@_0BM@PAPJHAGI@invalid?5map?1set?$DMT?$DO?5iterator?$AA@ 10026e70     solid:C-api.obj
+ 0002:00000e8c       ??_C@_0BE@JONHPENG@map?1set?$DMT?$DO?5too?5long?$AA@ 10026e8c     solid:C-api.obj
+ 0002:00000ea0       ??_C@_0BD@OLBABOEK@vector?$DMT?$DO?5too?5long?$AA@ 10026ea0     solid:C-api.obj
+ 0002:00001114       ??_7Polyhedron@@6B@        10027114     solid:Polyhedron.obj
+ 0002:00001158       __real@ca511b0ec57e649a    10027158     solid:BBoxTree.obj
+ 0002:00001198       __real@3f91df46a0000000    10027198     sg_vs2008_32:sg.obj
+ 0002:000011a0       ??_C@_05JLFELJNP@FATAL?$AA@ 100271a0     ul_vs2008_32:ulError.obj
+ 0002:000011a8       ??_C@_07KCOHIFOP@WARNING?$AA@ 100271a8     ul_vs2008_32:ulError.obj
+ 0002:000011b0       ??_C@_05KOLFGEDA@DEBUG?$AA@ 100271b0     ul_vs2008_32:ulError.obj
+ 0002:000011bc       ??_C@_0BA@JFNIOLAK@string?5too?5long?$AA@ 100271bc     libcpmt:string.obj
+ 0002:000011cc       ??_C@_0BI@CFPLBAOH@invalid?5string?5position?$AA@ 100271cc     libcpmt:string.obj
+ 0002:000011e4       __FPinit                   100271e4     LIBCMT:_fpinit_.obj
+ 0002:000011e8       __FPmtinit                 100271e8     LIBCMT:_fpinit_.obj
+ 0002:000011ec       __FPmtterm                 100271ec     LIBCMT:_fpinit_.obj
+ 0002:000011f0       __pRawDllMain              100271f0     LIBCMT:dllcrt0.obj
+ 0002:000011f0       __pDefaultRawDllMain       100271f0     LIBCMT:dllcrt0.obj
+ 0002:000011f8       ??_7exception@std@@6B@     100271f8     LIBCMT:stdexcpt.obj
+ 0002:00001200       ??_C@_0BC@EOODALEL@Unknown?5exception?$AA@ 10027200     LIBCMT:stdexcpt.obj
+ 0002:00001218       ??_7type_info@@6B@         10027218     LIBCMT:typinfo.obj
+ 0002:0000123c       ??_C@_0P@MIGLKIOC@CorExitProcess?$AA@ 1002723c     LIBCMT:crt0dat.obj
+ 0002:0000124c       ??_C@_1BI@BGOHAHKC@?$AAm?$AAs?$AAc?$AAo?$AAr?$AAe?$AAe?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 1002724c     LIBCMT:crt0dat.obj
+ 0002:00001264       ??_C@_05KLBDPFGC@e?$CL000?$AA@ 10027264     LIBCMT:cvt.obj
+ 0002:00001270       __real@4150017ec0000000    10027270     LIBCMT:_testfdiv_.obj
+ 0002:00001278       __real@4147ffff80000000    10027278     LIBCMT:_testfdiv_.obj
+ 0002:00001280       ??_C@_0BK@NHEOCAHP@IsProcessorFeaturePresent?$AA@ 10027280     LIBCMT:_testfdiv_.obj
+ 0002:0000129c       ??_C@_08CPNIBGIE@KERNEL32?$AA@ 1002729c     LIBCMT:_testfdiv_.obj
+ 0002:00002088       __DEFAULT_CW_in_mem        10028088     LIBCMT:_common_.obj
+ 0002:0000208a       __pi_by_2_to_61            1002808a     LIBCMT:_common_.obj
+ 0002:00002980       ??_C@_1O@CEDCILHN@?$AA?$CI?$AAn?$AAu?$AAl?$AAl?$AA?$CJ?$AA?$AA@ 10028980     LIBCMT:output.obj
+ 0002:00002990       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 10028990     LIBCMT:output.obj
+ 0002:00002998       ___lookuptable             10028998     LIBCMT:output.obj
+ 0002:000029f4       ??_C@_0O@NLDKAIKN@EncodePointer?$AA@ 100289f4     LIBCMT:tidtable.obj
+ 0002:00002a04       ??_C@_1BK@DBDEIDLH@?$AAK?$AAE?$AAR?$AAN?$AAE?$AAL?$AA3?$AA2?$AA?4?$AAD?$AAL?$AAL?$AA?$AA@ 10028a04     LIBCMT:tidtable.obj
+ 0002:00002a20       ??_C@_0O@KBPMFGHI@DecodePointer?$AA@ 10028a20     LIBCMT:tidtable.obj
+ 0002:00002a30       ??_C@_07PEJMOBNF@FlsFree?$AA@ 10028a30     LIBCMT:tidtable.obj
+ 0002:00002a38       ??_C@_0M@JCPCPOEF@FlsSetValue?$AA@ 10028a38     LIBCMT:tidtable.obj
+ 0002:00002a44       ??_C@_0M@GDNOONDI@FlsGetValue?$AA@ 10028a44     LIBCMT:tidtable.obj
+ 0002:00002a50       ??_C@_08KNHFBNJ@FlsAlloc?$AA@ 10028a50     LIBCMT:tidtable.obj
+ 0002:00002a5c       ??_C@_0L@KDOEJCKC@_nextafter?$AA@ 10028a5c     LIBCMT:_fpexcept_.obj
+ 0002:00002a68       ??_C@_05JGDBENOH@_logb?$AA@ 10028a68     LIBCMT:_fpexcept_.obj
+ 0002:00002a70       ??_C@_03ONILCKOB@_yn?$AA@  10028a70     LIBCMT:_fpexcept_.obj
+ 0002:00002a74       ??_C@_03NAKIGLHK@_y1?$AA@  10028a74     LIBCMT:_fpexcept_.obj
+ 0002:00002a78       ??_C@_03MJLDFKDL@_y0?$AA@  10028a78     LIBCMT:_fpexcept_.obj
+ 0002:00002a7c       ??_C@_05GKKHEGJL@frexp?$AA@ 10028a7c     LIBCMT:_fpexcept_.obj
+ 0002:00002a84       ??_C@_04KEPJIHGP@fmod?$AA@ 10028a84     LIBCMT:_fpexcept_.obj
+ 0002:00002a8c       ??_C@_06MEIMCGCF@_hypot?$AA@ 10028a8c     LIBCMT:_fpexcept_.obj
+ 0002:00002a94       ??_C@_05KBKMEMPO@_cabs?$AA@ 10028a94     LIBCMT:_fpexcept_.obj
+ 0002:00002a9c       ??_C@_05CEJMAHNP@ldexp?$AA@ 10028a9c     LIBCMT:_fpexcept_.obj
+ 0002:00002aa4       ??_C@_04EHEDPDJG@modf?$AA@ 10028aa4     LIBCMT:_fpexcept_.obj
+ 0002:00002aac       ??_C@_04ODHECPBC@fabs?$AA@ 10028aac     LIBCMT:_fpexcept_.obj
+ 0002:00002ab4       ??_C@_05PBJFFIGL@floor?$AA@ 10028ab4     LIBCMT:_fpexcept_.obj
+ 0002:00002abc       ??_C@_04GFPJNGEK@ceil?$AA@ 10028abc     LIBCMT:_fpexcept_.obj
+ 0002:00002ac4       ??_C@_03IIINPABG@tan?$AA@  10028ac4     LIBCMT:_fpexcept_.obj
+ 0002:00002ac8       ??_C@_03LALBNOCG@cos?$AA@  10028ac8     LIBCMT:_fpexcept_.obj
+ 0002:00002acc       ??_C@_03BLEJJJBH@sin?$AA@  10028acc     LIBCMT:_fpexcept_.obj
+ 0002:00002ad0       ??_C@_04EIAKFFMI@sqrt?$AA@ 10028ad0     LIBCMT:_fpexcept_.obj
+ 0002:00002ad8       ??_C@_05KNGEOGJB@atan2?$AA@ 10028ad8     LIBCMT:_fpexcept_.obj
+ 0002:00002ae0       ??_C@_04MLLJIGOK@atan?$AA@ 10028ae0     LIBCMT:_fpexcept_.obj
+ 0002:00002ae8       ??_C@_04PDIFKINK@acos?$AA@ 10028ae8     LIBCMT:_fpexcept_.obj
+ 0002:00002af0       ??_C@_04FIHNOPOL@asin?$AA@ 10028af0     LIBCMT:_fpexcept_.obj
+ 0002:00002af8       ??_C@_04FJHINJAO@tanh?$AA@ 10028af8     LIBCMT:_fpexcept_.obj
+ 0002:00002b00       ??_C@_04HPJJNFIM@cosh?$AA@ 10028b00     LIBCMT:_fpexcept_.obj
+ 0002:00002b08       ??_C@_04COOMCNPB@sinh?$AA@ 10028b08     LIBCMT:_fpexcept_.obj
+ 0002:00002b10       ??_C@_05HGHHAHAP@log10?$AA@ 10028b10     LIBCMT:_fpexcept_.obj
+ 0002:00002b18       ??_C@_03MGHMBJCF@log?$AA@  10028b18     LIBCMT:_fpexcept_.obj
+ 0002:00002b1c       ??_C@_03JGHBODFD@pow?$AA@  10028b1c     LIBCMT:_fpexcept_.obj
+ 0002:00002b20       ??_C@_03KHJOGHMM@exp?$AA@  10028b20     LIBCMT:_fpexcept_.obj
+ 0002:00006400       __XcptActTab               1002c400     LIBCMT:winxfltr.obj
+ 0002:00006478       ??_C@_0P@GGKDKEEG@runtime?5error?5?$AA@ 1002c478     LIBCMT:crt0msg.obj
+ 0002:00006488       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 1002c488     LIBCMT:crt0msg.obj
+ 0002:0000648c       ??_C@_0O@MJNIPGOH@TLOSS?5error?$AN?6?$AA@ 1002c48c     LIBCMT:crt0msg.obj
+ 0002:0000649c       ??_C@_0N@BONNPDHF@SING?5error?$AN?6?$AA@ 1002c49c     LIBCMT:crt0msg.obj
+ 0002:000064ac       ??_C@_0P@MBDAJNE@DOMAIN?5error?$AN?6?$AA@ 1002c4ac     LIBCMT:crt0msg.obj
+ 0002:000064c0       ??_C@_0JL@DFDOOABL@R6034?$AN?6An?5application?5has?5made?5a@ 1002c4c0     LIBCMT:crt0msg.obj
+ 0002:00006560       ??_C@_0PH@EPAFIJ@R6033?$AN?6?9?5Attempt?5to?5use?5MSIL?5cod@ 1002c560     LIBCMT:crt0msg.obj
+ 0002:00006658       ??_C@_0DD@BKEEABMM@R6032?$AN?6?9?5not?5enough?5space?5for?5lo@ 1002c658     LIBCMT:crt0msg.obj
+ 0002:00006690       ??_C@_0GD@OFKILIED@R6031?$AN?6?9?5Attempt?5to?5initialize?5t@ 1002c690     LIBCMT:crt0msg.obj
+ 0002:000066f4       ??_C@_0BP@LPMHJOKI@R6030?$AN?6?9?5CRT?5not?5initialized?$AN?6?$AA@ 1002c6f4     LIBCMT:crt0msg.obj
+ 0002:00006714       ??_C@_0CF@KJDAIALP@R6028?$AN?6?9?5unable?5to?5initialize?5he@ 1002c714     LIBCMT:crt0msg.obj
+ 0002:0000673c       ??_C@_0DF@GAKBPDFP@R6027?$AN?6?9?5not?5enough?5space?5for?5lo@ 1002c73c     LIBCMT:crt0msg.obj
+ 0002:00006774       ??_C@_0DF@IBLNNAIG@R6026?$AN?6?9?5not?5enough?5space?5for?5st@ 1002c774     LIBCMT:crt0msg.obj
+ 0002:000067ac       ??_C@_0CG@IOHKGFNJ@R6025?$AN?6?9?5pure?5virtual?5function?5c@ 1002c7ac     LIBCMT:crt0msg.obj
+ 0002:000067d4       ??_C@_0DF@JIJJFJDC@R6024?$AN?6?9?5not?5enough?5space?5for?5_o@ 1002c7d4     LIBCMT:crt0msg.obj
+ 0002:0000680c       ??_C@_0CJ@EGEJHFME@R6019?$AN?6?9?5unable?5to?5open?5console?5@ 1002c80c     LIBCMT:crt0msg.obj
+ 0002:00006838       ??_C@_0CB@GNHNIELH@R6018?$AN?6?9?5unexpected?5heap?5error?$AN?6@ 1002c838     LIBCMT:crt0msg.obj
+ 0002:0000685c       ??_C@_0CN@FOLDKNG@R6017?$AN?6?9?5unexpected?5multithread?5@ 1002c85c     LIBCMT:crt0msg.obj
+ 0002:0000688c       ??_C@_0CM@FAHFJNHO@R6016?$AN?6?9?5not?5enough?5space?5for?5th@ 1002c88c     LIBCMT:crt0msg.obj
+ 0002:000068b8       ??_C@_0JG@LBKMGKLD@?$AN?6This?5application?5has?5requested@ 1002c8b8     LIBCMT:crt0msg.obj
+ 0002:00006950       ??_C@_0CM@FLCNIPKK@R6009?$AN?6?9?5not?5enough?5space?5for?5en@ 1002c950     LIBCMT:crt0msg.obj
+ 0002:0000697c       ??_C@_0CK@KMMJOAPP@R6008?$AN?6?9?5not?5enough?5space?5for?5ar@ 1002c97c     LIBCMT:crt0msg.obj
+ 0002:000069a8       ??_C@_0CN@LEKKICBM@R6002?$AN?6?9?5floating?5point?5support?5@ 1002c9a8     LIBCMT:crt0msg.obj
+ 0002:000069d8       ??_C@_0CF@GOGNBNAK@Microsoft?5Visual?5C?$CL?$CL?5Runtime?5Lib@ 1002c9d8     LIBCMT:crt0msg.obj
+ 0002:00006a00       ??_C@_02PHMGELLB@?6?6?$AA@ 1002ca00     LIBCMT:crt0msg.obj
+ 0002:00006a04       ??_C@_03KHICJKCI@?4?4?4?$AA@ 1002ca04     LIBCMT:crt0msg.obj
+ 0002:00006a08       ??_C@_0BH@DNAGHKFM@?$DMprogram?5name?5unknown?$DO?$AA@ 1002ca08     LIBCMT:crt0msg.obj
+ 0002:00006a20       ??_C@_0BK@OFGJDLJJ@Runtime?5Error?$CB?6?6Program?3?5?$AA@ 1002ca20     LIBCMT:crt0msg.obj
+ 0002:00006a3c       __pDestructExceptionObject 1002ca3c     LIBCMT:frame.obj
+ 0002:00006a44       ??_7bad_exception@std@@6B@ 1002ca44     LIBCMT:frame.obj
+ 0002:00006a4c       ??_C@_0O@DPKOEFFH@bad?5exception?$AA@ 1002ca4c     LIBCMT:frame.obj
+ 0002:00008308       ??_C@_01NEMOKFLO@?$DN?$AA@ 1002e308     LIBCMT:setlocal.obj
+ 0002:0000830a       ??_C@_00CNPNBAHC@?$AA@     1002e30a     LIBCMT:setlocal.obj
+ 0002:00008378       ??_C@_05EOHGHCHD@exp10?$AA@ 1002e378     LIBCMT:_libm_error_.obj
+ 0002:00008380       ___lookuptable_s           1002e380     LIBCMT:outputs.obj
+ 0002:000083e0       __atan_table               1002e3e0     LIBCMT:_atan_table_.obj
+ 0002:00009bf0       ??_C@_0BK@CFCOFLF@?5Complete?5Object?5Locator?8?$AA@ 1002fbf0     LIBCMT:undname.obj
+ 0002:00009c0c       ??_C@_0BN@MECKDCOJ@?5Class?5Hierarchy?5Descriptor?8?$AA@ 1002fc0c     LIBCMT:undname.obj
+ 0002:00009c2c       ??_C@_0BD@LGICGFMM@?5Base?5Class?5Array?8?$AA@ 1002fc2c     LIBCMT:undname.obj
+ 0002:00009c40       ??_C@_0BM@LDKODKLH@?5Base?5Class?5Descriptor?5at?5?$CI?$AA@ 1002fc40     LIBCMT:undname.obj
+ 0002:00009c5c       ??_C@_0BC@DAFEJGAK@?5Type?5Descriptor?8?$AA@ 1002fc5c     LIBCMT:undname.obj
+ 0002:00009c70       ??_C@_0BM@PMGGMLDN@?$GAlocal?5static?5thread?5guard?8?$AA@ 1002fc70     LIBCMT:undname.obj
+ 0002:00009c8c       ??_C@_0CL@FGIJHLCE@?$GAmanaged?5vector?5copy?5constructor@ 1002fc8c     LIBCMT:undname.obj
+ 0002:00009cb8       ??_C@_0CJ@GJELGAMM@?$GAvector?5vbase?5copy?5constructor?5i@ 1002fcb8     LIBCMT:undname.obj
+ 0002:00009ce4       ??_C@_0CD@CGAJBKEJ@?$GAvector?5copy?5constructor?5iterato@ 1002fce4     LIBCMT:undname.obj
+ 0002:00009d08       ??_C@_0CB@PDBIFEP@?$GAdynamic?5atexit?5destructor?5for?5?8@ 1002fd08     LIBCMT:undname.obj
+ 0002:00009d2c       ??_C@_0BL@CLIPGLGB@?$GAdynamic?5initializer?5for?5?8?$AA@ 1002fd2c     LIBCMT:undname.obj
+ 0002:00009d48       ??_C@_0CM@FCBBDIGB@?$GAeh?5vector?5vbase?5copy?5constructo@ 1002fd48     LIBCMT:undname.obj
+ 0002:00009d74       ??_C@_0CG@HLDDJMAG@?$GAeh?5vector?5copy?5constructor?5iter@ 1002fd74     LIBCMT:undname.obj
+ 0002:00009d9c       ??_C@_0CF@IMGKMJNO@?$GAmanaged?5vector?5destructor?5itera@ 1002fd9c     LIBCMT:undname.obj
+ 0002:00009dc4       ??_C@_0CG@CFDHKGGD@?$GAmanaged?5vector?5constructor?5iter@ 1002fdc4     LIBCMT:undname.obj
+ 0002:00009dec       ??_C@_0BN@CKNJLHMB@?$GAplacement?5delete?$FL?$FN?5closure?8?$AA@ 1002fdec     LIBCMT:undname.obj
+ 0002:00009e0c       ??_C@_0BL@CNOONJFP@?$GAplacement?5delete?5closure?8?$AA@ 1002fe0c     LIBCMT:undname.obj
+ 0002:00009e28       ??_C@_0P@HJKNJFNN@?$GAomni?5callsig?8?$AA@ 1002fe28     LIBCMT:undname.obj
+ 0002:00009e38       ??_C@_09LBNFPBCA@?5delete?$FL?$FN?$AA@ 1002fe38     LIBCMT:undname.obj
+ 0002:00009e44       ??_C@_06FHBGPFGH@?5new?$FL?$FN?$AA@ 1002fe44     LIBCMT:undname.obj
+ 0002:00009e4c       ??_C@_0CE@IIHCMGGL@?$GAlocal?5vftable?5constructor?5closu@ 1002fe4c     LIBCMT:undname.obj
+ 0002:00009e70       ??_C@_0BA@KKLDJDLB@?$GAlocal?5vftable?8?$AA@ 1002fe70     LIBCMT:undname.obj
+ 0002:00009e80       ??_C@_05KHLCHHI@?$GARTTI?$AA@ 1002fe80     LIBCMT:undname.obj
+ 0002:00009e88       ??_C@_03KLGMFNMG@?$GAEH?$AA@ 1002fe88     LIBCMT:undname.obj
+ 0002:00009e8c       ??_C@_0BA@KBCDOMBN@?$GAudt?5returning?8?$AA@ 1002fe8c     LIBCMT:undname.obj
+ 0002:00009e9c       ??_C@_0BL@LLKPOHJI@?$GAcopy?5constructor?5closure?8?$AA@ 1002fe9c     LIBCMT:undname.obj
+ 0002:00009eb8       ??_C@_0CH@OOJPLCPH@?$GAeh?5vector?5vbase?5constructor?5ite@ 1002feb8     LIBCMT:undname.obj
+ 0002:00009ee0       ??_C@_0CA@GCEOPDGL@?$GAeh?5vector?5destructor?5iterator?8?$AA@ 1002fee0     LIBCMT:undname.obj
+ 0002:00009f00       ??_C@_0CB@JONCMFFK@?$GAeh?5vector?5constructor?5iterator?8@ 1002ff00     LIBCMT:undname.obj
+ 0002:00009f24       ??_C@_0BL@NILFHHPC@?$GAvirtual?5displacement?5map?8?$AA@ 1002ff24     LIBCMT:undname.obj
+ 0002:00009f40       ??_C@_0CE@IKBNEHA@?$GAvector?5vbase?5constructor?5iterat@ 1002ff40     LIBCMT:undname.obj
+ 0002:00009f64       ??_C@_0BN@LFPFMEDL@?$GAvector?5destructor?5iterator?8?$AA@ 1002ff64     LIBCMT:undname.obj
+ 0002:00009f84       ??_C@_0BO@PFGOCPJJ@?$GAvector?5constructor?5iterator?8?$AA@ 1002ff84     LIBCMT:undname.obj
+ 0002:00009fa4       ??_C@_0BN@IMDCHIKM@?$GAscalar?5deleting?5destructor?8?$AA@ 1002ffa4     LIBCMT:undname.obj
+ 0002:00009fc4       ??_C@_0BO@OBMKPJIG@?$GAdefault?5constructor?5closure?8?$AA@ 1002ffc4     LIBCMT:undname.obj
+ 0002:00009fe4       ??_C@_0BN@DEGPLNFK@?$GAvector?5deleting?5destructor?8?$AA@ 1002ffe4     LIBCMT:undname.obj
+ 0002:0000a004       ??_C@_0BD@JDLKDPAB@?$GAvbase?5destructor?8?$AA@ 10030004     LIBCMT:undname.obj
+ 0002:0000a018       ??_C@_08OBABFOLI@?$GAstring?8?$AA@ 10030018     LIBCMT:undname.obj
+ 0002:0000a024       ??_C@_0BF@KDPPACIK@?$GAlocal?5static?5guard?8?$AA@ 10030024     LIBCMT:undname.obj
+ 0002:0000a03c       ??_C@_08LLFFHHDJ@?$GAtypeof?8?$AA@ 1003003c     LIBCMT:undname.obj
+ 0002:0000a048       ??_C@_07FEEIOKP@?$GAvcall?8?$AA@ 10030048     LIBCMT:undname.obj
+ 0002:0000a050       ??_C@_09BLBHBJP@?$GAvbtable?8?$AA@ 10030050     LIBCMT:undname.obj
+ 0002:0000a05c       ??_C@_09IFPLHPGF@?$GAvftable?8?$AA@ 1003005c     LIBCMT:undname.obj
+ 0002:0000a068       ??_C@_02MHEGNOJ@?$FO?$DN?$AA@ 10030068     LIBCMT:undname.obj
+ 0002:0000a06c       ??_C@_02DHLNPPGH@?$HM?$DN?$AA@ 1003006c     LIBCMT:undname.obj
+ 0002:0000a070       ??_C@_02FGJGFEAB@?$CG?$DN?$AA@ 10030070     LIBCMT:undname.obj
+ 0002:0000a074       ??_C@_03CDNPDDLA@?$DM?$DM?$DN?$AA@ 10030074     LIBCMT:undname.obj
+ 0002:0000a078       ??_C@_03IKFCCPFF@?$DO?$DO?$DN?$AA@ 10030078     LIBCMT:undname.obj
+ 0002:0000a07c       ??_C@_02FENAOKFI@?$CF?$DN?$AA@ 1003007c     LIBCMT:undname.obj
+ 0002:0000a080       ??_C@_02FJEHGPIO@?1?$DN?$AA@ 10030080     LIBCMT:undname.obj
+ 0002:0000a084       ??_C@_02FKMDLLOA@?9?$DN?$AA@ 10030084     LIBCMT:undname.obj
+ 0002:0000a088       ??_C@_02FOEOMHFC@?$CL?$DN?$AA@ 10030088     LIBCMT:undname.obj
+ 0002:0000a08c       ??_C@_02FPIMKNGF@?$CK?$DN?$AA@ 1003008c     LIBCMT:undname.obj
+ 0002:0000a090       ??_C@_02NONPIBCD@?$HM?$HM?$AA@ 10030090     LIBCMT:undname.obj
+ 0002:0000a094       ??_C@_02PPKAJPJL@?$CG?$CG?$AA@ 10030094     LIBCMT:undname.obj
+ 0002:0000a098       ??_C@_01DNKMNLPK@?$HM?$AA@ 10030098     LIBCMT:undname.obj
+ 0002:0000a09c       ??_C@_01JKBOJNNK@?$FO?$AA@ 1003009c     LIBCMT:undname.obj
+ 0002:0000a0a0       ??_C@_01PJKLJHI@?$HO?$AA@  100300a0     LIBCMT:undname.obj
+ 0002:0000a0a4       ??_C@_02HCKGKOFO@?$CI?$CJ?$AA@ 100300a4     LIBCMT:undname.obj
+ 0002:0000a0a8       ??_C@_01IHBHIGKO@?0?$AA@   100300a8     LIBCMT:undname.obj
+ 0002:0000a0ac       ??_C@_02EEKDKGMJ@?$DO?$DN?$AA@ 100300ac     LIBCMT:undname.obj
+ 0002:0000a0b0       ??_C@_01PPODPGHN@?$DO?$AA@ 100300b0     LIBCMT:undname.obj
+ 0002:0000a0b4       ??_C@_02EHCHHCKH@?$DM?$DN?$AA@ 100300b4     LIBCMT:undname.obj
+ 0002:0000a0b8       ??_C@_01MNNFJEPP@?$DM?$AA@ 100300b8     LIBCMT:undname.obj
+ 0002:0000a0bc       ??_C@_01FGNFDNOH@?$CF?$AA@ 100300bc     LIBCMT:undname.obj
+ 0002:0000a0c0       ??_C@_01KMDKNFGN@?1?$AA@   100300c0     LIBCMT:undname.obj
+ 0002:0000a0c4       ??_C@_03MNHNFDLC@?9?$DO?$CK?$AA@ 100300c4     LIBCMT:undname.obj
+ 0002:0000a0c8       ??_C@_01HNPIGOCE@?$CG?$AA@ 100300c8     LIBCMT:undname.obj
+ 0002:0000a0cc       ??_C@_01MIFGBAGJ@?$CL?$AA@ 100300cc     LIBCMT:undname.obj
+ 0002:0000a0d0       ??_C@_01JOAMLHOP@?9?$AA@   100300d0     LIBCMT:undname.obj
+ 0002:0000a0d4       ??_C@_02BAABKJLB@?9?9?$AA@ 100300d4     LIBCMT:undname.obj
+ 0002:0000a0d8       ??_C@_02ECNGHCIF@?$CL?$CL?$AA@ 100300d8     LIBCMT:undname.obj
+ 0002:0000a0dc       ??_C@_01NBENCBCI@?$CK?$AA@ 100300dc     LIBCMT:undname.obj
+ 0002:0000a0e0       ??_C@_02HBOOOICD@?9?$DO?$AA@ 100300e0     LIBCMT:undname.obj
+ 0002:0000a0e4       ??_C@_08LHJFAFGD@operator?$AA@ 100300e4     LIBCMT:undname.obj
+ 0002:0000a0f0       ??_C@_02GPECMEKF@?$FL?$FN?$AA@ 100300f0     LIBCMT:undname.obj
+ 0002:0000a0f4       ??_C@_02FDNJECIE@?$CB?$DN?$AA@ 100300f4     LIBCMT:undname.obj
+ 0002:0000a0f8       ??_C@_02EGOFBIJA@?$DN?$DN?$AA@ 100300f8     LIBCMT:undname.obj
+ 0002:0000a0fc       ??_C@_01DCLJPIOD@?$CB?$AA@ 100300fc     LIBCMT:undname.obj
+ 0002:0000a100       ??_C@_02FODMEDOG@?$DM?$DM?$AA@ 10030100     LIBCMT:undname.obj
+ 0002:0000a104       ??_C@_02GPIOPFAK@?$DO?$DO?$AA@ 10030104     LIBCMT:undname.obj
+ 0002:0000a108       ??_C@_07FPCDHGMM@?5delete?$AA@ 10030108     LIBCMT:undname.obj
+ 0002:0000a110       ??_C@_04NIHEBCM@?5new?$AA@ 10030110     LIBCMT:undname.obj
+ 0002:0000a118       ??_C@_0M@GFIIJFMG@__unaligned?$AA@ 10030118     LIBCMT:undname.obj
+ 0002:0000a124       ??_C@_0L@PILCLIHE@__restrict?$AA@ 10030124     LIBCMT:undname.obj
+ 0002:0000a130       ??_C@_07JOMMBBKO@__ptr64?$AA@ 10030130     LIBCMT:undname.obj
+ 0002:0000a138       ??_C@_09HIJEGCPM@__clrcall?$AA@ 10030138     LIBCMT:undname.obj
+ 0002:0000a144       ??_C@_0L@JMKHOMEK@__fastcall?$AA@ 10030144     LIBCMT:undname.obj
+ 0002:0000a150       ??_C@_0L@NPHFGOKO@__thiscall?$AA@ 10030150     LIBCMT:undname.obj
+ 0002:0000a15c       ??_C@_09IFJBGAPI@__stdcall?$AA@ 1003015c     LIBCMT:undname.obj
+ 0002:0000a168       ??_C@_08GHMPAG@__pascal?$AA@ 10030168     LIBCMT:undname.obj
+ 0002:0000a174       ??_C@_07KOLFKCDI@__cdecl?$AA@ 10030174     LIBCMT:undname.obj
+ 0002:0000a17c       ??_C@_08EHJDFFNH@__based?$CI?$AA@ 1003017c     LIBCMT:undname.obj
+ 0002:0000a308       ??_C@_0BI@DFKBFLJE@GetProcessWindowStation?$AA@ 10030308     LIBCMT:crtmbox.obj
+ 0002:0000a320       ??_C@_0BK@CIDNPOGP@GetUserObjectInformationA?$AA@ 10030320     LIBCMT:crtmbox.obj
+ 0002:0000a33c       ??_C@_0BD@HHGDFDBJ@GetLastActivePopup?$AA@ 1003033c     LIBCMT:crtmbox.obj
+ 0002:0000a350       ??_C@_0BA@HNOPNCHB@GetActiveWindow?$AA@ 10030350     LIBCMT:crtmbox.obj
+ 0002:0000a360       ??_C@_0M@CHKKJDAI@MessageBoxA?$AA@ 10030360     LIBCMT:crtmbox.obj
+ 0002:0000a36c       ??_C@_0L@NDEGIDAG@USER32?4DLL?$AA@ 1003036c     LIBCMT:crtmbox.obj
+ 0002:0000a378       ??_C@_13NOLLCAOD@?$AA?$AA?$AA?$AA@ 10030378     LIBCMT:a_map.obj
+ 0002:0000a380       ___newctype                10030380     LIBCMT:ctype.obj
+ 0002:0000a680       __wctype                   10030680     LIBCMT:ctype.obj
+ 0002:0000a888       ___newclmap                10030888     LIBCMT:ctype.obj
+ 0002:0000aa08       ___newcumap                10030a08     LIBCMT:ctype.obj
+ 0002:0000ab88       ??_C@_08JCCMCCIL@HH?3mm?3ss?$AA@ 10030b88     LIBCMT:strftime.obj
+ 0002:0000ab94       ??_C@_0BE@CKGJFCPC@dddd?0?5MMMM?5dd?0?5yyyy?$AA@ 10030b94     LIBCMT:strftime.obj
+ 0002:0000aba8       ??_C@_08BPBNCDIB@MM?1dd?1yy?$AA@ 10030ba8     LIBCMT:strftime.obj
+ 0002:0000abb4       ??_C@_02CJNFDJBF@PM?$AA@   10030bb4     LIBCMT:strftime.obj
+ 0002:0000abb8       ??_C@_02DEDBPAFC@AM?$AA@   10030bb8     LIBCMT:strftime.obj
+ 0002:0000abbc       ??_C@_08EDHMEBNP@December?$AA@ 10030bbc     LIBCMT:strftime.obj
+ 0002:0000abc8       ??_C@_08HCHEGEOA@November?$AA@ 10030bc8     LIBCMT:strftime.obj
+ 0002:0000abd4       ??_C@_07JJNFCEND@October?$AA@ 10030bd4     LIBCMT:strftime.obj
+ 0002:0000abdc       ??_C@_09BHHEALKD@September?$AA@ 10030bdc     LIBCMT:strftime.obj
+ 0002:0000abe8       ??_C@_06LBBHFDDG@August?$AA@ 10030be8     LIBCMT:strftime.obj
+ 0002:0000abf0       ??_C@_04MIEPOIFP@July?$AA@ 10030bf0     LIBCMT:strftime.obj
+ 0002:0000abf8       ??_C@_04CNLMGBGM@June?$AA@ 10030bf8     LIBCMT:strftime.obj
+ 0002:0000ac00       ??_C@_05DMJDNLEJ@April?$AA@ 10030c00     LIBCMT:strftime.obj
+ 0002:0000ac08       ??_C@_05HPCKOFNC@March?$AA@ 10030c08     LIBCMT:strftime.obj
+ 0002:0000ac10       ??_C@_08GNJGEPFN@February?$AA@ 10030c10     LIBCMT:strftime.obj
+ 0002:0000ac1c       ??_C@_07CGJPFGJA@January?$AA@ 10030c1c     LIBCMT:strftime.obj
+ 0002:0000ac24       ??_C@_03MKABNOCG@Dec?$AA@  10030c24     LIBCMT:strftime.obj
+ 0002:0000ac28       ??_C@_03JPJOFNIA@Nov?$AA@  10030c28     LIBCMT:strftime.obj
+ 0002:0000ac2c       ??_C@_03BMAOKBAD@Oct?$AA@  10030c2c     LIBCMT:strftime.obj
+ 0002:0000ac30       ??_C@_03GGCAPAJC@Sep?$AA@  10030c30     LIBCMT:strftime.obj
+ 0002:0000ac34       ??_C@_03IFJFEIGA@Aug?$AA@  10030c34     LIBCMT:strftime.obj
+ 0002:0000ac38       ??_C@_03LBGABGKK@Jul?$AA@  10030c38     LIBCMT:strftime.obj
+ 0002:0000ac3c       ??_C@_03IDFGHECI@Jun?$AA@  10030c3c     LIBCMT:strftime.obj
+ 0002:0000ac40       ??_C@_03CNMDKL@May?$AA@    10030c40     LIBCMT:strftime.obj
+ 0002:0000ac44       ??_C@_03LEOLGMJP@Apr?$AA@  10030c44     LIBCMT:strftime.obj
+ 0002:0000ac48       ??_C@_03ODNJBKGA@Mar?$AA@  10030c48     LIBCMT:strftime.obj
+ 0002:0000ac4c       ??_C@_03HJBDCHOM@Feb?$AA@  10030c4c     LIBCMT:strftime.obj
+ 0002:0000ac50       ??_C@_03JIHJHPIE@Jan?$AA@  10030c50     LIBCMT:strftime.obj
+ 0002:0000ac54       ??_C@_08INBOOONO@Saturday?$AA@ 10030c54     LIBCMT:strftime.obj
+ 0002:0000ac60       ??_C@_06JECMNKMI@Friday?$AA@ 10030c60     LIBCMT:strftime.obj
+ 0002:0000ac68       ??_C@_08HACCIKIA@Thursday?$AA@ 10030c68     LIBCMT:strftime.obj
+ 0002:0000ac74       ??_C@_09DLIGFAKA@Wednesday?$AA@ 10030c74     LIBCMT:strftime.obj
+ 0002:0000ac80       ??_C@_07BAAGCFCM@Tuesday?$AA@ 10030c80     LIBCMT:strftime.obj
+ 0002:0000ac88       ??_C@_06JLEDEDGH@Monday?$AA@ 10030c88     LIBCMT:strftime.obj
+ 0002:0000ac90       ??_C@_06OOPIFAJ@Sunday?$AA@ 10030c90     LIBCMT:strftime.obj
+ 0002:0000ac98       ??_C@_03FEFJNEK@Sat?$AA@   10030c98     LIBCMT:strftime.obj
+ 0002:0000ac9c       ??_C@_03IDIOELNC@Fri?$AA@  10030c9c     LIBCMT:strftime.obj
+ 0002:0000aca0       ??_C@_03IOFIKPDN@Thu?$AA@  10030ca0     LIBCMT:strftime.obj
+ 0002:0000aca4       ??_C@_03MHOMLAJA@Wed?$AA@  10030ca4     LIBCMT:strftime.obj
+ 0002:0000aca8       ??_C@_03NAGEINEP@Tue?$AA@  10030ca8     LIBCMT:strftime.obj
+ 0002:0000acac       ??_C@_03PDAGKDH@Mon?$AA@   10030cac     LIBCMT:strftime.obj
+ 0002:0000acb0       ??_C@_03KOEHGMDN@Sun?$AA@  10030cb0     LIBCMT:strftime.obj
+ 0002:0000acb4       ??_C@_06IMKFLFPG@1?$CDQNAN?$AA@ 10030cb4     LIBCMT:_x10fout_.obj
+ 0002:0000acbc       ??_C@_05DNEBIAHO@1?$CDINF?$AA@ 10030cbc     LIBCMT:_x10fout_.obj
+ 0002:0000acc4       ??_C@_05PHHOCPM@1?$CDIND?$AA@ 10030cc4     LIBCMT:_x10fout_.obj
+ 0002:0000accc       ??_C@_06PGGFOGJG@1?$CDSNAN?$AA@ 10030ccc     LIBCMT:_x10fout_.obj
+ 0002:0000acd4       ___dnames                  10030cd4     LIBCMT:timeset.obj
+ 0002:0000acec       ___mnames                  10030cec     LIBCMT:timeset.obj
+ 0002:0000ad14       ??_C@_07GPDNMNG@CONOUT$?$AA@ 10030d14     LIBCMT:initcon.obj
+ 0002:0000ad20       __load_config_used         10030d20     LIBCMT:loadcfg.obj
+ 0002:0000ad68       ??_R4bad_alloc@std@@6B@    10030d68     solid:C-api.obj
+ 0002:0000ad7c       ??_R3bad_alloc@std@@8      10030d7c     solid:C-api.obj
+ 0002:0000ad8c       ??_R2bad_alloc@std@@8      10030d8c     solid:C-api.obj
+ 0002:0000ad98       ??_R1A@?0A@EA@bad_alloc@std@@8 10030d98     solid:C-api.obj
+ 0002:0000adb4       ??_R1A@?0A@EA@exception@std@@8 10030db4     solid:C-api.obj
+ 0002:0000add0       ??_R3exception@std@@8      10030dd0     solid:C-api.obj
+ 0002:0000ade0       ??_R2exception@std@@8      10030de0     solid:C-api.obj
+ 0002:0000ade8       ??_R4Shape@@6B@            10030de8     solid:C-api.obj
+ 0002:0000adfc       ??_R3Shape@@8              10030dfc     solid:C-api.obj
+ 0002:0000ae0c       ??_R2Shape@@8              10030e0c     solid:C-api.obj
+ 0002:0000ae14       ??_R1A@?0A@EA@Shape@@8     10030e14     solid:C-api.obj
+ 0002:0000ae30       ??_R4Complex@@6B@          10030e30     solid:C-api.obj
+ 0002:0000ae44       ??_R3Complex@@8            10030e44     solid:C-api.obj
+ 0002:0000ae54       ??_R2Complex@@8            10030e54     solid:C-api.obj
+ 0002:0000ae60       ??_R1A@?0A@EA@Complex@@8   10030e60     solid:C-api.obj
+ 0002:0000ae7c       ??_R4Polytope@@6B@         10030e7c     solid:C-api.obj
+ 0002:0000ae90       ??_R3Polytope@@8           10030e90     solid:C-api.obj
+ 0002:0000aea0       ??_R2Polytope@@8           10030ea0     solid:C-api.obj
+ 0002:0000aeb0       ??_R1A@?0A@EA@Polytope@@8  10030eb0     solid:C-api.obj
+ 0002:0000aecc       ??_R1A@?0A@EA@Convex@@8    10030ecc     solid:C-api.obj
+ 0002:0000aee8       ??_R3Convex@@8             10030ee8     solid:C-api.obj
+ 0002:0000aef8       ??_R2Convex@@8             10030ef8     solid:C-api.obj
+ 0002:0000af04       ??_R4Box@@6B@              10030f04     solid:C-api.obj
+ 0002:0000af18       ??_R3Box@@8                10030f18     solid:C-api.obj
+ 0002:0000af28       ??_R2Box@@8                10030f28     solid:C-api.obj
+ 0002:0000af38       ??_R1A@?0A@EA@Box@@8       10030f38     solid:C-api.obj
+ 0002:0000af54       ??_R4Simplex@@6B@          10030f54     solid:C-api.obj
+ 0002:0000af68       ??_R3Simplex@@8            10030f68     solid:C-api.obj
+ 0002:0000af78       ??_R2Simplex@@8            10030f78     solid:C-api.obj
+ 0002:0000af8c       ??_R1A@?0A@EA@Simplex@@8   10030f8c     solid:C-api.obj
+ 0002:0000afa8       ??_R4Polygon@@6B@          10030fa8     solid:C-api.obj
+ 0002:0000afbc       ??_R3Polygon@@8            10030fbc     solid:C-api.obj
+ 0002:0000afcc       ??_R2Polygon@@8            10030fcc     solid:C-api.obj
+ 0002:0000afe0       ??_R1A@?0A@EA@Polygon@@8   10030fe0     solid:C-api.obj
+ 0002:0000affc       ??_R4logic_error@std@@6B@  10030ffc     solid:C-api.obj
+ 0002:0000b010       ??_R3logic_error@std@@8    10031010     solid:C-api.obj
+ 0002:0000b020       ??_R2logic_error@std@@8    10031020     solid:C-api.obj
+ 0002:0000b02c       ??_R1A@?0A@EA@logic_error@std@@8 1003102c     solid:C-api.obj
+ 0002:0000b048       ??_R4length_error@std@@6B@ 10031048     solid:C-api.obj
+ 0002:0000b05c       ??_R3length_error@std@@8   1003105c     solid:C-api.obj
+ 0002:0000b06c       ??_R2length_error@std@@8   1003106c     solid:C-api.obj
+ 0002:0000b07c       ??_R1A@?0A@EA@length_error@std@@8 1003107c     solid:C-api.obj
+ 0002:0000b098       ??_R4out_of_range@std@@6B@ 10031098     solid:C-api.obj
+ 0002:0000b0ac       ??_R3out_of_range@std@@8   100310ac     solid:C-api.obj
+ 0002:0000b0bc       ??_R2out_of_range@std@@8   100310bc     solid:C-api.obj
+ 0002:0000b0cc       ??_R1A@?0A@EA@out_of_range@std@@8 100310cc     solid:C-api.obj
+ 0002:0000b0e8       ??_R4Polyhedron@@6B@       100310e8     solid:Polyhedron.obj
+ 0002:0000b0fc       ??_R3Polyhedron@@8         100310fc     solid:Polyhedron.obj
+ 0002:0000b10c       ??_R2Polyhedron@@8         1003110c     solid:Polyhedron.obj
+ 0002:0000b120       ??_R1A@?0A@EA@Polyhedron@@8 10031120     solid:Polyhedron.obj
+ 0002:0000b13c       ??_R4exception@std@@6B@    1003113c     LIBCMT:stdexcpt.obj
+ 0002:0000b150       ??_R4type_info@@6B@        10031150     LIBCMT:typinfo.obj
+ 0002:0000b164       ??_R3type_info@@8          10031164     LIBCMT:typinfo.obj
+ 0002:0000b174       ??_R2type_info@@8          10031174     LIBCMT:typinfo.obj
+ 0002:0000b17c       ??_R1A@?0A@EA@type_info@@8 1003117c     LIBCMT:typinfo.obj
+ 0002:0000b198       ??_R4bad_exception@std@@6B@ 10031198     LIBCMT:frame.obj
+ 0002:0000b1ac       ??_R3bad_exception@std@@8  100311ac     LIBCMT:frame.obj
+ 0002:0000b1bc       ??_R2bad_exception@std@@8  100311bc     LIBCMT:frame.obj
+ 0002:0000b1c8       ??_R1A@?0A@EA@bad_exception@std@@8 100311c8     LIBCMT:frame.obj
+ 0002:0000b1f0       ___safe_se_handler_table   100311f0     <linker-defined>
+ 0002:0000b254       ___rtc_iaa                 10031254     LIBCMT:_initsect_.obj
+ 0002:0000b258       ___rtc_izz                 10031258     LIBCMT:_initsect_.obj
+ 0002:0000b25c       ___rtc_taa                 1003125c     LIBCMT:_initsect_.obj
+ 0002:0000b260       ___rtc_tzz                 10031260     LIBCMT:_initsect_.obj
+ 0002:0000b268       __TI2?AVbad_alloc@std@@    10031268     solid:C-api.obj
+ 0002:0000b278       __CTA2?AVbad_alloc@std@@   10031278     solid:C-api.obj
+ 0002:0000b284       __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12 10031284     solid:C-api.obj
+ 0002:0000b2a0       __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12 100312a0     solid:C-api.obj
+ 0002:0000b3cc       __TI3?AVout_of_range@std@@ 100313cc     solid:C-api.obj
+ 0002:0000b408       __CTA3?AVout_of_range@std@@ 10031408     solid:C-api.obj
+ 0002:0000b418       __CT??_R0?AVout_of_range@std@@@8??0out_of_range@std@@QAE@ABV01@@Z40 10031418     solid:C-api.obj
+ 0002:0000b434       __CT??_R0?AVlogic_error@std@@@8??0logic_error@std@@QAE@ABV01@@Z40 10031434     solid:C-api.obj
+ 0002:0000b47c       __TI3?AVlength_error@std@@ 1003147c     solid:C-api.obj
+ 0002:0000b48c       __CTA3?AVlength_error@std@@ 1003148c     solid:C-api.obj
+ 0002:0000b49c       __CT??_R0?AVlength_error@std@@@8??0length_error@std@@QAE@ABV01@@Z40 1003149c     solid:C-api.obj
+ 0002:0000bab4       __TI2?AVbad_exception@std@@ 10031ab4     LIBCMT:frame.obj
+ 0002:0000bac4       __CTA2?AVbad_exception@std@@ 10031ac4     LIBCMT:frame.obj
+ 0002:0000bad0       __CT??_R0?AVbad_exception@std@@@8??0bad_exception@std@@QAE@ABV01@@Z12 10031ad0     LIBCMT:frame.obj
+ 0002:0000bd54       __IMPORT_DESCRIPTOR_tgf    10031d54     tgf:tgf.dll
+ 0002:0000bd68       __IMPORT_DESCRIPTOR_robottools 10031d68     robottools:robottools.dll
+ 0002:0000bd7c       __IMPORT_DESCRIPTOR_KERNEL32 10031d7c     kernel32:KERNEL32.dll
+ 0002:0000bd90       __NULL_IMPORT_DESCRIPTOR   10031d90     tgf:tgf.dll
+ 0003:00000010       ?simDammageFactor@@3PAMA   10033010     categories.obj
+ 0003:00000024       ?simSkidFactor@@3PAMA      10033024     categories.obj
+ 0003:0000004c       ?rulesFuelFactor@@3MA      1003304c     simu.obj
+ 0003:00000050       ?rulesDamageFactor@@3MA    10033050     simu.obj
+ 0003:000000b8       ?caching@@3_NA             100330b8     solid:C-api.obj
+ 0003:000000bc       ??_R0?AVbad_alloc@std@@@8  100330bc     solid:C-api.obj
+ 0003:000000d8       ??_R0?AVexception@std@@@8  100330d8     solid:C-api.obj
+ 0003:000000f4       ??_R0?AVShape@@@8          100330f4     solid:C-api.obj
+ 0003:00000108       ??_R0?AVComplex@@@8        10033108     solid:C-api.obj
+ 0003:00000120       ??_R0?AVPolytope@@@8       10033120     solid:C-api.obj
+ 0003:00000138       ??_R0?AVConvex@@@8         10033138     solid:C-api.obj
+ 0003:00000150       ??_R0?AVBox@@@8            10033150     solid:C-api.obj
+ 0003:00000164       ??_R0?AVSimplex@@@8        10033164     solid:C-api.obj
+ 0003:0000017c       ??_R0?AVPolygon@@@8        1003317c     solid:C-api.obj
+ 0003:00000194       ??_R0?AVlogic_error@std@@@8 10033194     solid:C-api.obj
+ 0003:000001b4       ??_R0?AVlength_error@std@@@8 100331b4     solid:C-api.obj
+ 0003:000001d4       ??_R0?AVout_of_range@std@@@8 100331d4     solid:C-api.obj
+ 0003:00000208       ?rel_error@@3NA            10033208     solid:Convex.obj
+ 0003:00000210       ?abs_error@@3NA            10033210     solid:Convex.obj
+ 0003:00000240       ??_R0?AVPolyhedron@@@8     10033240     solid:Polyhedron.obj
+ 0003:00000260       ?bboxCompAxis@@3PAVBBoxCompAxis@@A 10033260     solid:BBoxTree.obj
+ 0003:00000270       ?_sgdGravity@@3PANA        10033270     sg_vs2008_32:sgd.obj
+ 0003:00000288       ?_sgGravity@@3PAMA         10033288     sg_vs2008_32:sg.obj
+ 0003:000002a8       __fltused                  100332a8     LIBCMT:_fpinit_.obj
+ 0003:000002ac       __ldused                   100332ac     LIBCMT:_fpinit_.obj
+ 0003:0000031c       ??_R0?AVtype_info@@@8      1003331c     LIBCMT:typinfo.obj
+ 0003:00000348       __aexit_rtn                10033348     LIBCMT:crt0dat.obj
+ 0003:00000350       __iob                      10033350     LIBCMT:_file.obj
+ 0003:000005d0       __cfltcvt_tab              100335d0     LIBCMT:cmiscdat.obj
+ 0003:00000600       __OP_ATAN2jmptab           10033600     LIBCMT:_87triga_.obj
+ 0003:00000650       __infinity                 10033650     LIBCMT:_87tran_.obj
+ 0003:0000065a       __minfinity                1003365a     LIBCMT:_87tran_.obj
+ 0003:00000664       __logemax                  10033664     LIBCMT:_87tran_.obj
+ 0003:0000068a       __OP_EXPjmptab             1003368a     LIBCMT:_87tran_.obj
+ 0003:000006b0       __indefinite               100336b0     LIBCMT:_87disp_.obj
+ 0003:000006ba       __piby2                    100336ba     LIBCMT:_87disp_.obj
+ 0003:000006e0       ___nullstring              100336e0     LIBCMT:output.obj
+ 0003:000006e4       ___wnullstring             100336e4     LIBCMT:output.obj
+ 0003:00000858       ___security_cookie         10033858     LIBCMT:gs_cookie.obj
+ 0003:0000085c       ___security_cookie_complement 1003385c     LIBCMT:gs_cookie.obj
+ 0003:00000860       ___flsindex                10033860     LIBCMT:tidtable.obj
+ 0003:00000864       ___getvalueindex           10033864     LIBCMT:tidtable.obj
+ 0003:00000868       __d_inf                    10033868     LIBCMT:_util_.obj
+ 0003:00000870       __d_ind                    10033870     LIBCMT:_util_.obj
+ 0003:00000878       __d_max                    10033878     LIBCMT:_util_.obj
+ 0003:00000880       __d_min                    10033880     LIBCMT:_util_.obj
+ 0003:00000888       __d_mzero                  10033888     LIBCMT:_util_.obj
+ 0003:000009a0       ___badioinfo               100339a0     LIBCMT:ioinit.obj
+ 0003:000009e0       __amblksiz                 100339e0     LIBCMT:heapinit.obj
+ 0003:000009e4       __First_FPE_Indx           100339e4     LIBCMT:winxfltr.obj
+ 0003:000009e8       __Num_FPE                  100339e8     LIBCMT:winxfltr.obj
+ 0003:000009ec       __XcptActTabSize           100339ec     LIBCMT:winxfltr.obj
+ 0003:000009f0       __XcptActTabCount          100339f0     LIBCMT:winxfltr.obj
+ 0003:00000a10       ___abort_behavior          10033a10     LIBCMT:abort.obj
+ 0003:00000ad4       ??_R0?AVbad_exception@std@@@8 10033ad4     LIBCMT:frame.obj
+ 0003:00000c20       ___initialmbcinfo          10033c20     LIBCMT:mbctype.obj
+ 0003:00000e40       __mbctype                  10033e40     LIBCMT:mbctype.obj
+ 0003:00000f48       __mbcasemap                10033f48     LIBCMT:mbctype.obj
+ 0003:00001048       ___ptmbcinfo               10034048     LIBCMT:mbctype.obj
+ 0003:00001144       ___globallocalestatus      10034144     LIBCMT:glstatus.obj
+ 0003:00001148       ___clocalestr              10034148     LIBCMT:nlsdata2.obj
+ 0003:00001150       ___initiallocinfo          10034150     LIBCMT:nlsdata2.obj
+ 0003:00001228       ___ptlocinfo               10034228     LIBCMT:nlsdata2.obj
+ 0003:0000122c       ___lc_clike                1003422c     LIBCMT:nlsdata2.obj
+ 0003:00001230       ___initiallocalestructinfo 10034230     LIBCMT:nlsdata2.obj
+ 0003:000013a0       __matherr_flag             100343a0     LIBCMT:_matherr_.obj
+ 0003:000013a4       __NLG_Destination          100343a4     LIBCMT:exsup.obj
+ 0003:000013b4       __pctype                   100343b4     LIBCMT:ctype.obj
+ 0003:000013b8       __pwctype                  100343b8     LIBCMT:ctype.obj
+ 0003:000013c0       ___lc_time_c               100343c0     LIBCMT:strftime.obj
+ 0003:00001478       ___lc_time_curr            10034478     LIBCMT:strftime.obj
+ 0003:0000147c       ___lconv_static_decimal    1003447c     LIBCMT:lconv.obj
+ 0003:00001480       ___lconv_c                 10034480     LIBCMT:lconv.obj
+ 0003:000014b0       ___lconv                   100344b0     LIBCMT:lconv.obj
+ 0003:000014b4       ___mb_cur_max              100344b4     LIBCMT:nlsdata1.obj
+ 0003:000014b8       ___decimal_point           100344b8     LIBCMT:nlsdata1.obj
+ 0003:000014bc       ___decimal_point_length    100344bc     LIBCMT:nlsdata1.obj
+ 0003:00001500       __timezone                 10034500     LIBCMT:timeset.obj
+ 0003:00001504       __daylight                 10034504     LIBCMT:timeset.obj
+ 0003:00001508       __dstbias                  10034508     LIBCMT:timeset.obj
+ 0003:00001590       __tzname                   10034590     LIBCMT:timeset.obj
+ 0003:000015b0       __pow10pos                 100345b0     LIBCMT:_constpow_.obj
+ 0003:00001710       __pow10neg                 10034710     LIBCMT:_constpow_.obj
+ 0003:0000186c       __coninpfh                 1003486c     LIBCMT:initcon.obj
+ 0003:00001870       __confh                    10034870     LIBCMT:initcon.obj
+ 0003:00001874       __lpdays                   10034874     LIBCMT:days.obj
+ 0003:000018a8       __days                     100348a8     LIBCMT:days.obj
+ 0003:00001a78       ?SimTelemetry@@3HA         10034a78     simu.obj
+ 0003:00001a7c       ?SimDeltaTime@@3MA         10034a7c     simu.obj
+ 0003:00001a80       ?SimCarTable@@3PAUtCar@@A  10034a80     simu.obj
+ 0003:00001a88       ?currentType@@3W4DtPolyType@@A 10034a88     solid:C-api.obj
+ 0003:00001a8c       ?currentComplex@@3PAVComplex@@A 10034a8c     solid:C-api.obj
+ 0003:00001a90       ?currentObject@@3PAVObject@@A 10034a90     solid:C-api.obj
+ 0003:00001a94       ?complexList@@3V?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@A 10034a94     solid:C-api.obj
+ 0003:00001aac       ?indexBuf@@3V?$vector@IV?$allocator@I@std@@@std@@A 10034aac     solid:C-api.obj
+ 0003:00001ac4       ?polyList@@3V?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@A 10034ac4     solid:C-api.obj
+ 0003:00001adc       ?pointBuf@@3V?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@A 10034adc     solid:C-api.obj
+ 0003:00001af4       ?proxList@@3V?$set@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@@std@@A 10034af4     solid:C-api.obj
+ 0003:00001b18       ?respTable@@3VRespTable@@A 10034b18     solid:C-api.obj
+ 0003:00001b64       ?objectList@@3V?$map@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@@std@@A 10034b64     solid:C-api.obj
+ 0003:00001bbc       ?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A 10034bbc     solid:C-api.obj
+ 0003:00001bc0       ?id@?$numpunct@D@std@@2V0locale@2@A 10034bc0     solid:C-api.obj
+ 0003:00001bc4       ?free_node@@3PAVBBoxInternal@@A 10034bc4     solid:Complex.obj
+ 0003:000021a8       ?coll_data@Response@@2UDtCollData@@A 100351a8     solid:Response.obj
+ 0003:000021f0       ?partnerList@@3V?$vector@PAXV?$allocator@PAX@std@@@std@@A 100351f0     solid:RespTable.obj
+ 0003:0000269c       ___fastflag                1003569c     LIBCMT:_fpinit_.obj
+ 0003:000026a0       __adjust_fdiv              100356a0     LIBCMT:_fpinit_.obj
+ 0003:000026ac       __aenvptr                  100356ac     LIBCMT:dllcrt0.obj
+ 0003:000026b0       __wenvptr                  100356b0     LIBCMT:dllcrt0.obj
+ 0003:000026b4       ___error_mode              100356b4     LIBCMT:dllcrt0.obj
+ 0003:000026b8       ___app_type                100356b8     LIBCMT:dllcrt0.obj
+ 0003:000026cc       ___pInvalidArgHandler      100356cc     LIBCMT:invarg.obj
+ 0003:000026d0       __umaskval                 100356d0     LIBCMT:crt0dat.obj
+ 0003:000026d4       ___argc                    100356d4     LIBCMT:crt0dat.obj
+ 0003:000026d8       ___argv                    100356d8     LIBCMT:crt0dat.obj
+ 0003:000026dc       ___wargv                   100356dc     LIBCMT:crt0dat.obj
+ 0003:000026e0       __environ                  100356e0     LIBCMT:crt0dat.obj
+ 0003:000026e4       ___initenv                 100356e4     LIBCMT:crt0dat.obj
+ 0003:000026e8       __wenviron                 100356e8     LIBCMT:crt0dat.obj
+ 0003:000026ec       ___winitenv                100356ec     LIBCMT:crt0dat.obj
+ 0003:000026f0       __pgmptr                   100356f0     LIBCMT:crt0dat.obj
+ 0003:000026f4       __wpgmptr                  100356f4     LIBCMT:crt0dat.obj
+ 0003:000026f8       __exitflag                 100356f8     LIBCMT:crt0dat.obj
+ 0003:000026fc       __C_Termination_Done       100356fc     LIBCMT:crt0dat.obj
+ 0003:00002700       __C_Exit_Done              10035700     LIBCMT:crt0dat.obj
+ 0003:00002704       __cflush                   10035704     LIBCMT:_file.obj
+ 0003:00002708       __stdbuf                   10035708     LIBCMT:_sftbuf.obj
+ 0003:00002710       _gpFlsAlloc                10035710     LIBCMT:tidtable.obj
+ 0003:00002714       _gpFlsGetValue             10035714     LIBCMT:tidtable.obj
+ 0003:00002718       _gpFlsSetValue             10035718     LIBCMT:tidtable.obj
+ 0003:0000271c       _gpFlsFree                 1003571c     LIBCMT:tidtable.obj
+ 0003:00002720       __maxwait                  10035720     LIBCMT:crtheap.obj
+ 0003:00002834       __crtheap                  10035834     LIBCMT:heapinit.obj
+ 0003:00002b5c       ___pPurecall               10035b5c     LIBCMT:inithelp.obj
+ 0003:00002b60       ?_pnhHeap@@3P6AHI@ZA       10035b60     LIBCMT:handler.obj
+ 0003:00002b64       ?__pInconsistency@@3P6AXXZA 10035b64     LIBCMT:hooks.obj
+ 0003:00003000       ___mbulinfo                10036000     LIBCMT:mbctype.obj
+ 0003:0000300c       ___mbcodepage              1003600c     LIBCMT:mbctype.obj
+ 0003:00003010       ___ismbcodepage            10036010     LIBCMT:mbctype.obj
+ 0003:00003014       ___mblcid                  10036014     LIBCMT:mbctype.obj
+ 0003:00003018       ___locale_changed          10036018     LIBCMT:setlocal.obj
+ 0003:0000301c       ___lc_handle               1003601c     LIBCMT:nlsdata2.obj
+ 0003:00003034       ___lc_codepage             10036034     LIBCMT:nlsdata2.obj
+ 0003:00003038       ___lc_collate_cp           10036038     LIBCMT:nlsdata2.obj
+ 0003:0000303c       __outputformat             1003603c     LIBCMT:outputformat.obj
+ 0003:00003044       ___sbh_pHeaderDefer        10036044     LIBCMT:sbheap.obj
+ 0003:00003048       __newmode                  10036048     LIBCMT:_newmode.obj
+ 0003:00003060       ?pArgList@UnDecorator@@0PAVReplicator@@A 10036060     LIBCMT:undname.obj
+ 0003:00003064       ?pZNameList@UnDecorator@@0PAVReplicator@@A 10036064     LIBCMT:undname.obj
+ 0003:00003068       ?pTemplateArgList@UnDecorator@@0PAVReplicator@@A 10036068     LIBCMT:undname.obj
+ 0003:0000306c       ?gName@UnDecorator@@0PBDB  1003606c     LIBCMT:undname.obj
+ 0003:00003070       ?name@UnDecorator@@0PBDB   10036070     LIBCMT:undname.obj
+ 0003:00003074       ?outputString@UnDecorator@@0PADA 10036074     LIBCMT:undname.obj
+ 0003:00003078       ?maxStringLength@UnDecorator@@0HA 10036078     LIBCMT:undname.obj
+ 0003:0000307c       ?disableFlags@UnDecorator@@0KA 1003607c     LIBCMT:undname.obj
+ 0003:00003080       ?m_pGetParameter@UnDecorator@@0P6APADJ@ZA 10036080     LIBCMT:undname.obj
+ 0003:00003084       ?fExplicitTemplateParams@UnDecorator@@0_NA 10036084     LIBCMT:undname.obj
+ 0003:00003085       ?fGetTemplateArgumentList@UnDecorator@@0_NA 10036085     LIBCMT:undname.obj
+ 0003:000030a4       ___lconv_static_null       100360a4     LIBCMT:lconv.obj
+ 0003:00003160       ___sbh_cntHeaderList       10036160     <common>
+ 0003:00003164       ___sbh_pHeaderList         10036164     <common>
+ 0003:00003168       ___sbh_threshold           10036168     <common>
+ 0003:0000316c       ___sbh_pHeaderScan         1003616c     <common>
+ 0003:00003170       ___sbh_sizeHeaderList      10036170     <common>
+ 0003:00003174       ___sbh_indGroupDefer       10036174     <common>
+ 0003:00003178       __pmatherr                 10036178     <common>
+ 0003:0000317c       __debugger_hook_dummy      1003617c     <common>
+ 0003:00003180       ___active_heap             10036180     <common>
+ 0003:00003184       __nhandle                  10036184     <common>
+ 0003:000031a0       ___pioinfo                 100361a0     <common>
+ 0003:000032a0       ___use_sse2_mathfcns       100362a0     <common>
+ 0003:000032a4       ___sse2_available          100362a4     <common>
+ 0003:000032a8       ___piob                    100362a8     <common>
+ 0003:000032c0       __bufin                    100362c0     <common>
+ 0003:000042c0       __nstream                  100372c0     <common>
+ 0003:000042c4       ___env_initialized         100372c4     <common>
+ 0003:000042c8       ___onexitend               100372c8     <common>
+ 0003:000042cc       ___onexitbegin             100372cc     <common>
+ 0003:000042d0       ___mbctype_initialized     100372d0     <common>
+ 0003:000042d4       ___dyn_tls_init_callback   100372d4     <common>
+ 0003:000042d8       __acmdln                   100372d8     <common>
+
+ entry point at        0001:000138bb
+
+ Static symbols
+
+ 0001:000013d0       ?SimCarUpdateForces@@YAXPAUtCar@@@Z 100023d0 f   car.obj
+ 0001:00001a30       ?SimCarUpdateSpeed@@YAXPAUtCar@@@Z 10002a30 f   car.obj
+ 0001:00001cd0       ?SimCarUpdatePos@@YAXPAUtCar@@@Z 10002cd0 f   car.obj
+ 0001:00001eb0       ?SimCarUpdateCornerPos@@YAXPAUtCar@@@Z 10002eb0 f   car.obj
+ 0001:00002800       ?SimCarCollideResponse@@YAXPAX00PBUDtCollData@@@Z 10003800 f   collide.obj
+ 0001:00002e20       ?SimCarWallCollideResponse@@YAXPAX00PBUDtCollData@@@Z 10003e20 f   collide.obj
+ 0001:000033e0       ?getFirstWallStart@@YAPAUtrackSeg@@PAU1@H@Z 100043e0 f   collide.obj
+ 0001:00003ec0       ?updateSpool@@YAXPAUtCar@@PAUtDifferential@@H@Z 10004ec0 f   differential.obj
+ 0001:00004cd0       ?ctrlCheck@@YAXPAUtCar@@@Z 10005cd0 f   simu.obj
+ 0001:000050d0       ?RemoveCar@@YAXPAUtCar@@PAUSituation@@@Z 100060d0 f   simu.obj
+ 0001:00005f80       ?simuInit@@YAHHPAX@Z       10006f80 f   simuitf.obj
+ 0001:000061b0       ?initDamper@@YAXPAUSuspension@@@Z 100071b0 f   susp.obj
+ 0001:000061d0       ?damperForce@@YAMPAUSuspension@@@Z 100071d0 f   susp.obj
+ 0001:00006280       ?springForce@@YAMPAUSuspension@@@Z 10007280 f   susp.obj
+ 0001:00006cd0       ?setupGear@@YAXPAXPAUtCar@@PAUCarElt@@PAUtTransmission@@MMH@Z 10007cd0 f   transmission.obj
+ 0001:000098b3       __catch$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IAEXII@Z$0 1000a8b3 f i solid:C-api.obj
+ 0001:00009943       __catch$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IAEXII@Z$1 1000a943 f i solid:C-api.obj
+ 0001:0000c645       __catch$?_Insert_n@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@IAEXV?$_Vector_const_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@IABVPoint@@@Z$0 1000d645 f i solid:C-api.obj
+ 0001:0000c651       __catch$?_Insert_n@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@IAEXV?$_Vector_const_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@IABVPoint@@@Z$2 1000d651 f i solid:C-api.obj
+ 0001:000137c5       ___DllMainCRTStartup       100147c5 f   LIBCMT:dllcrt0.obj
+ 0001:00013f28       ?CatchGuardHandler@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUCatchGuardRN@@PAX2@Z 10014f28 f   LIBCMT:_trnsctrl_.obj
+ 0001:00014032       ?TranslatorGuardHandler@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUTranslatorGuardRN@@PAX2@Z 10015032 f   LIBCMT:_trnsctrl_.obj
+ 0001:0001424b       __onexit_nolock            1001524b f   LIBCMT:onexit.obj
+ 0001:000145e4       __initterm                 100155e4 f   LIBCMT:crt0dat.obj
+ 0001:000146aa       _doexit                    100156aa f   LIBCMT:crt0dat.obj
+ 0001:00014cf7       __shift                    10015cf7 f   LIBCMT:cvt.obj
+ 0001:00014d3c       __cftoe2_l                 10015d3c f   LIBCMT:cvt.obj
+ 0001:0001530e       __cftof2_l                 1001630e f   LIBCMT:cvt.obj
+ 0001:0001674c       _write_char                1001774c f   LIBCMT:output.obj
+ 0001:0001677f       _write_multi_char          1001777f f   LIBCMT:output.obj
+ 0001:000167a5       _write_string              100177a5 f   LIBCMT:output.obj
+ 0001:000184e2       _fastzero_I                100194e2 f   LIBCMT:p4_memset.obj
+ 0001:000197fd       _parse_cmdline             1001a7fd f   LIBCMT:stdargv.obj
+ 0001:0001add0       ?ExFilterRethrow@@YAHPAU_EXCEPTION_POINTERS@@@Z 1001bdd0 f   LIBCMT:frame.obj
+ 0001:0001ae93       ?IsInExceptionSpec@@YAEPAUEHExceptionRecord@@PBU_s_ESTypeList@@@Z 1001be93 f   LIBCMT:frame.obj
+ 0001:0001af0e       ?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 1001bf0e f   LIBCMT:frame.obj
+ 0001:0001af3f       __catch$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$0 1001bf3f f   LIBCMT:frame.obj
+ 0001:0001af57       ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 1001bf57 f   LIBCMT:frame.obj
+ 0001:0001b304       ?CatchIt@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1E@Z 1001c304 f   LIBCMT:frame.obj
+ 0001:0001b372       ?FindHandlerForForeignException@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z 1001c372 f   LIBCMT:frame.obj
+ 0001:0001b466       ?FindHandler@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@EH1@Z 1001c466 f   LIBCMT:frame.obj
+ 0001:0001c21b       _siglookup                 1001d21b f   LIBCMT:winsig.obj
+ 0001:0001c60e       _flsall                    1001d60e f   LIBCMT:fflush.obj
+ 0001:0001c82d       ?CPtoLCID@@YAHH@Z          1001d82d f   LIBCMT:mbctype.obj
+ 0001:0001c85c       ?setSBCS@@YAXPAUthreadmbcinfostruct@@@Z 1001d85c f   LIBCMT:mbctype.obj
+ 0001:0001c8c0       ?setSBUpLow@@YAXPAUthreadmbcinfostruct@@@Z 1001d8c0 f   LIBCMT:mbctype.obj
+ 0001:0001caf7       ?getSystemCP@@YAHH@Z       1001daf7 f   LIBCMT:mbctype.obj
+ 0001:0001d181       __updatetlocinfoEx_nolock  1001e181 f   LIBCMT:setlocal.obj
+ 0001:0001da13       _has_osfxsr_set            1001ea13 f   LIBCMT:cpu_disp.obj
+ 0001:0001f028       __unwind_handler4          10020028 f   LIBCMT:exsup4.obj
+ 0001:000208e1       ?x_ismbbtype_l@@YAHPAUlocaleinfo_struct@@IHH@Z 100218e1 f   LIBCMT:ismbbyte.obj
+ 0001:0002094c       _fastcopy_I                1002194c f   LIBCMT:p4_memcpy.obj
+ 0001:00020de8       __unwind_handler           10021de8 f   LIBCMT:exsup.obj
+ 0001:000210d3       ?strtoxl@@YAKPAUlocaleinfo_struct@@PBDPAPBDHH@Z 100220d3 f   LIBCMT:strtol.obj
+ 0001:0002132d       ?__crtLCMapStringA_stat@@YAHPAUlocaleinfo_struct@@KKPBDHPADHHH@Z 1002232d f   LIBCMT:a_map.obj
+ 0001:00021717       ?__crtGetStringTypeA_stat@@YAHPAUlocaleinfo_struct@@KPBDHPAGHHH@Z 10022717 f   LIBCMT:a_str.obj
+ 0001:0002376c       __hw_cw                    1002476c f   LIBCMT:_ieee87_.obj
+ 0001:000237fa       ___hw_cw_sse2              100247fa f   LIBCMT:_ieee87_.obj
+ 0001:00024730       __unwindfunclet$??1Object@@QAE@XZ$0 10025730 f   solid:C-api.obj
+ 0001:00024748       __ehhandler$??1Object@@QAE@XZ 10025748 f   solid:C-api.obj
+ 0001:00024760       __ehhandler$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IAEXII@Z 10025760 f   solid:C-api.obj
+ 0001:00024770       __unwindfunclet$??1Complex@@UAE@XZ$0 10025770 f   solid:C-api.obj
+ 0001:00024770       __unwindfunclet$??0Polytope@@QAE@ABVVertexBase@@HQBI@Z$0 10025770 f   solid:C-api.obj
+ 0001:00024778       __ehhandler$??1Complex@@UAE@XZ 10025778 f   solid:C-api.obj
+ 0001:00024778       __ehhandler$??0Polytope@@QAE@ABVVertexBase@@HQBI@Z 10025778 f   solid:C-api.obj
+ 0001:00024790       __unwindfunclet$??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z$0 10025790 f   solid:C-api.obj
+ 0001:00024790       __unwindfunclet$??0logic_error@std@@QAE@ABV01@@Z$0 10025790 f   solid:C-api.obj
+ 0001:00024798       __ehhandler$??0logic_error@std@@QAE@ABV01@@Z 10025798 f   solid:C-api.obj
+ 0001:00024798       __ehhandler$??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 10025798 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Insert@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@ABVEncounter@@@Z$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Xlen@?$vector@PAXV?$allocator@PAX@std@@@std@@KAXXZ$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?erase@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Insert@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@ABU?$pair@QAXPAVObject@@@2@@Z$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Xlen@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@KAXXZ$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?erase@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Xlen@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@KAXXZ$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Xlen@?$vector@IV?$allocator@I@std@@@std@@KAXXZ$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Xlen@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@KAXXZ$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?erase@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?_Insert@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@ABU?$pair@QAXVResponse@@@2@@Z$0 100257b0 f   solid:C-api.obj
+ 0001:000247b0       __unwindfunclet$?erase@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z$0 100257b0 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Insert@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@2@ABU?$pair@QAXPAVObject@@@2@@Z 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?erase@?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?erase@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Insert@?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@2@ABU?$pair@QAXVResponse@@@2@@Z 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Insert@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@IAE?AViterator@12@_NPAU_Node@?$_Tree_nod@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@2@ABVEncounter@@@Z 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?erase@?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Xlen@?$vector@PAXV?$allocator@PAX@std@@@std@@KAXXZ 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Xlen@?$vector@PAVComplex@@V?$allocator@PAVComplex@@@std@@@std@@KAXXZ 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Xlen@?$vector@PBVPolytope@@V?$allocator@PBVPolytope@@@std@@@std@@KAXXZ 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?erase@?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE?AViterator@12@Vconst_iterator@12@@Z 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Xlen@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@KAXXZ 100257b8 f   solid:C-api.obj
+ 0001:000247b8       __ehhandler$?_Xlen@?$vector@IV?$allocator@I@std@@@std@@KAXXZ 100257b8 f   solid:C-api.obj
+ 0001:000247d0       __unwindfunclet$??0?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE@ABU?$less@VEncounter@@@1@ABV?$allocator@VEncounter@@@1@@Z$0 100257d0 f   solid:C-api.obj
+ 0001:000247d0       __unwindfunclet$??0?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE@ABU?$less@U?$pair@PAXPAX@std@@@1@ABV?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@1@@Z$0 100257d0 f   solid:C-api.obj
+ 0001:000247d0       __unwindfunclet$??0?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE@ABU?$less@PAX@1@ABV?$allocator@U?$pair@QAXVResponse@@@std@@@1@@Z$0 100257d0 f   solid:C-api.obj
+ 0001:000247d0       __unwindfunclet$??0?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE@ABU?$less@PAX@1@ABV?$allocator@U?$pair@QAXPAVObject@@@std@@@1@@Z$0 100257d0 f   solid:C-api.obj
+ 0001:000247d8       __ehhandler$??0?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE@ABU?$less@PAX@1@ABV?$allocator@U?$pair@QAXVResponse@@@std@@@1@@Z 100257d8 f   solid:C-api.obj
+ 0001:000247d8       __ehhandler$??0?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE@ABU?$less@U?$pair@PAXPAX@std@@@1@ABV?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@1@@Z 100257d8 f   solid:C-api.obj
+ 0001:000247d8       __ehhandler$??0?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE@ABU?$less@PAX@1@ABV?$allocator@U?$pair@QAXPAVObject@@@std@@@1@@Z 100257d8 f   solid:C-api.obj
+ 0001:000247d8       __ehhandler$??0?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE@ABU?$less@VEncounter@@@1@ABV?$allocator@VEncounter@@@1@@Z 100257d8 f   solid:C-api.obj
+ 0001:000247f0       __ehhandler$?_Insert_n@?$vector@VPoint@@V?$allocator@VPoint@@@std@@@std@@IAEXV?$_Vector_const_iterator@VPoint@@V?$allocator@VPoint@@@std@@@2@IABVPoint@@@Z 100257f0 f   solid:C-api.obj
+ 0001:00024800       __unwindfunclet$??1?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE@XZ$0 10025800 f   solid:C-api.obj
+ 0001:00024800       __unwindfunclet$??1?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE@XZ$0 10025800 f   solid:C-api.obj
+ 0001:00024800       __unwindfunclet$??1?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE@XZ$0 10025800 f   solid:C-api.obj
+ 0001:00024800       __unwindfunclet$??1?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE@XZ$0 10025800 f   solid:C-api.obj
+ 0001:00024808       __ehhandler$??1?$_Tree@V?$_Tmap_traits@U?$pair@PAXPAX@std@@VResponse@@U?$less@U?$pair@PAXPAX@std@@@2@V?$allocator@U?$pair@$$CBU?$pair@PAXPAX@std@@VResponse@@@std@@@2@$0A@@std@@@std@@QAE@XZ 10025808 f   solid:C-api.obj
+ 0001:00024808       __ehhandler$??1?$_Tree@V?$_Tset_traits@VEncounter@@U?$less@VEncounter@@@std@@V?$allocator@VEncounter@@@3@$0A@@std@@@std@@QAE@XZ 10025808 f   solid:C-api.obj
+ 0001:00024808       __ehhandler$??1?$_Tree@V?$_Tmap_traits@PAXVResponse@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXVResponse@@@std@@@3@$0A@@std@@@std@@QAE@XZ 10025808 f   solid:C-api.obj
+ 0001:00024808       __ehhandler$??1?$_Tree@V?$_Tmap_traits@PAXPAVObject@@U?$less@PAX@std@@V?$allocator@U?$pair@QAXPAVObject@@@std@@@3@$0A@@std@@@std@@QAE@XZ 10025808 f   solid:C-api.obj
+ 0001:00024820       __unwindfunclet$??0RespTable@@QAE@XZ$0 10025820 f   solid:C-api.obj
+ 0001:0002482b       __ehhandler$??0RespTable@@QAE@XZ 1002582b f   solid:C-api.obj
+ 0001:00024840       __unwindfunclet$??__EpointBuf@@YAXXZ$0 10025840 f   solid:C-api.obj
+ 0001:0002484a       __ehhandler$??__EpointBuf@@YAXXZ 1002584a f   solid:C-api.obj
+ 0001:00024860       __unwindfunclet$??__EindexBuf@@YAXXZ$0 10025860 f   solid:C-api.obj
+ 0001:0002486a       __ehhandler$??__EindexBuf@@YAXXZ 1002586a f   solid:C-api.obj
+ 0001:00024880       __unwindfunclet$??__EpolyList@@YAXXZ$0 10025880 f   solid:C-api.obj
+ 0001:0002488a       __ehhandler$??__EpolyList@@YAXXZ 1002588a f   solid:C-api.obj
+ 0001:000248a0       __unwindfunclet$??__EcomplexList@@YAXXZ$0 100258a0 f   solid:C-api.obj
+ 0001:000248aa       __ehhandler$??__EcomplexList@@YAXXZ 100258aa f   solid:C-api.obj
+ 0001:000248c0       __unwindfunclet$??__FrespTable@@YAXXZ$0 100258c0 f   solid:C-api.obj
+ 0001:000248ca       __ehhandler$??__FrespTable@@YAXXZ 100258ca f   solid:C-api.obj
+ 0001:000248e0       __unwindfunclet$?finish@Complex@@QAEXHPAPBVPolytope@@@Z$1 100258e0 f   solid:Complex.obj
+ 0001:000248fa       __unwindfunclet$?finish@Complex@@QAEXHPAPBVPolytope@@@Z$3 100258fa f   solid:Complex.obj
+ 0001:0002490b       __ehhandler$?finish@Complex@@QAEXHPAPBVPolytope@@@Z 1002590b f   solid:Complex.obj
+ 0001:00024920       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$0 10025920 f   solid:Object.obj
+ 0001:00024938       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$1 10025938 f   solid:Object.obj
+ 0001:00024950       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$2 10025950 f   solid:Object.obj
+ 0001:00024966       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$3 10025966 f   solid:Object.obj
+ 0001:0002497c       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$4 1002597c f   solid:Object.obj
+ 0001:00024992       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$5 10025992 f   solid:Object.obj
+ 0001:000249a8       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$6 100259a8 f   solid:Object.obj
+ 0001:000249be       __unwindfunclet$??0Object@@QAE@PAXPBVShape@@@Z$7 100259be f   solid:Object.obj
+ 0001:000249d4       __ehhandler$??0Object@@QAE@PAXPBVShape@@@Z 100259d4 f   solid:Object.obj
+ 0001:000249e0       __unwindfunclet$??__EpartnerList@@YAXXZ$0 100259e0 f   solid:RespTable.obj
+ 0001:000249ea       __ehhandler$??__EpartnerList@@YAXXZ 100259ea f   solid:RespTable.obj
+ 0001:00024a00       __unwindfunclet$??0BBoxInternal@@QAE@HPAVBBoxLeaf@@@Z$0 10025a00 f   solid:BBoxTree.obj
+ 0001:00024a11       __unwindfunclet$??0BBoxInternal@@QAE@HPAVBBoxLeaf@@@Z$1 10025a11 f   solid:BBoxTree.obj
+ 0001:00024a22       __ehhandler$??0BBoxInternal@@QAE@HPAVBBoxLeaf@@@Z 10025a22 f   solid:BBoxTree.obj
+ 0001:00024a2c       __unwindfunclet$?_Xlen@_String_base@std@@SAXXZ$0 10025a2c f   libcpmt:string.obj
+ 0001:00024a2c       __unwindfunclet$?_Xran@_String_base@std@@SAXXZ$0 10025a2c f   libcpmt:string.obj
+ 0001:00024a34       __ehhandler$?_Xran@_String_base@std@@SAXXZ 10025a34 f   libcpmt:string.obj
+ 0001:00024a34       __ehhandler$?_Xlen@_String_base@std@@SAXXZ 10025a34 f   libcpmt:string.obj
+ 0001:00024a4f       __ehhandler$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10025a4f f   LIBCMT:frame.obj
+ 0001:00024a70       ??__EpointBuf@@YAXXZ       10025a70 f   solid:C-api.obj
+ 0001:00024ad0       ??__EindexBuf@@YAXXZ       10025ad0 f   solid:C-api.obj
+ 0001:00024b30       ??__EpolyList@@YAXXZ       10025b30 f   solid:C-api.obj
+ 0001:00024b90       ??__EcomplexList@@YAXXZ    10025b90 f   solid:C-api.obj
+ 0001:00024bf0       ??__EobjectList@@YAXXZ     10025bf0 f   solid:C-api.obj
+ 0001:00024c20       ??__ErespTable@@YAXXZ      10025c20 f   solid:C-api.obj
+ 0001:00024c40       ??__EproxList@@YAXXZ       10025c40 f   solid:C-api.obj
+ 0001:00024c70       ??__EpartnerList@@YAXXZ    10025c70 f   solid:RespTable.obj
+ 0001:00024cd0       ??__EendpointList@@YAXXZ   10025cd0 f   solid:Endpoint.obj
+ 0001:00024d00       ??__FindexBuf@@YAXXZ       10025d00 f   solid:C-api.obj
+ 0001:00024d40       ??__FpolyList@@YAXXZ       10025d40 f   solid:C-api.obj
+ 0001:00024d80       ??__FcomplexList@@YAXXZ    10025d80 f   solid:C-api.obj
+ 0001:00024dc0       ??__FpointBuf@@YAXXZ       10025dc0 f   solid:C-api.obj
+ 0001:00024e00       ??__FobjectList@@YAXXZ     10025e00 f   solid:C-api.obj
+ 0001:00024e10       ??__FproxList@@YAXXZ       10025e10 f   solid:C-api.obj
+ 0001:00024e20       ??__FrespTable@@YAXXZ      10025e20 f   solid:C-api.obj
+ 0001:00024e70       ??__FpartnerList@@YAXXZ    10025e70 f   solid:RespTable.obj
+ 0001:00024eb0       ??__FendpointList@@YAXXZ   10025eb0 f   solid:Endpoint.obj
+ 0001:00024ec4       ??__Fnomem@?5???2@YAPAXI@Z@YAXXZ 10025ec4 f   LIBCMT:new.obj
