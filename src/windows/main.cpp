@@ -16,6 +16,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
+#define PROFILER
 
 #ifdef WIN32
 #include <windows.h>
@@ -31,6 +32,15 @@
 #include "windowsspec.h"
 
 
+#include <direct.h>
+static void PrintFullPath( char * partialPath )
+{
+   char full[_MAX_PATH];
+   if( _fullpath( full, partialPath, _MAX_PATH ) != NULL )
+      printf( "\n Full path is: %s\n", full );
+   else
+      printf( "\n Invalid path\n" );
+}
 // replace '\' with '/'
 static void convertDelimiter(char* buf, const int bufsize)
 {
@@ -215,10 +225,10 @@ int
 main(int argc, char *argv[])
 {
 	const char* raceconfig = "";
-
+	GfOut("Hello from Arseny!\n");
 	WindowsSpecInit();			/* init specific windows functions */
 	init_args(argc, argv, &raceconfig);
-
+	
 	if (strlen(raceconfig) == 0) {
 		GfScrInit(argc, argv);	/* init screen */
 		TorcsEntry();			/* launch TORCS */

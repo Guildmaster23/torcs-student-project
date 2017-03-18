@@ -157,7 +157,7 @@ static void reSelectRaceman(void *params)
 
 
 void ReRunRaceOnConsole(const char* raceconfig)
-{
+ {
 	ReInfo = (tRmInfo *)calloc(1, sizeof(tRmInfo));
 	ReInfo->s = (tSituation *)calloc(1, sizeof(tSituation));
 	ReInfo->modList = &ReRaceModList;
@@ -173,13 +173,13 @@ void ReRunRaceOnConsole(const char* raceconfig)
 	const char* dllname = GfParmGetStr(ReInfo->_reParam, "Modules", "track", "");
 	snprintf(buf, BUFSIZE, "%smodules/track/%s.%s", GetLibDir (), dllname, DLLEXT);
 	if (GfModLoad(0, buf, &reEventModList)) return;
-	reEventModList->modInfo->fctInit(reEventModList->modInfo->index, &ReInfo->_reTrackItf);
+	reEventModList->modInfo->fctInit(reEventModList->modInfo->index, &ReInfo->_reTrackItf); ///trackInit
 
 	ReInfo->movieCapture.enabled = 0;
 
 	const char *s, *e, *m;
 
-	ReInfo->params = GfParmReadFile(raceconfig, GFPARM_RMODE_STD);
+   	ReInfo->params = GfParmReadFile(raceconfig, GFPARM_RMODE_STD);
 	if (ReInfo->params == 0) {
 		GfError("Could not open file: %s\n", raceconfig);
 		exit(1);
@@ -675,8 +675,8 @@ ReInitCars(void)
 		GfOut("%d drivers ready to race\n", nCars);
 	}
 
-	ReInfo->s->_ncars = nCars;
-	FREEZ(ReInfo->s->cars);
+ 	ReInfo->s->_ncars = nCars;
+   	FREEZ(ReInfo->s->cars);
 	ReInfo->s->cars = (tCarElt **)calloc(nCars, sizeof(tCarElt *));
 	for (i = 0; i < nCars; i++) {
 		ReInfo->s->cars[i] = &(ReInfo->carList[i]);
