@@ -53,5 +53,5 @@ TorcsEntry(void)
 
 	SplashScreen();
 	
-	startMenuMusic();
+		
 }
