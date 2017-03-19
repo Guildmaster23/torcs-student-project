@@ -715,7 +715,7 @@ ReUpdate(void)
 	tRmMovieCapture	*capture;
 	int mode = RM_ASYNC;
 	int i;
-	const int MAXSTEPS = 2;
+	const int MAXSTEPS = 200;
 	
 	START_PROFILE("ReUpdate");
 	ReInfo->_refreshDisplay = 0;
