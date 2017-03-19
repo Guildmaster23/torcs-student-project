@@ -26,6 +26,10 @@ runtime/
 export/libd/client.lib
 export/libd/robottools.lib
 export/libd/tgf.lib
+export/libd/learning.lib
+export/libd/solid.lib
+export/libd/ssggraphlib.lib
+export/libd/txml.lib
 
 # Visual Studio 2015 cache/options directory
 .vs/
