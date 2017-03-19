@@ -1,0 +1,7 @@
+TORCS.ncb
+TORCS.suo
+TORCS.vcproj
+Debug/*
+runtimed/*
+runtime/*
+*.Chernov.user
