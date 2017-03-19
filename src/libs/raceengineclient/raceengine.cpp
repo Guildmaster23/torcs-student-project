@@ -10,7 +10,7 @@
 
 /***************************************************************************
  *                                                                         *
- *   This program is free softwar e; you can redistribute it and/or modify  *
+ *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
  *   the Free Software Foundation; either version 2 of the License, or     *
  *   (at your option) any later version.                                   *
@@ -630,8 +630,6 @@ ReOneStep(double deltaTimeIncrement)
 
 	ReInfo->_reCurTime += deltaTimeIncrement * ReInfo->_reTimeMult; /* "Real" time */
 	s->currentTime += deltaTimeIncrement; /* Simulated time */
-	//GfOut("ReInfo->_reCurTime %.4f\n", ReInfo->_reCurTime);
-	//GfOut("s->currentTime %.4f\n", s->currentTime);
 
 	if (s->currentTime < 0) {
 		/* no simu yet */
@@ -715,7 +713,7 @@ ReUpdate(void)
 	tRmMovieCapture	*capture;
 	int mode = RM_ASYNC;
 	int i;
-	const int MAXSTEPS = 200;
+	const int MAXSTEPS = 2000;
 	
 	START_PROFILE("ReUpdate");
 	ReInfo->_refreshDisplay = 0;
@@ -767,10 +765,8 @@ ReUpdate(void)
 
 		case RM_DISP_MODE_CONSOLE:
 			t = ReInfo->_reCurTime;
-			//GfOut("\nStart time %.4f\n", t);
 			while ((t - ReInfo->_reCurTime + 2.0) > 0.0) {
 				ReOneStep(RCM_MAX_DT_SIMU);
-				//GfOut("Current time %.4f\n", ReInfo->_reCurTime);
 			}
 			mode = RM_SYNC;
 			break;

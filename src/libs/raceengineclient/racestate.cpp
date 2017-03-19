@@ -78,7 +78,7 @@ ReStateManage(void)
 				break;
 
 			case RE_STATE_PRE_RACE:
- 				GfOut("RaceEngine: state = RE_STATE_PRE_RACE\n");
+				GfOut("RaceEngine: state = RE_STATE_PRE_RACE\n");
 				mode = RePreRace();
 				if (mode & RM_NEXT_STEP) {
 					ReInfo->_reState = RE_STATE_RACE_START;
