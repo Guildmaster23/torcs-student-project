@@ -227,6 +227,7 @@ main(int argc, char *argv[])
 	const char* raceconfig = "";
 	GfOut("Hello from Marat!\n");
 	GfOut("Marat, how are you?\n");
+	GfOut("I am fine, and you?\n");
 	WindowsSpecInit();			/* init specific windows functions */
 	init_args(argc, argv, &raceconfig);
 	
