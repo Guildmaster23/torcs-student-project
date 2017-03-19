@@ -228,6 +228,8 @@ main(int argc, char *argv[])
 	GfOut("Hello from Marat!\n");
 	GfOut("Marat, how are you?\n");
 	GfOut("I am fine, and you?\n");
+	GfOut("Yet another pointless commit\n");
+
 	WindowsSpecInit();			/* init specific windows functions */
 	init_args(argc, argv, &raceconfig);
 	
