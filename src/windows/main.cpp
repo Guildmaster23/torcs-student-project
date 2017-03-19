@@ -214,8 +214,9 @@ static void init_args(int argc, char **argv, const char** raceconfig)
 int
 main(int argc, char *argv[])
 {
+	GfOut("Hey hey again from Marat\n");
 	const char* raceconfig = "";
-
+	
 	WindowsSpecInit();			/* init specific windows functions */
 	init_args(argc, argv, &raceconfig);
 
