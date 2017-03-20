@@ -2109,7 +2109,7 @@ int GfParmGetEltNb(void *handle, const char *path)
 	struct parmHeader *conf = parmHandle->conf;
 	struct section	*section;
 	int count;
-	
+	//GfOut(GfParmGetStr(handle, "Drivers Start List/1", RM_ATTR_MODULE, ""));
 	if (parmHandle->magic != PARM_MAGIC) {
 		GfFatal ("GfParmGetEltNb: bad handle (%p)\n", parmHandle);
 		return 0;

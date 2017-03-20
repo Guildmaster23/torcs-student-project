@@ -216,6 +216,7 @@ typedef struct RmMovieCapture
 typedef struct RmInfo
 {
     tCarElt		*carList;	/**< List of all the cars racing */
+	tCarElt *trafCarList;/**< List of all traffic cars racing*/
     tSituation		*s;		/**< Situation during race */
     tTrack		*track;		/**< Current track */
     void		*params;	/**< Raceman parameters */
@@ -238,6 +239,7 @@ typedef struct RmInfo
 #define RM_SECT_CONF		"Configuration"
 #define RM_SECT_OPTIONS		"Options"
 #define RM_SECT_POINTS		"Points"
+#define RM_SECT_TRAFFIC		"Traffic Cars"
 
 #define RM_SECT_DRIVERS_RACING	"Drivers Start List"
 

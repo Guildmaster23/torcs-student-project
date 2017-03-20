@@ -421,13 +421,15 @@ int ReRaceStart(void)
 			}
 		} else {
 			/* Starting grid in the drivers list order */
-			nCars = GfParmGetEltNb(params, RM_SECT_DRIVERS);
+			nCars = GfParmGetEltNb(params, RM_SECT_DRIVERS);  //Count the number of subsections in a "Drivers" section in the params handle.
+			int nTrafficCars = GfParmGetEltNb(params, RM_SECT_TRAFFIC); //Ars. Testing my traffic section
 			maxCars = (int)GfParmGetNum(params, raceName, RM_ATTR_MAX_DRV, NULL, 100);
 			nCars = MIN(nCars, maxCars);
 			for (i = 1; i < nCars + 1; i++) {
-				snprintf(path, BUFSIZE, "%s/%d", RM_SECT_DRIVERS, i);
-				snprintf(path2, BUFSIZE, "%s/%d", RM_SECT_DRIVERS_RACING, i);
-				GfParmSetStr(params, path2, RM_ATTR_MODULE, GfParmGetStr(params, path, RM_ATTR_MODULE, ""));
+				snprintf(path, BUFSIZE, "%s/%d", RM_SECT_DRIVERS, i); // generating string "Drivers/i"
+				snprintf(path2, BUFSIZE, "%s/%d", RM_SECT_DRIVERS_RACING, i); //generating "Drivers Start List/i" string
+				GfParmSetStr(params, path2, RM_ATTR_MODULE, GfParmGetStr(params, path, RM_ATTR_MODULE, "")); // in section "Drivers Start List/i"  set "module" to (result of value "module" in subsection 1 of section 1
+				GfOut(GfParmGetStr(params, "Drivers Start List/1", RM_ATTR_MODULE, "")); //Ars. Testing. Safe to delete
 				GfParmSetNum(params, path2, RM_ATTR_IDX, NULL, GfParmGetNum(params, path, RM_ATTR_IDX, NULL, 0));
 			}
 		}

@@ -520,6 +520,7 @@ int
 ReInitCars(void)
 {
 	int nCars;
+	int nTrafficCars;
 	int index;
 	int i, j, k;
 	int robotIdx;
@@ -540,9 +541,15 @@ ReInitCars(void)
 	/* Get the number of cars racing */
 	nCars = GfParmGetEltNb(params, RM_SECT_DRIVERS_RACING);
 	GfOut("loading %d cars\n", nCars);
+	
+	nTrafficCars = (int) GfParmGetNum(params, RM_SECT_TRAFFIC, "cars number", NULL, 0); // Ars. Parse XML for traffic section
+	GfOut("loading %d traffic cars\n", nTrafficCars);
+
 
 	FREEZ(ReInfo->carList);
 	ReInfo->carList = (tCarElt*)calloc(nCars, sizeof(tCarElt));
+	FREEZ(ReInfo->trafCarList);	/// Ars. added field into ReInfo 
+	ReInfo->trafCarList = (tCarElt*)calloc(nTrafficCars, sizeof(tCarElt)); // Ars. alloc memory
 	FREEZ(ReInfo->rules);
 	ReInfo->rules = (tRmCarRules*)calloc(nCars, sizeof(tRmCarRules));
 	//focusedIdx = (int)GfParmGetNum(ReInfo->params, RM_SECT_DRIVERS, RM_ATTR_FOCUSEDIDX, NULL, 0);
