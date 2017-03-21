@@ -33,6 +33,7 @@ extern void ReShutdown(void);
 extern void ReStartNewRace(void * /* dummy */);
 extern void ReAddRacemanListButton(void *menuHandle);
 extern int  ReInitCars(void);
+extern int  ReInitTrafficCars(void);
 extern int  ReInitTrack(void);
 extern void ReRaceCleanup(void);
 extern void ReRaceCleanDrivers(void);

@@ -59,6 +59,7 @@ typedef int (*tfRmRunState) (struct RmInfo *);
 /** General info on current race */
 typedef struct {
     int			ncars;		/**< number of cars */
+	int			nTrafficCars;
     int			totLaps;	/**< total laps */
     int			state;
 #define RM_RACE_RUNNING		0X00000001
@@ -76,6 +77,7 @@ typedef struct {
 } tRaceAdmInfo;
 
 #define _ncars		raceInfo.ncars
+#define _nTrafficCars		raceInfo.nTrafficCars
 #define _totLaps	raceInfo.totLaps
 #define _raceState	raceInfo.state
 #define _raceType	raceInfo.type
@@ -88,6 +90,7 @@ typedef struct Situation {
     double		currentTime;	/**< current time in sec since the beginning of the simulation */
     int			nbPlayers;	/**< number of human player in local (splitted screen) */
     tCarElt		**cars;		/**< list of cars */ 
+	tCarElt		**trafficCars;
 } tSituation;
 
 /** Race Engine */
