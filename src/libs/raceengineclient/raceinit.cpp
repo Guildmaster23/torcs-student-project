@@ -401,7 +401,28 @@ initStartingGrid(void)
 		NORM0_2PI(car->_yaw);
 		ReInfo->_reSimItf.config(car, ReInfo);
 	}
+
+	//Ars. Traffic car part  
+	{
+		car = &(ReInfo->trafCarList[0]);
+		car->_speed_x = 30; /// HARDCODED... for the time being
+		car->_pos_X = 370;
+		car->_pos_Y = 486;
+		car->_pos_Z = 8.12;
+		car->_yaw = -6.28;
+		car->index = 8;
+		ReInfo->_reSimItf.config(car, ReInfo);
+	}
+
 }
+
+//private static void 
+//placeTrafficCars() 
+//{
+
+//	}
+//
+//}
 
 
 static void
@@ -815,6 +836,7 @@ ReInitTrafficCars(void)
 					snprintf(buf, BUFSIZE, "cars/%s/%s.xml", elt->_carName, elt->_carName);
 					GfOut("Car Specification: %s\n", buf);
 					carhdle = GfParmReadFile(buf, GFPARM_RMODE_STD | GFPARM_RMODE_CREAT);
+					elt->_carHandle = carhdle;
 					const char* category = GfParmGetStr(carhdle, SECT_CAR, PRM_CATEGORY, NULL);
 					snprintf(buf, BUFSIZE, "Loading Traffic Driver %-20s... Car: %s", curModInfo->name, elt->_carName);
 					RmLoadingScreenSetText(buf);

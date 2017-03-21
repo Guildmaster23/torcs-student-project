@@ -443,7 +443,7 @@ int ReRaceStart(void)
 		}
 	}
 
-	return reRaceRealStart();
+ 	return reRaceRealStart();
 }
 
 /***************************************************************/

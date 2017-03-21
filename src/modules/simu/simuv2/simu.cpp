@@ -119,8 +119,16 @@ ctrlCheck(tCar *car)
 void
 SimConfig(tCarElt *carElt, RmInfo *info)
 {
-    tCar *car = &(SimCarTable[carElt->index]);
-
+	tCar *car; 
+    //Ars. Here goes hardcoded shit. DELETE please 
+	if (carElt->index != 8) {
+		car = &(SimCarTable[carElt->index]); // that line was before my intrusion
+	}
+	else {
+		carElt->index = 0;  //don't ask, just some freakin wizardry
+		car = &(SimTrafficCarTable[carElt->index]);
+	}
+	//
     memset(car, 0, sizeof(tCar));
 
     car->carElt = carElt;
@@ -135,6 +143,8 @@ SimConfig(tCarElt *carElt, RmInfo *info)
     sgMakeCoordMat4(carElt->pub.posMat, carElt->_pos_X - carElt->_statGC_x, carElt->_pos_Y - carElt->_statGC_y, carElt->_pos_Z - carElt->_statGC_z,
 		    RAD2DEG(carElt->_yaw), RAD2DEG(carElt->_roll), RAD2DEG(carElt->_pitch));
 }
+
+
 
 /* After pit stop */
 void SimReConfig(tCarElt *carElt)
