@@ -55,6 +55,7 @@ int segIndice = 0;
 
 tdble grMaxDammage = 10000.0;
 int grNbCars = 0;
+int grTrafficNbCars = 0;
 
 void *grHandle = NULL;
 void *grTrackHandle = NULL;

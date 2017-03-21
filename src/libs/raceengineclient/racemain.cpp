@@ -297,6 +297,8 @@ static int reRaceRealStart(void)
 		memset(&(s->cars[i]->ctrl), 0, sizeof(tCarCtrl));
 		s->cars[i]->ctrl.brakeCmd = 1.0;
 	}
+	s->trafficCars[0]->ctrl.brakeCmd = 0.0;  // Ars
+
 	for (j = 0; j < ((int)(1.0 / RCM_MAX_DT_SIMU)); j++) {
 		ReInfo->_reSimItf.update(s, RCM_MAX_DT_SIMU, -1);
 	}
