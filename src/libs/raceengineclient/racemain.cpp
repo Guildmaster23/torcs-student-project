@@ -249,10 +249,6 @@ static int reRaceRealStart(void)
 		return RM_QUIT;
 	}
 
-	if (ReInitTrafficCars()) {
-		return RM_QUIT;
-	}
-
 	/* Blind mode or not */
 	if (ReInfo->_displayMode != RM_DISP_MODE_CONSOLE) {
 		ReInfo->_displayMode = RM_DISP_MODE_NORMAL;

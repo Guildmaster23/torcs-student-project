@@ -32,9 +32,11 @@
 #include "sim.h"
 
 tCar *SimCarTable = 0;
+tCar *SimTrafficCarTable = 0;
 tdble SimDeltaTime;
 int SimTelemetry;
 static int SimNbCars = 0;
+static int SimNbTrafficCars = 1; /////////////////Ars. IF YOU SEE IT DELETE THE LINE PLEASE
 
 tdble rulesFuelFactor = 1.0f;
 tdble rulesDamageFactor = 1.0f;
@@ -436,12 +438,14 @@ SimUpdate(tSituation *s, double deltaTime, int telemetry)
 
 
 void
-SimInit(int nbcars, tTrack* track, tdble fuelFactor, tdble damageFactor)
+SimInit(int nbcars, int nbTrafficCars, tTrack* track, tdble fuelFactor, tdble damageFactor)
 {
 	rulesFuelFactor = fuelFactor;
 	rulesDamageFactor = damageFactor;
     SimNbCars = nbcars;
+	SimNbTrafficCars = nbTrafficCars;
     SimCarTable = (tCar*)calloc(nbcars, sizeof(tCar));
+	SimTrafficCarTable = (tCar*)calloc(nbTrafficCars, sizeof(tCar));
     SimCarCollideInit(track);
 }
 

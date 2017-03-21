@@ -700,7 +700,9 @@ ReInitCars(void)
 	// I stuff for now anything into one call because collision detection works with the same
 	// library on all objects, so it is a bit dangerous to distribute the handling to various
 	// locations (because the library maintains global state like a default collision handler etc.).
-    ReInfo->_reSimItf.init(nCars, ReInfo->track, ReInfo->raceRules.fuelFactor, ReInfo->raceRules.damageFactor);
+    nTrafficCars = ReInitTrafficCars();
+	
+	ReInfo->_reSimItf.init(nCars, nTrafficCars, ReInfo->track, ReInfo->raceRules.fuelFactor, ReInfo->raceRules.damageFactor);
 
     initStartingGrid();
 
@@ -776,7 +778,7 @@ ReInitTrafficCars(void)
 					elt->robot = curRobot;
 					elt->_paramsHandle = robhdle;
 					elt->_driverIndex = robotIdx;
-					strncpy(elt->_modName, cardllname, MAX_NAME_LEN - 1);
+					strncpy(elt->_modName, "berniw3", MAX_NAME_LEN - 1);
 					elt->_modName[MAX_NAME_LEN - 1] = 0;
 
 					snprintf(path, BUFSIZE, "%s/%s/%d", ROB_SECT_ROBOTS, ROB_LIST_INDEX, robotIdx);  //path Robots/index/4 for berniw 
@@ -863,7 +865,7 @@ ReInitTrafficCars(void)
 		GfTrace("No driver for that race...\n");
 		return -1;
 	} else {
-		GfOut("%d drivers ready to race\n", nTrafficCars);
+		GfOut("%d traffic drivers ready to race\n", nTrafficCars);
 	}
 
 	//upload cars into the situation
@@ -878,13 +880,13 @@ ReInitTrafficCars(void)
 	// I stuff for now anything into one call because collision detection works with the same
 	// library on all objects, so it is a bit dangerous to distribute the handling to various
 	// locations (because the library maintains global state like a default collision handler etc.).
-    ReInfo->_reSimItf.init(nCars, ReInfo->track, ReInfo->raceRules.fuelFactor, ReInfo->raceRules.damageFactor);
+    //ReInfo->_reSimItf.init(nCars, ReInfo->track, ReInfo->raceRules.fuelFactor, ReInfo->raceRules.damageFactor);
 
-    initStartingGrid();
+    //initStartingGrid();
 
-    initPits();
+    //initPits();
 
-    return 0;
+    return nTrafficCars;
 }
 
 

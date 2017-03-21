@@ -49,7 +49,7 @@ struct RmInfo;
  *  @param[in] fuelFactor Factor for fuel consumtion, e.g 1 for normal, 0 for none, etc.
  *  @param[in] damageFactor Factor for damage, e.g. 1 for normal, 0 for none, etc.
  */
-typedef void (*tfSimInit)(int nbCars, tTrack* track, tdble fuelFactor, tdble damageFactor);
+typedef void (*tfSimInit)(int nbCars, int nbTrafficCars, tTrack* track, tdble fuelFactor, tdble damageFactor);
 
 /** Callback function prototype for simulation configuration of a given car
  *  @ingroup simumodint
