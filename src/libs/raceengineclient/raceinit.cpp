@@ -541,8 +541,8 @@ ReInitCars(void)
 	/* Get the number of cars racing */
 	nCars = GfParmGetEltNb(params, RM_SECT_DRIVERS_RACING);
 	GfOut("loading %d cars\n", nCars);
-	
-	nTrafficCars = (int) GfParmGetNum(params, RM_SECT_TRAFFIC, "cars number", NULL, 0); // Ars. Parse XML for traffic section
+	//Ars. Parse XML for traffic section
+	nTrafficCars = (int) GfParmGetNum(params, RM_SECT_TRAFFIC, "cars number", NULL, 0);  
 	GfOut("loading %d traffic cars\n", nTrafficCars);
 
 
@@ -557,10 +557,10 @@ ReInitCars(void)
 
 	for (i = 1; i < nCars + 1; i++) {
 		/* Get Shared library name */
-		snprintf(path, BUFSIZE, "%s/%d", RM_SECT_DRIVERS_RACING, i);
-		const char* cardllname = GfParmGetStr(ReInfo->params, path, RM_ATTR_MODULE, "");
-		robotIdx = (int)GfParmGetNum(ReInfo->params, path, RM_ATTR_IDX, NULL, 0);
-		snprintf(path, BUFSIZE, "%sdrivers/%s/%s.%s", GetLibDir (), cardllname, cardllname, DLLEXT);
+		snprintf(path, BUFSIZE, "%s/%d", RM_SECT_DRIVERS_RACING, i); //get "Drivers Start List/i" string
+		const char* cardllname = GfParmGetStr(ReInfo->params, path, RM_ATTR_MODULE, ""); //get driver module name like "olethros"
+		robotIdx = (int)GfParmGetNum(ReInfo->params, path, RM_ATTR_IDX, NULL, 0); //get number of robot index 
+		snprintf(path, BUFSIZE, "%sdrivers/%s/%s.%s", GetLibDir (), cardllname, cardllname, DLLEXT); // path = "drivers/olethros/olethros.dll
 
 		/* load the robot shared library */
 		if (GfModLoad(CAR_IDENT, path, ReInfo->modList)) {
@@ -577,11 +577,12 @@ ReInitCars(void)
 				/* retrieve the robot interface (function pointers) */
 				curRobot = (tRobotItf*)calloc(1, sizeof(tRobotItf));
 				curModInfo->fctInit(robotIdx, (void*)(curRobot));
-				snprintf(buf, BUFSIZE, "%sdrivers/%s/%s.xml", GetLocalDir(), cardllname, cardllname);
-				robhdle = GfParmReadFile(buf, GFPARM_RMODE_STD);
+				
+				snprintf(buf, BUFSIZE, "%sdrivers/%s/%s.xml", GetLocalDir(), cardllname, cardllname);//    .../AppData/Local/torcs/drivers/berniw/berniw.xml
+				robhdle = GfParmReadFile(buf, GFPARM_RMODE_STD); //read parameters from a file in path = buf (STD - searches if its was already opened)
 				if (!robhdle) {
-					snprintf(buf, BUFSIZE, "drivers/%s/%s.xml", cardllname, cardllname);
-					robhdle = GfParmReadFile(buf, GFPARM_RMODE_STD);
+					snprintf(buf, BUFSIZE, "drivers/%s/%s.xml", cardllname, cardllname); //  /drivers/berniw/berniw.xml
+					robhdle = GfParmReadFile(buf, GFPARM_RMODE_STD);  
 				}
 				if (robhdle != NULL) {
 					elt = &(ReInfo->carList[index]);
@@ -594,15 +595,18 @@ ReInitCars(void)
 					strncpy(elt->_modName, cardllname, MAX_NAME_LEN - 1);
 					elt->_modName[MAX_NAME_LEN - 1] = 0;
 
-					snprintf(path, BUFSIZE, "%s/%s/%d", ROB_SECT_ROBOTS, ROB_LIST_INDEX, robotIdx);
+					snprintf(path, BUFSIZE, "%s/%s/%d", ROB_SECT_ROBOTS, ROB_LIST_INDEX, robotIdx);  //path Robots/index/4 for berniw 
+					// copying data from xml into the elt structure
 					strncpy(elt->_name, GfParmGetStr(robhdle, path, ROB_ATTR_NAME, "<none>"), MAX_NAME_LEN - 1);
 					elt->_name[MAX_NAME_LEN - 1] = 0;
+					
 					strncpy(elt->_teamname, GfParmGetStr(robhdle, path, ROB_ATTR_TEAM, "<none>"), MAX_NAME_LEN - 1);
 					elt->_teamname[MAX_NAME_LEN - 1] = 0;
 					
 					strncpy(elt->_carName, GfParmGetStr(robhdle, path, ROB_ATTR_CAR, ""), MAX_NAME_LEN - 1);
 					elt->_carName[MAX_NAME_LEN - 1] = 0;
 					elt->_raceNumber = (int)GfParmGetNum(robhdle, path, ROB_ATTR_RACENUM, (char*)NULL, 0);
+					//check if it is a robot and not a human by special field
 					if (strcmp(GfParmGetStr(robhdle, path, ROB_ATTR_TYPE, ROB_VAL_ROBOT), ROB_VAL_ROBOT)) {
 						elt->_driverType = RM_DRV_HUMAN;
 						if (ReInfo->_displayMode == RM_DISP_MODE_CONSOLE) {
@@ -612,6 +616,8 @@ ReInitCars(void)
 					} else {
 						elt->_driverType = RM_DRV_ROBOT;
 					}
+					
+					//set default skill lelvel and try to get a real one from xml
 					elt->_skillLevel = 0;
 					const char* str = GfParmGetStr(robhdle, path, ROB_ATTR_LEVEL, ROB_VAL_SEMI_PRO);
 					for(k = 0; k < (int)(sizeof(level_str)/sizeof(char*)); k++) {
@@ -682,6 +688,7 @@ ReInitCars(void)
 		GfOut("%d drivers ready to race\n", nCars);
 	}
 
+	//upload cars into the situation
 	ReInfo->s->_ncars = nCars;
 	FREEZ(ReInfo->s->cars);
 	ReInfo->s->cars = (tCarElt **)calloc(nCars, sizeof(tCarElt *));
@@ -701,7 +708,6 @@ ReInitCars(void)
 
     return 0;
 }
-
 /** Dump the track segments on screen
     @param	track	track to dump
     @param	verbose	if set to 1 all the segments are described (long)
