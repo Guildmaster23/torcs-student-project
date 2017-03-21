@@ -330,6 +330,15 @@ RemoveCar(tCar *car, tSituation *s)
 void
 SimUpdate(tSituation *s, double deltaTime, int telemetry)
 {
+	if (SimTrafficCarTable->carElt->robot != NULL) {
+		SimUpdate(s, SimTrafficCarTable, deltaTime, telemetry, 1);
+	}
+	SimUpdate(s, SimCarTable, deltaTime, telemetry, s->_ncars);
+}
+
+void
+SimUpdate(tSituation *s, tCar *SimCarTable, double deltaTime, int telemetry, int ncars)
+{	
 	int i;
 	int ncar;
 	tCarElt *carElt;
@@ -337,12 +346,12 @@ SimUpdate(tSituation *s, double deltaTime, int telemetry)
 	
 	SimDeltaTime = deltaTime;
 	SimTelemetry = telemetry;
-	for (ncar = 0; ncar < s->_ncars; ncar++) {
+	for (ncar = 0; ncar < ncars; ncar++) {
 		SimCarTable[ncar].collision = 0;
 		SimCarTable[ncar].blocked = 0;
 	}
 	
-	for (ncar = 0; ncar < s->_ncars; ncar++) {
+	for (ncar = 0; ncar < ncars; ncar++) {
 		car = &(SimCarTable[ncar]);
 		carElt = car->carElt;
 	
@@ -411,7 +420,7 @@ SimUpdate(tSituation *s, double deltaTime, int telemetry)
 	
 	/* printf ("%f - ", s->currentTime); */
 	
-	for (ncar = 0; ncar < s->_ncars; ncar++) {
+	for (ncar = 0; ncar < ncars; ncar++) {
 		car = &(SimCarTable[ncar]);
 		CHECK(car);
 		carElt = car->carElt;

@@ -411,6 +411,12 @@ initStartingGrid(void)
 		car->_pos_Z = 8.12;
 		car->_yaw = -6.28;
 		car->index = 8;
+		car->_state = RM_CAR_STATE_SIMU_NO_MOVE;
+		curseg = ReInfo->track->seg;  /* last segment */
+		while (startpos < curseg->lgfromstart) {
+			curseg = curseg->prev;
+		}
+		car->_trkPos.seg = curseg;
 		ReInfo->_reSimItf.config(car, ReInfo);
 	}
 
@@ -727,7 +733,7 @@ ReInitCars(void)
 
     initStartingGrid();
 
-    initPits();
+    //initPits();
 
     return 0;
 }

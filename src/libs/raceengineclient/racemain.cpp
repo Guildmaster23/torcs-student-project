@@ -280,6 +280,11 @@ static int reRaceRealStart(void)
 		robot = s->cars[i]->robot;
 		robot->rbNewRace(robot->index, s->cars[i], s);
 	}
+	//Ars.
+		robot = s->trafficCars[0]->robot;
+		robot->rbNewRace(8, s->cars[0], s);
+		RmLoadingScreenSetText("Loading traffic car");
+	//
 	carInfo = ReInfo->_reCarInfo;
 
 	ReInfo->_reSimItf.update(s, RCM_MAX_DT_SIMU, -1);
