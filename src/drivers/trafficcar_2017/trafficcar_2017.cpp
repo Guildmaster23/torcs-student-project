@@ -109,21 +109,21 @@ static void newRace(int index, tCarElt* car, tSituation *s)
 // Drive during race.
 static void drive(int index, tCarElt* car, tSituation *s)
 {
-	driver[index]->drive(s);
+	driver[index]->drive(car, s);
 }
 
 
 // Pitstop callback.
 static int pitcmd(int index, tCarElt* car, tSituation *s)
 {
-	return driver[index]->pitCommand(s);
+	return driver[index]->pitCommand(car, s);
 }
 
 
 // End of the current race.
 static void endRace(int index, tCarElt *car, tSituation *s)
 {
-	driver[index]->endRace(s);
+	driver[index]->endRace(car, s);
 }
 
 

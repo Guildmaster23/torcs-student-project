@@ -18,11 +18,11 @@
 ROBOT       = trafficcar_2017
 MODULE      = ${ROBOT}.so
 MODULEDIR   = drivers/${ROBOT}
-SOURCES     = ${ROBOT}.cpp driver.cpp opponent.cpp spline.cpp pit.cpp learn.cpp strategy.cpp cardata.cpp
+SOURCES     = ${ROBOT}.cpp driver.cpp
 
 SHIPDIR     = drivers/${ROBOT}
 SHIP        = ${ROBOT}.xml logo.rgb
-SHIPSUBDIRS = 0 1 2 3 4 5 6 7 8 9
+SHIPSUBDIRS = 0
 
 PKGSUBDIRS  = ${SHIPSUBDIRS}
 src-robots-base_PKGFILES = $(shell find * -maxdepth 0 -type f -print)
