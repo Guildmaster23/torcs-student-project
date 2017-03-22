@@ -33,10 +33,12 @@
 #include <raceman.h>
 #include <racescreens.h>
 #include <portability.h>
-
+#include <iostream>
+#include <fstream>
 
 /* Tracks Categories */
 static tFList *CategoryList;
+bool TrafficBool;
 static void *scrHandle;
 static int TrackLabelId;
 static int CatLabelId;
@@ -46,7 +48,9 @@ static int LengthId;
 static int WidthId;
 static int DescId;
 static int PitsId;
+static int TrafficId;
 static tRmTrackSelect *ts;
+
 
 
 static void rmtsActivate(void * /* dummy */)
@@ -84,10 +88,13 @@ static void rmtsDeactivate(void *screen)
 static void rmUpdateTrackInfo(void)
 {
 	void *trackHandle;
+	void *TrafficHandle;
 	float tmp;
+	int tmpInt;
 	tTrack *trk;
 	const int BUFSIZE = 1024;
 	char buf[BUFSIZE];
+	char buf2[BUFSIZE];
 	
 	snprintf(buf, BUFSIZE, "tracks/%s/%s/%s.%s", CategoryList->name, ((tFList*)CategoryList->userData)->name,
 		((tFList*)CategoryList->userData)->name, TRKEXT);
@@ -101,6 +108,11 @@ static void rmUpdateTrackInfo(void)
 
 	GfuiLabelSetText(scrHandle, DescId, GfParmGetStr(trackHandle, TRK_SECT_HDR, TRK_ATT_DESCR, ""));
 	GfuiLabelSetText(scrHandle, AuthorId, GfParmGetStr(trackHandle, TRK_SECT_HDR, TRK_ATT_AUTHOR, ""));
+
+	// new handle for traffic
+
+	GfuiLabelSetText(scrHandle, TrafficId, "0");
+
 
 	tmp = GfParmGetNum(trackHandle, TRK_SECT_MAIN, TRK_ATT_WIDTH, NULL, 0);
 	snprintf(buf, BUFSIZE, "%.2f m", tmp);
@@ -120,6 +132,20 @@ static void rmUpdateTrackInfo(void)
 	GfParmReleaseHandle(trackHandle);
 }
 
+static void ChangeTrafficCar()
+{
+	const int BUFSIZE = 1024;
+	char buf[BUFSIZE];
+	if (TrafficBool) {
+		GfuiLabelSetText(scrHandle, TrafficId, "0");
+		TrafficBool = false;
+	} else
+	{
+		GfuiLabelSetText(scrHandle, TrafficId, "1");
+		TrafficBool = true;
+	}
+
+}
 
 static void rmtsPrevNext(void *vsel)
 {
@@ -258,6 +284,7 @@ void RmTrackSelect(void *vs)
 	const int BUFSIZE = 1024;
 	char buf[BUFSIZE];
 	char path[BUFSIZE];
+	TrafficBool = false;
 
 	ts = (tRmTrackSelect*)vs;
 
@@ -392,7 +419,7 @@ void RmTrackSelect(void *vs)
 
 	Xpos = 20;
 	Ypos = 320;
-	DX = 110;
+	DX = 125;
 	DY = 30;
 
 	GfuiLabelCreate(scrHandle,
@@ -462,6 +489,52 @@ void RmTrackSelect(void *vs)
 				GFUI_FONT_MEDIUM_C,
 				Xpos + DX, Ypos,
 				GFUI_ALIGN_HL_VB, 20);
+	
+	Ypos -= DY;
+	
+	GfuiLabelCreate(scrHandle,
+				"Traffic car:",
+				GFUI_FONT_MEDIUM,
+				Xpos, Ypos,
+				GFUI_ALIGN_HL_VB, 0);
+
+	TrafficId = GfuiLabelCreate(scrHandle,
+				"",
+				GFUI_FONT_MEDIUM_C,
+				Xpos + DX, Ypos,
+				GFUI_ALIGN_HL_VB, 20);
+
+	Ypos -= DY;
+
+	GfuiButtonCreate(scrHandle, "ChangeTrafficState", GFUI_FONT_LARGE_C, 
+				Xpos+DX, Ypos, 200, GFUI_ALIGN_HC_VB, GFUI_MOUSE_UP,
+			ts->prevScreen, (tfuiCallback)ChangeTrafficCar, NULL, (tfuiCallback)NULL, (tfuiCallback)NULL);
+/*
+	GfuiGrButtonCreate(scrHandle,
+			"data/img/arrow-left.png",
+			"data/img/arrow-left.png",
+			"data/img/arrow-left.png",
+			"data/img/arrow-left-pushed.png",
+			40, Ypos, GFUI_ALIGN_HC_VB, 0,
+			(void*)0, rmCatPrevNext,
+			NULL, (tfuiCallback)NULL, (tfuiCallback)NULL);
+
+
+	CatLabelId = GfuiLabelCreate(scrHandle,
+				"0",
+				GFUI_FONT_LARGE_C,
+				70, Ypos, GFUI_ALIGN_HC_VB,
+				30);
+
+	GfuiGrButtonCreate(scrHandle,
+			"data/img/arrow-right.png",
+			"data/img/arrow-right.png",
+			"data/img/arrow-right.png",
+			"data/img/arrow-right-pushed.png",
+			100, Ypos, GFUI_ALIGN_HC_VB, 0,
+			(void*)1, rmCatPrevNext,
+			NULL, (tfuiCallback)NULL, (tfuiCallback)NULL);
+*/
 
 	rmUpdateTrackInfo();
 
