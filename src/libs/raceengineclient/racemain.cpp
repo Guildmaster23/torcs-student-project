@@ -435,7 +435,7 @@ int ReRaceStart(void)
 			for (i = 1; i < nCars + 1; i++) {
 				snprintf(path, BUFSIZE, "%s/%d", RM_SECT_DRIVERS, i); // generating string "Drivers/i"
 				snprintf(path2, BUFSIZE, "%s/%d", RM_SECT_DRIVERS_RACING, i); //generating "Drivers Start List/i" string
-				if (i==1) GfParmSetStr(params, path2, RM_ATTR_MODULE, "inferno"); // in section "Drivers Start List/i"  set "module" to (result of value "module" in subsection 1 of section 1
+				if (i==4 && 0) GfParmSetStr(params, path2, RM_ATTR_MODULE, "inferno"); // in section "Drivers Start List/i"  set "module" to (result of value "module" in subsection 1 of section 1
 				else GfParmSetStr(params, path2, RM_ATTR_MODULE, GfParmGetStr(params, path, RM_ATTR_MODULE, "")); // in section "Drivers Start List/i"  set "module" to (result of value "module" in subsection 1 of section 1
 		
 				GfOut(GfParmGetStr(params, "Drivers Start List/1", RM_ATTR_MODULE, "")); //Ars. Testing. Safe to delete
