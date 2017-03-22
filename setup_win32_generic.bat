@@ -928,6 +928,18 @@ if exist .\src\drivers\olethros\*.* call .\create_dir .\%RUNTIMEDIR%\drivers\ole
 if exist .\src\drivers\olethros\olethros.xml copy .\src\drivers\olethros\olethros.xml .\%RUNTIMEDIR%\drivers\olethros\olethros.xml
 if exist .\src\drivers\olethros\logo.rgb copy .\src\drivers\olethros\logo.rgb .\%RUNTIMEDIR%\drivers\olethros\logo.rgb
 
+if exist .\src\drivers\trafficcar_2017\0\*.* call .\create_dir .\%RUNTIMEDIR%
+if exist .\src\drivers\trafficcar_2017\0\*.* call .\create_dir .\%RUNTIMEDIR%\drivers
+if exist .\src\drivers\trafficcar_2017\0\*.* call .\create_dir .\%RUNTIMEDIR%\drivers\trafficcar_2017
+if exist .\src\drivers\trafficcar_2017\0\*.* call .\create_dir .\%RUNTIMEDIR%\drivers\trafficcar_2017\0
+if exist .\src\drivers\trafficcar_2017\0\default.xml copy .\src\drivers\trafficcar_2017\0\default.xml .\%RUNTIMEDIR%\drivers\trafficcar_2017\0\default.xml
+
+if exist .\src\drivers\trafficcar_2017\*.* call .\create_dir .\%RUNTIMEDIR%
+if exist .\src\drivers\trafficcar_2017\*.* call .\create_dir .\%RUNTIMEDIR%\drivers
+if exist .\src\drivers\trafficcar_2017\*.* call .\create_dir .\%RUNTIMEDIR%\drivers\trafficcar_2017
+if exist .\src\drivers\trafficcar_2017\trafficcar_2017.xml copy .\src\drivers\trafficcar_2017\trafficcar_2017.xml .\%RUNTIMEDIR%\drivers\trafficcar_2017\trafficcar_2017.xml
+if exist .\src\drivers\trafficcar_2017\logo.rgb copy .\src\drivers\trafficcar_2017\logo.rgb .\%RUNTIMEDIR%\drivers\trafficcar_2017\logo.rgb
+
 
 if exist .\src\libs\raceengineclient\*.* call .\create_dir .\%RUNTIMEDIR%
 if exist .\src\libs\raceengineclient\*.* call .\create_dir .\%RUNTIMEDIR%\config
