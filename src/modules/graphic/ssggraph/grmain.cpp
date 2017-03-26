@@ -285,6 +285,11 @@ initView(int x, int y, int width, int height, int /* flag */, void *screen)
 	GfuiAddKey(screen, '[',            "Split Screen",     (void*)GR_SPLIT_ADD,	grSplitScreen, NULL);
 	GfuiAddKey(screen, ']',            "UnSplit Screen",   (void*)GR_SPLIT_REM,	grSplitScreen, NULL);
 	GfuiAddKey(screen, 'm',            "Track Maps",       (void*)0, grSelectTrackMap, NULL);
+	
+	GfuiAddKey(screen, 'w',            "Track Maps",       (void*)1, SetRotationFlag, NULL);
+	GfuiAddKey(screen, 'a',            "Track Maps",       (void*)2, SetRotationFlag, NULL);
+	GfuiAddKey(screen, 's',            "Track Maps",       (void*)3, SetRotationFlag, NULL);
+	GfuiAddKey(screen, 'd',            "Track Maps",       (void*)4, SetRotationFlag, NULL);
 
 	grAdaptScreenSize();
 

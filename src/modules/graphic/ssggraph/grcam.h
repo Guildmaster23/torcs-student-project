@@ -27,6 +27,8 @@
 #include <float.h>
 #endif
 
+void SetRotationFlag(void* flag);
+
 class cGrCamera;
 class cGrScreen;
 
