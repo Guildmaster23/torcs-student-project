@@ -52,8 +52,9 @@ SetRotationFlag(void* flag) {
 
 void
 SetRotationFlag(void* flagx, void* flagy) {
-	int rotationHorizontal = (int) flagx;
-	int rotationVertical = (int) flagy;
+	flagDeleteMe = 5;
+	rotationHorizontal = (int) flagx;
+	rotationVertical = (int) flagy;
 }
 
 float
@@ -703,39 +704,44 @@ protected:
 	tdble y = car->_pos_Y + disty;
 	tdble z = car->_pos_Z + distz;
 
-	///processKeyboardCameraRotation(&distx, &disty, &distz, &flagDeleteMe);
 	if (flagDeleteMe != 0) {
-		double cosa = 0.99996192306417128873735516482698;
-		double sina = 0.00872653549837393496488821397358;
+		float proportionality = 0.01;
 
 		sgVec3 camVecRelToCar;   //camera vector relative to the car
 		sgQuat quaternion;
+		sgQuat quaternionVertical;
+		sgQuat quaternionHorizontal;
 		sgVec3 vecPerp;
 		sgSetVec3 ( camVecRelToCar, distx, disty, distz);
 
-		switch(flagDeleteMe){
-			case 1:	
-				sgSetVec3 ( vecPerp, camVecRelToCar[1], -camVecRelToCar[0], 0);
-				sgNormaliseVec3(vecPerp, vecPerp);
-				sgSetQuat(quaternion, cosa, sina*vecPerp[0], sina*vecPerp[1], 0);
-				break;
-			case 2:
-				sgSetVec3 ( camVecRelToCar, distx, disty, distz);
-				sgSetQuat(quaternion, cosa, 0, 0, -sina);
-				break;
-			case 3:
-				sgSetVec3 ( vecPerp, -camVecRelToCar[1], camVecRelToCar[0], 0);
-				sgNormaliseVec3(vecPerp, vecPerp);
-				sgSetQuat(quaternion, cosa, sina*vecPerp[0], sina*vecPerp[1], 0);
-				break;
-			case 4:
-				sgSetVec3 ( camVecRelToCar, distx, disty, distz);
-				sgSetQuat(quaternion, cosa, 0, 0, sina);
-				break;
-			default:
-				break;
+		if (rotationVertical) {
+			double angle = rotationVertical*proportionality*(2*PI/360.0);
+			double cosa = cos(angle);
+			double sina = sin(angle);
+			sgSetVec3 ( vecPerp, camVecRelToCar[1], -camVecRelToCar[0], 0);
+			sgNormaliseVec3(vecPerp, vecPerp);
+			sgSetQuat(quaternionVertical, cosa, sina*vecPerp[0], sina*vecPerp[1], 0);
 		}
+		if (rotationHorizontal) {
+			double angle = rotationHorizontal*proportionality*(2*PI/360.0);
+			double cosa = cos(angle);
+			double sina = sin(angle);
+			sgSetQuat(quaternionHorizontal, cosa, 0, 0, -sina);
+		}
+
+		if (rotationHorizontal && rotationVertical) {
+			sgMultQuat ( quaternion, quaternionVertical, quaternionHorizontal ) ;
+		}
+		else if (rotationHorizontal) {
+			sgCopyQuat(quaternion,quaternionHorizontal);
+		}
+		else if (rotationVertical) {
+			sgCopyQuat(quaternion,quaternionVertical);
+		}
+
 		flagDeleteMe = 0;
+		rotationVertical = 0;
+		rotationHorizontal = 0;
 		sgRotateVecQuat(camVecRelToCar, quaternion);
 		distx = camVecRelToCar[0];
 		disty = camVecRelToCar[1];
