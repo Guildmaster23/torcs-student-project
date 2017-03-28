@@ -436,15 +436,18 @@ static void
 gfuiMotion(int x, int y)
 {
 	GfOut("there a x = %d and y = %d    ", GfuiMouse.X, GfuiMouse.Y);
+	// old values of coordinates of mouse
 	int oldX = GfuiMouse.X;
 	int oldY = GfuiMouse.Y;
+	// new values of coordinates of mouse
 	GfuiMouse.X = (x - (ScrW - ViewW)/2) * (int)GfuiScreen->width / ViewW;
 	GfuiMouse.Y = (ViewH - y + (ScrH - ViewH)/2) * (int)GfuiScreen->height / ViewH;
 	GfOut("there a new x = %d and y = %d\n", GfuiMouse.X, GfuiMouse.Y );
-	//if (ReInfo->_reState == RE_STATE_RACE) {
+	if (ReInfo->_reState == RE_STATE_RACE) {
+		// send diff of coordinates to handler
 		SetRotationFlag((int*)(GfuiMouse.X - oldX),(int*)(GfuiMouse.Y - oldY));
-		
-	//}
+		//GfOut("there a diff x = %d and y = %d\n", (GfuiMouse.X - oldX), (GfuiMouse.Y - oldY) );	
+	}
 	gfuiUpdateFocus();
 	gfuiMouseAction((void*)(1 - GfuiScreen->mouse));
 	glutPostRedisplay();
