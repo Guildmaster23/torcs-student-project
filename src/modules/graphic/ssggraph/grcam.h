@@ -28,7 +28,7 @@
 #endif
 
 void SetRotationFlag(void* flag);
-void SetRotationFlag(void* flagx, void* flagy);
+void SetRotationFlag(int flagx, int flagy);
 
 class cGrCamera;
 class cGrScreen;

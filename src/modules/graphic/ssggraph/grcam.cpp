@@ -51,10 +51,10 @@ SetRotationFlag(void* flag) {
 }
 
 void
-SetRotationFlag(void* flagx, void* flagy) {
+SetRotationFlag(int flagx, int flagy) {
 	flagDeleteMe = 5;
-	rotationHorizontal = (int) flagx;
-	rotationVertical = (int) flagy;
+	rotationHorizontal = flagx;
+	rotationVertical = flagy;
 }
 
 float
@@ -705,7 +705,7 @@ protected:
 	tdble z = car->_pos_Z + distz;
 
 	if (flagDeleteMe != 0) {
-		float proportionality = 0.01;
+		float proportionality = 0.1f;
 
 		sgVec3 camVecRelToCar;   //camera vector relative to the car
 		sgQuat quaternion;
@@ -738,14 +738,16 @@ protected:
 		else if (rotationVertical) {
 			sgCopyQuat(quaternion,quaternionVertical);
 		}
-
+		
+		if (rotationVertical || rotationHorizontal) {
+			sgRotateVecQuat(camVecRelToCar, quaternion);
+			distx = camVecRelToCar[0];
+			disty = camVecRelToCar[1];
+			distz = camVecRelToCar[2];
+			rotationVertical = 0;
+			rotationHorizontal = 0;
+		}
 		flagDeleteMe = 0;
-		rotationVertical = 0;
-		rotationHorizontal = 0;
-		sgRotateVecQuat(camVecRelToCar, quaternion);
-		distx = camVecRelToCar[0];
-		disty = camVecRelToCar[1];
-		distz = camVecRelToCar[2];
 	}
 
 
