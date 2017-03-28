@@ -27,6 +27,11 @@
 #include <stdio.h>
 #include <time.h>
 
+#include <src/modules/graphic/ssggraph/grmain.cpp>
+#include <src/libs/raceengineclient/racestate.h>
+#include <src/libs/raceengineclient/raceengine.h>
+#include <src/modules/graphic/ssggraph/grcam.h>
+
 #include <tgfclient.h>
 #include "gui.h"
 
@@ -430,8 +435,19 @@ gfuiMouse(int button, int state, int x, int y)
 static void
 gfuiMotion(int x, int y)
 {
+	GfOut("there a x = %d and y = %d    ", GfuiMouse.X, GfuiMouse.Y);
+	// old values of coordinates of mouse
+	int oldX = GfuiMouse.X;
+	int oldY = GfuiMouse.Y;
+	// new values of coordinates of mouse
 	GfuiMouse.X = (x - (ScrW - ViewW)/2) * (int)GfuiScreen->width / ViewW;
 	GfuiMouse.Y = (ViewH - y + (ScrH - ViewH)/2) * (int)GfuiScreen->height / ViewH;
+	GfOut("there a new x = %d and y = %d\n", GfuiMouse.X, GfuiMouse.Y );
+	if (ReInfo->_reState == RE_STATE_RACE) {
+		// send diff of coordinates to handler
+		SetRotationFlag((int*)(GfuiMouse.X - oldX),(int*)(GfuiMouse.Y - oldY));
+		//GfOut("there a diff x = %d and y = %d\n", (GfuiMouse.X - oldX), (GfuiMouse.Y - oldY) );	
+	}
 	gfuiUpdateFocus();
 	gfuiMouseAction((void*)(1 - GfuiScreen->mouse));
 	glutPostRedisplay();
@@ -441,8 +457,10 @@ gfuiMotion(int x, int y)
 static void
 gfuiPassiveMotion(int x, int y)
 {
+	//GfOut("there a x = %d and y = %d    ", GfuiMouse.X, GfuiMouse.Y);
 	GfuiMouse.X = (x - (ScrW - ViewW)/2) * (int)GfuiScreen->width / ViewW;
 	GfuiMouse.Y = (ViewH - y + (ScrH - ViewH)/2) * (int)GfuiScreen->height / ViewH;
+	//GfOut("there a new x = %d and y = %d\n", GfuiMouse.X, GfuiMouse.Y );
 	gfuiUpdateFocus();
 	glutPostRedisplay();
 }
