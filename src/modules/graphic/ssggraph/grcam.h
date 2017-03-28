@@ -28,6 +28,7 @@
 #endif
 
 void SetRotationFlag(void* flag);
+void SetRotationFlag(void* flagx, void* flagy);
 
 class cGrCamera;
 class cGrScreen;
@@ -74,7 +75,6 @@ class cGrCamera
     virtual void setZoom(int cmd) = 0;				/* Set the zoom with commands */
     virtual void loadDefaults(char *attr) = 0;			/* Load the default values from parameter file */
     virtual void onSelect(tCarElt *car, tSituation *s) = 0;	/* called when the camera is selected */
-
     virtual float getLODFactor(float x, float y, float z) = 0;	/* Get the LOD factor for an object located at x,y,z */
 
     /* Set the camera view */
@@ -170,6 +170,7 @@ class cGrPerspCamera : public cGrCamera
     void setModelView(void);
     void loadDefaults(char *attr);
     void setZoom(int cmd);
+	void processKeyboardCameraRotation(float *x, float *y, float *z);
     float getLODFactor(float x, float y, float z);
     float getFogStart(void) { return fogstart; }
     float getFogEnd(void) { return fogend; }

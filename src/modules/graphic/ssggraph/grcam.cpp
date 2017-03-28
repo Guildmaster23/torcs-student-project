@@ -43,10 +43,17 @@
 #include <tgfclient.h>
 
 int flagDeleteMe = 0;
-
+int rotationHorizontal = 0;
+int rotationVertical = 0;
 void
 SetRotationFlag(void* flag) {
 	flagDeleteMe = (int) flag;
+}
+
+void
+SetRotationFlag(void* flagx, void* flagy) {
+	int rotationHorizontal = (int) flagx;
+	int rotationVertical = (int) flagy;
 }
 
 float
@@ -647,16 +654,60 @@ protected:
 	up[2] = 1;
     }
 
-    void update(tCarElt *car, tSituation *s) {
+	void processKeyboardCameraRotation(float *x, float *y, float *z, int *flagDeleteMe) {
+		if (*flagDeleteMe != 0) {
+			int distx = *x;
+			int disty = *y;
+			int distz = *z;
+			
+			double cosa = 0.99996192306417128873735516482698;
+			double sina = 0.00872653549837393496488821397358;
 
-	
+			sgVec3 camVecRelToCar;   //camera vector relative to the car
+			sgQuat quaternion;
+			sgVec3 vecPerp;
+			sgSetVec3 ( camVecRelToCar, distx, disty, distz);
+
+			switch(*flagDeleteMe){
+				case 1:	
+					sgSetVec3 ( vecPerp, camVecRelToCar[1], -camVecRelToCar[0], 0);
+					sgNormaliseVec3(vecPerp, vecPerp);
+					sgSetQuat(quaternion, cosa, sina*vecPerp[0], sina*vecPerp[1], 0);
+					break;
+				case 2:
+					sgSetVec3 ( camVecRelToCar, distx, disty, distz);
+					sgSetQuat(quaternion, cosa, 0, 0, -sina);
+					break;
+				case 3:
+					sgSetVec3 ( vecPerp, -camVecRelToCar[1], camVecRelToCar[0], 0);
+					sgNormaliseVec3(vecPerp, vecPerp);
+					sgSetQuat(quaternion, cosa, sina*vecPerp[0], sina*vecPerp[1], 0);
+					break;
+				case 4:
+					sgSetVec3 ( camVecRelToCar, distx, disty, distz);
+					sgSetQuat(quaternion, cosa, 0, 0, sina);
+					break;
+				default:
+					break;
+			}
+			*flagDeleteMe = 0;
+			sgRotateVecQuat(camVecRelToCar, quaternion);
+			*x = camVecRelToCar[0];
+			*y = camVecRelToCar[1];
+			*z = camVecRelToCar[2];
+		}
+	}
+
+    void update(tCarElt *car, tSituation *s) {
 	tdble x = car->_pos_X + distx;
 	tdble y = car->_pos_Y + disty;
 	tdble z = car->_pos_Z + distz;
+
+	///processKeyboardCameraRotation(&distx, &disty, &distz, &flagDeleteMe);
 	if (flagDeleteMe != 0) {
 		double cosa = 0.99996192306417128873735516482698;
 		double sina = 0.00872653549837393496488821397358;
-		
+
 		sgVec3 camVecRelToCar;   //camera vector relative to the car
 		sgQuat quaternion;
 		sgVec3 vecPerp;
@@ -690,6 +741,8 @@ protected:
 		disty = camVecRelToCar[1];
 		distz = camVecRelToCar[2];
 	}
+
+
 	eye[0] = x;
 	eye[1] = y;
 	eye[2] = z;
