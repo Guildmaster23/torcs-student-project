@@ -315,12 +315,12 @@ refresh(tSituation *s)
     nFrame++;
     grCurTime = GfTimeClock();
     grDeltaTime = grCurTime - OldTime;
-    if ((grCurTime - OldTime) > 1.0) {
+    //if ((grCurTime - OldTime) > 1.0) {
 	/* The Frames Per Second (FPS) display is refreshed every second */
-	grFps = (tdble)nFrame / (grCurTime - OldTime);
+	/*grFps = (tdble)nFrame / (grCurTime - OldTime);
 	nFrame = 0;
 	OldTime = grCurTime;
-    }
+    }*/
 
     TRACE_GL("refresh: start");
 
