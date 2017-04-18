@@ -1302,58 +1302,6 @@ grCamCreateSceneCameraList(class cGrScreen *myscreen, tGrCamHead *cams, tdble fo
     GF_TAILQ_INIT(&cams[c]);
     id = 0;
     
-    /* cam F2 = behind very near */
-    cam = new cGrCarCamBehind(myscreen,
-			      id,
-			      1,	/* drawCurr */
-			      1,	/* drawBG  */
-			      40.0,	/* fovy */
-			      5.0,	/* fovymin */
-			      95.0,	/* fovymax */
-			      6.0,	/* dist */
-			      2.0,	/* height */
-			      1.0,	/* near */
-			      600.0 * fovFactor,	/* far */
-			      300.0 * fovFactor,	/* fog */
-			      600.0 * fovFactor	/* fog */
-			      );
-    cam->add(&cams[c]);
-    id++;
-    
-    /* cam F2 = behind near */
-    cam = new cGrCarCamBehind(myscreen,
-			      id,
-			      1,	/* drawCurr */
-			      1,	/* drawBG  */
-			      40.0,	/* fovy */
-			      5.0,	/* fovymin */
-			      95.0,	/* fovymax */
-			      10.0,	/* dist */
-			      2.0,	/* height */
-			      1.0,	/* near */
-			      600.0 * fovFactor,	/* far */
-			      300.0 * fovFactor,	/* fog */
-			      600.0 * fovFactor	/* fog */
-			      );
-    cam->add(&cams[c]);
-    id++;
-    
-    /* cam F2 = car inside with car (bonnet view) fixed to the car */
-    cam = new cGrCarCamInsideFixedCar(myscreen,
-				      id,
-				      1,	/* drawCurr */
-				      1,	/* drawBG  */
-				      67.5,	/* fovy */
-				      50.0,	/* fovymin */
-				      95.0,	/* fovymax */
-				      0.3,	/* near */
-				      600.0 * fovFactor,	/* far */
-				      300.0 * fovFactor,	/* fog */
-				      600.0 * fovFactor	/* fog */
-				      );
-    cam->add(&cams[c]);
-    id++;
-    
     /* cam F2 = car inside with car (bonnet view) */
     cam = new cGrCarCamInside(myscreen,
 			      id,
