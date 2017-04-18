@@ -64,7 +64,7 @@ class cGrBoard
     void initBoardCar(tCarElt *car);
 	cGrTrackMap *getTrackMap() { return trackMap; }
 
-    void refreshBoard(tSituation *s, float Fps, int forceArcade, tCarElt *curr);
+    //void refreshBoard(tSituation *s, float Fps, int forceArcade, tCarElt *curr);
     void loadDefaults(tCarElt *curCar);
 };
 

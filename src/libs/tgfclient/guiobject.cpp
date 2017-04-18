@@ -58,8 +58,8 @@ void GfuiPrintString(const char *text, float *fgColor, int font, int x, int y, i
 			gfuiFont[font]->output(x - gfuiFont[font]->getWidth(text), y, text);
 			break;
 	}
-	glDisable(GL_ALPHA_TEST);
-	glDisable(GL_TEXTURE_2D);
+	//glDisable(GL_ALPHA_TEST);
+	//glDisable(GL_TEXTURE_2D);
 }
 
 int GfuiFontHeight(int font)
