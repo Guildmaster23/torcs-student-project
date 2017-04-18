@@ -273,13 +273,7 @@ initView(int x, int y, int width, int height, int /* flag */, void *screen)
 	GfuiAddSKey(screen, GLUT_KEY_F10,  "Follow Car Zoomed", (void*)8, grSelectCamera, NULL);
 	GfuiAddSKey(screen, GLUT_KEY_F11,  "TV Director View",  (void*)9, grSelectCamera, NULL);
 
-	GfuiAddKey(screen, '5',            "FPS Counter",      (void*)3, grSelectBoard, NULL);
-	GfuiAddKey(screen, '4',            "G/Cmd Graph",      (void*)4, grSelectBoard, NULL);
-	GfuiAddKey(screen, '3',            "Leaders Board",    (void*)2, grSelectBoard, NULL);
-	GfuiAddKey(screen, '2',            "Driver Counters",  (void*)1, grSelectBoard, NULL);
-	GfuiAddKey(screen, '1',            "Driver Board",     (void*)0, grSelectBoard, NULL);
 	GfuiAddKey(screen, '9',            "Mirror",	   (void*)0, grSwitchMirror, NULL);
-	GfuiAddKey(screen, '0',            "Arcade Board",     (void*)5, grSelectBoard, NULL);
 	GfuiAddKey(screen, '>',            "Zoom In",          (void*)GR_ZOOM_IN,	grSetZoom, NULL);
 	GfuiAddKey(screen, '<',            "Zoom Out",         (void*)GR_ZOOM_OUT,	grSetZoom, NULL);
 	GfuiAddKey(screen, '[',            "Split Screen",     (void*)GR_SPLIT_ADD,	grSplitScreen, NULL);
